@@ -1,8 +1,0 @@
-{
-  "realm": "analyticsproduct",
-  "auth-server-url": "http://localhost:8080/",
-  "ssl-required": "external",
-  "resource": "analytics",
-  "public-client": true,
-  "confidential-port": 0
-}

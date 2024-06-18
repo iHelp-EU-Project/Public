@@ -1,9 +1,0 @@
-module.exports = {
-  NODE_ENV: process.env.NODE_ENV || 'development',
-  NODE_HOST: process.env.HOST || '0.0.0.0',
-  NODE_PORT: process.env.PORT || 3001,
-  KEYCLOAK_SERVER: process.env.KEYCLOAK_SERVER  || 'http://192.168.1.133/', // 'localhost'
-  REALM_PUBLIC_KEY : process.env.REALM_PUBLIC_KEY || 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxAmxIBqgBBGS739OnksHeHMiV9KH5Up2xXznXIqPQUPoCIOQ/7AihiO76/1U+v6DtRAzvPkwm97KgieVJP4MEayS10zmf2QQFY5BDiCmOHOQpKiDC/viMdwkuWELiNiRqzo//ngH2JmJIpJlSFfu22JrjC7mKrCycqLqJcghXzgqkGiUpGUA1+aPp4CHJNsHDJVrUGfct7d0xZJMMXjpJX6ptYrBBUGtAbMo4Txc3/O5ONPLFCcOyVKK71+vMC6EdFhnl9TK8stmC1intVoA31uuLAJLuXqXm15CuSA5X/2i4PG7fZ7G/4YBQH/7boG105W9PHtJg7pakHyi+81JTwIDAQAB',
-  MODEL_MANAGER : process.env.MODEL_MANAGER || '192.168.1.122:8000', // 'localhost'
-
-}
