@@ -1,0 +1,106 @@
+<div class="container-fluid col-10" style="margin-left: 15%;">
+
+     
+
+   
+    <div class="col-md-10 " style="margin-bottom:14% ; margin-top: 2%;" >
+    <!-- card-body -->
+
+            <div class="box" style="margin: 100 auto; width: 98%; margin-top: 100px; ">
+            <h2 class="text-center" style="margin-bottom: 2%;">{{ 'Clustering.text' | translate}}</h2>
+                <div class="text-center card-deck" id="cardDeck">
+                <!-- In the card-deck all the card has the same id ( id="card-algorithm" )because they are showing a -shadow- by the .hover event controlled by a JS function  [ $( "div#card-algorithm" ).hover( ) ]-->
+                    
+                    
+                  
+                <main class="container-fluid col-12" style="">    
+
+
+                    <!--  Clustering H2O -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3" style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="top" title="{{ 'DescriptionClustering.text' | translate}}">
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/H2Oai_Logo.png" style="width:75%" alt="Neuronal network">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'ClusteringH2O.text' | translate}}</h4>
+                        <h6 class="card-text"> {{ 'ValuesID.text' | translate}}<br/></h6>
+                        <a  class="stretched-link" [routerLink]="['/clusteringinitkmeans']"></a>
+                        </div>
+                    </div>
+                        
+                 
+                        
+                    <!-- Clustering Ward -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3" style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="{{ 'Descriptionward.text' | translate}}">
+                        <br/>
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded  border-0" src="assets/images/ward.png" style="width:90%; height: 50%;" alt="Clustering">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title>">{{ 'ClusteringWard.text' | translate}}</h4>
+                        <h6 class="card-text"> {{ 'ValuesID.text' | translate}}<br/></h6>
+                        <a href="#" class="stretched-link" [routerLink]="['/clusteringward']"></a>
+                        </div>
+                    </div>
+                        
+                   
+
+
+                    <!-- Clustering Birch -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3" style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="{{ 'DescriptionBirch.text' | translate}}">
+                        <br/>
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/birch.png" style="width:65%" alt="Regression">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'ClusteringBirch.text' | translate}}</h4>
+                        <h6 class="card-text"> {{ 'ValuesID.text' | translate}} <br/></h6>
+                        <a href="#" class="stretched-link" [routerLink]="['/clusteringbirch']"></a>
+                        </div>
+                    </div>
+
+              
+
+                         <!-- Clustering Sklearn -->
+                    <div id="card-algorithm"  (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3" style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="{{ 'DescriptionskClust.text' | translate}}">
+                        <br/>
+                         <div class="box">
+                            <img class="card-img-top img-thumbnail rounded  border-0" src="assets/images/scikit-learn.png" style="width:90%" alt="Clustering">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'ClusteringSklearn.text' | translate}}</h4>
+                        <h6 class="card-text"> {{ 'ValuesID.text' | translate}}<br/></h6>
+                        <a href="#" class="stretched-link" [routerLink]="['/clusteringsklearn']"></a>
+                      </div>
+                    </div>
+
+                </main>
+                    
+                        
+                </div><!-- card-deck  -->
+
+                <div   class="container col-5 col-md-2 contenido" >
+                    <div>
+                        <button 
+                                class="btn btn-secondary btn-lg back"  >
+                                <a style="color: aliceblue;" [routerLink]="['/home']">{{ 'Back.text' | translate}}</a>
+                        </button>
+                    </div>
+                    
+                </div>
+            
+    </div>
+    
+</div>
+ 

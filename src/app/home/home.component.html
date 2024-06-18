@@ -1,0 +1,82 @@
+<div class="container-fluid col-10 col-md-15" style="margin-left: 15%;">
+
+     
+
+   
+    <div class="col-md-10 col-md-offset-1" style="margin-bottom:8% ; margin-top: 2%;" >
+    <!-- card-body -->
+
+            <div class="box" style="margin: 100 auto; width: 98%; margin-top: 100px;">
+            <h2 class="text-center " style="margin-bottom: 2%;">{{ 'TypesAlgorithm.text' | translate}}</h2>
+                <div class="card-deck" id="cardDeck">
+                <!-- In the card-deck all the card has the same id ( id="card-algorithm" )because they are showing a -shadow- by the .hover event controlled by a JS function  [ $( "div#card-algorithm" ).hover( ) ]-->
+                    
+                    
+                  
+
+
+
+                    <!--  Unsupervised algorithm -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card mb-15 border border-0 efecto3" style="height: 350px;"
+                        data-toggle="tooltip" data-placement="top" title="">
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/nosu.png" style="width:100%" alt="Unsupervised">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'unsupervised.text' | translate}}</h4>
+                        <!-- <h6 class="card-text"> Values per columns<br/></h6><h6 class="text-muted">Unsupervised algorithms</h6> -->
+                        <a  class="stretched-link" [routerLink]="['/unsupervised']"></a>
+                        </div>
+                    </div>
+                        
+                    <!--  Supervised algorithm -->
+                    <div id="card-algorithm"  (resized)="onResized($event)"
+                        class="card  border border-0 efecto3" style="height: 350px;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="">
+                     
+                         <div class="box">
+                            <img class="card-img-top img-thumbnail rounded  border-0" src="assets/images/su.jpg" style="width:100%" alt="Supervised">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'supervised.text' | translate}}</h4>
+                        <!-- <h6 class="card-text"> Values with ID<br/><h6 class="text-muted">Unsupervised algorithm</h6></h6> -->
+                        <a  class="stretched-link" [routerLink]="['/supervised']"></a>
+                        </div>
+                    </div>
+                        
+                     <!--  Image recognition -->
+                    <div id="card-algorithm"  (resized)="onResized($event)"
+                        class="card  border border-0 efecto3" style="height: 350px;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="">
+                     
+                         <div class="box">
+                            <img class="card-img-top img-thumbnail rounded  border-0" src="assets/images/Images2.png" style="width:80%" alt="Image recognition">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title" style="margin-left: -20%;">{{ 'Recognition.text' | translate}}</h4>
+                        <!-- <h6 class="card-text"> Values with ID<br/><h6 class="text-muted">Unsupervised algorithm</h6></h6> -->
+                        <a  class="stretched-link" [routerLink]="['/imagesrecognition']"></a>
+                        </div>
+                    </div>
+                        
+                        
+                </div><!-- card-deck  -->
+
+
+            
+            </div>
+    <!-- <div   class="container col-5 col-md-2 contenido"  >
+			<div>
+				<button 
+						class="btn btn-secondary btn-lg back"  >
+						<a style="color: aliceblue;" [routerLink]="['/']">
+						<i class="fas fa-angle-double-left"></i>Back
+						</a>
+				</button>
+			</div>
+			 -->
+</div>
+ 

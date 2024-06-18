@@ -1,0 +1,50 @@
+<p>gan-model works!</p>
+<div class="container">
+    <div class="wrapper3" >
+        <div>
+            <h6 class="text">{{ 'FirstLayerConvolution.text' | translate}}</h6>
+            <img class="drop" width="75%" height="75%"
+                src="http://{{this.host}}:3001/users/files/download/{{receivedParameters}}_grid.png?username={{currentUser.username}}&modelsname={{receivedParameters}}&algorithm=/"
+                id="{{receivedParameters}}_1.png" />
+        </div>
+        <div>
+            <h6 class="text">{{ 'SecondLayerConvolution.text' | translate}}</h6>
+            <img class="drop" width="75%" height="75%"
+                src="http://{{this.host}}:3001/users/files/download/{{receivedParameters}}.png?username={{currentUser.username}}&modelsname={{receivedParameters}}&algorithm=/"
+                id="{{receivedParameters}}_2.png" />
+        </div>
+        <div>
+            <h6 class="text"> {{ 'SingleTestCNN.text' | translate}}</h6>
+            <img class="drop" width="75%" height="75%"
+                src="http://{{this.host}}:3001/users/files/download/{{receivedParameters}}_generator&discriminator.png?username={{currentUser.username}}&modelsname={{receivedParameters}}&algorithm=/"
+                id="{{receivedParameters}}_3.png" />
+        </div>
+        <!-- <div>
+            <h6 class="text"> {{ 'GroupTestCNN.text' | translate}}</h6>
+            <img class="drop" width="75%" height="75%"
+                src="http://{{this.host}}:3001/users/files/download/{{modelnameDate}}_4.png?username={{currentUser.username}}&modelsname={{modelnameDate}}&algorithm=/"
+                id="{{modelnameDate}}_4.png" />
+        </div> -->
+	</div>
+</div>
+<hr>
+<div  class="container">
+		<div  class="container col-3 col-md-1 contenidoButton"  >
+			<div>
+				<button 
+						class="btn btn-secondary btn-lg back"  >
+						<a style="color: aliceblue;" [routerLink]="['/mymodels']">
+						<i class="fas fa-angle-double-left"></i>{{ 'Back.text' | translate}}
+						</a>
+				</button>
+			</div>
+			<div>
+				<button 
+						
+						class="btn btn-secondary btn-lg back" style="background-color: #4A4A4A; width: 200%; ">
+						<a style="color: aliceblue;" (click)="deleteModels()" [routerLink]="['/mymodels']">{{ 'DeleteModel.text' | translate}}<i class="fas fa-angle-double-right"></i></a>
+				</button>		
+			</div>	
+		</div>
+		<hr>
+	</div>

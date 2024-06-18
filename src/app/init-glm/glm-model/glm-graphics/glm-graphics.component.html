@@ -1,0 +1,417 @@
+<!-- <div class="container" *ngIf="mymodels">
+	<div id="chartRegression">
+		<apx-chart *ngIf="chartArrayRegressionGraphics" 
+			[series]="chartArrayRegressionGraphics"
+			[chart]="chartOptionsRegression.chart" 
+			[plotOptions]="chartOptionsRegression.plotOptions"
+			[title]="chartOptionsRegression.title">
+		</apx-chart>
+	</div>
+</div> -->
+<br>
+	<div class="text-center align-items-center"   *ngIf="mymodels"> <strong>Model: {{modelName}}.{{dateModelCreateModels}}</strong></div>
+<br>
+<br>
+<!-- <div class="container" *ngIf="mymodels">
+	<div id="chartRegression2">
+		<apx-chart *ngIf="chartArrayRegressionGraphics2" 
+			[series]="chartArrayRegressionGraphics2"
+			[chart]="chartOptions.chart"
+			[xaxis]="chartOptions.xaxis"
+			[yaxis]="chartOptions.yaxis"
+			[title]="chartOptions.title"
+		></apx-chart>
+	</div>
+</div> -->
+
+<!-- <div class="container">
+		<div  id="chartClusterBoxplot" >
+		<apx-chart *ngIf="chartArrayClusterBoxplotGraphics"
+			[series]="chartArrayClusterBoxplotGraphics"
+			[chart]="chartOptionsCluster.chart"
+			[xaxis]="rank"
+			[dataLabels]="chartOptionsCluster.dataLabels"
+			[grid]="chartOptionsCluster.grid"
+			[stroke]="chartOptionsCluster.stroke"
+			[title]="chartOptionsCluster.title"
+			[markers]="chartOptionsCluster.markers"
+			[yaxis]="chartOptionsCluster.yaxis"
+			[fill]="chartOptionsCluster.fill"
+		></apx-chart>
+		</div>
+</div> -->
+
+<div *ngIf="withoutQuotesAnomalyesMatrixHeaders">
+	<hr>
+	<mat-tab-group dynamicHeight mat-align-tabs="center">
+		<mat-tab label="{{ 'DataMatrix.text' | translate}}">
+			<div class="container">
+			<table *ngIf="withoutQuotesAnomalyesMatrixHeaders || csvDataMatrixBody" id="table-DataMatrix" datatable [dtOptions]="dtOptions" class="row-border hover">
+				<thead>
+					<tr>
+	
+						<th *ngFor="let it of withoutQuotesAnomalyesMatrixHeaders ; let j = index">
+                           
+                         {{it}}
+                          
+						</th>
+	
+					</tr>
+				</thead>
+				<tbody style="width: 100%;">
+	
+					<tr *ngFor="let item of csvDataMatrixBodyMappedColumns ; let i = index">
+						<td *ngFor="let it of item ; let j = index" >
+								
+								
+									{{it}}
+							
+								
+	
+						</td>
+					</tr>
+	
+                </tbody>
+                <tfoot>
+							<tr>
+								<th *ngFor="let it of withoutQuotesAnomalyesMatrixHeaders ; let j = index">						
+												{{it}}
+								</th>	
+							</tr>
+						</tfoot>
+	
+			</table>
+            </div>
+            
+
+			
+				
+		</mat-tab>
+	
+		
+	</mat-tab-group>
+	<hr>
+	  <div class="container">
+					<div id="chartMatrix">
+						<apx-chart *ngIf="chartArrayMatrixGraphics" 
+							  	[series]="chartArrayMatrixGraphics"
+								[chart]="chartOptionsMatrix.chart"
+								[xaxis]="rankMatrix"
+								[fill]="chartOptionsMatrix.fill"
+								[dataLabels]="chartOptionsMatrix.dataLabels"
+								[title]="chartOptionsMatrix.title"
+								[yaxis]="chartOptionsMatrix.yaxis"
+								[tooltip]="chartOptionsMatrix.tooltip"
+								[theme]="chartOptionsMatrix.theme">
+						</apx-chart>
+					</div>
+				</div>
+	<hr>
+</div><!-- card-Correlations -->
+
+<div *ngIf="withoutQuotesAnomalyesPredictionHeaders">
+	<hr>
+	<mat-tab-group dynamicHeight mat-align-tabs="center">
+		<mat-tab label="{{ 'PredictionGLM.text' | translate}}">
+			<div class="container">
+			<table *ngIf="withoutQuotesAnomalyesPredictionHeaders || csvDataPredictionBody" id="table-DataPrediction" datatable [dtOptions]="dtOptions" class="row-border hover">
+				<thead>
+					<tr>
+	
+						<th *ngFor="let it of withoutQuotesAnomalyesPredictionHeaders ; let j = index">
+                           
+                         {{it}}
+                          
+						</th>
+	
+					</tr>
+				</thead>
+				<tbody style="width: 100%;">
+	
+					<tr *ngFor="let item of csvDataPredictionBodyJustTwentyRows ; let i = index">
+						<td *ngFor="let it of item ; let j = index" >
+								
+								
+									{{it}}
+							
+								
+	
+						</td>
+					</tr>
+	
+                </tbody>
+                <tfoot>
+							<tr>
+								<th *ngFor="let it of withoutQuotesAnomalyesPredictionHeaders ; let j = index">						
+												{{it}}
+								</th>	
+							</tr>
+						</tfoot>
+	
+			</table>
+            </div>
+            
+
+			
+				
+		</mat-tab>
+	
+		
+	</mat-tab-group>
+	<hr>
+	  <div class="container">
+					<div id="chartPrediction">
+						<apx-chart *ngIf="chartArrayPrediction" 
+							[series]="chartArrayPrediction"
+							[chart]="chartOptionsPrediction.chart" 
+							[plotOptions]="chartOptionsPrediction.plotOptions"
+							[title]="chartOptionsPrediction.title">
+						</apx-chart>
+					</div>
+				</div>
+	<hr>
+</div><!-- card-Correlations -->
+
+<!-- <div *ngIf="withoutQuotesAnomalyesregressionHeaders">
+	<hr>
+	<mat-tab-group dynamicHeight mat-align-tabs="center">
+		<mat-tab label="Regression">
+			<div class="">
+			<table *ngIf="withoutQuotesAnomalyesregressionHeaders || csvDataregressionBody" id="table-Dataregression" datatable class="row-border hover">
+				<thead>
+					<tr>
+	
+						<th *ngFor="let it of withoutQuotesAnomalyesregressionHeaders ; let j = index">
+                           
+                         {{it}}
+                          
+						</th>
+	
+					</tr>
+				</thead>
+				<tbody style="width: 100%;">
+	
+					<tr *ngFor="let item of csvDataregressionBodyJustTwentyRows ; let i = index">
+						<td *ngFor="let it of item ; let j = index" >
+								
+								
+									{{it}}
+							
+								
+	
+						</td>
+					</tr>
+	
+                </tbody>
+                <tfoot>
+							<tr>
+								<th *ngFor="let it of withoutQuotesAnomalyesregressionHeaders ; let j = index">						
+												{{it}}
+								</th>	
+							</tr>
+						</tfoot>
+	
+			</table>
+            </div>
+            
+
+			
+				
+		</mat-tab>
+	
+		
+	</mat-tab-group> -->
+  <!-- <div class="container">
+					<div id="chartMatrix">
+						<apx-chart *ngIf="true" 
+							  	[series]="chartOptionsMatrix.series"
+								[chart]="chartOptionsMatrix.chart"
+								[xaxis]="chartOptionsMatrix.xaxis"
+								[fill]="chartOptionsMatrix.fill"
+								[dataLabels]="chartOptionsMatrix.dataLabels"
+								[title]="chartOptionsMatrix.title"
+								[yaxis]="chartOptionsMatrix.yaxis"
+								[tooltip]="chartOptionsMatrix.tooltip"
+								[theme]="chartOptionsMatrix.theme">
+						</apx-chart>
+					</div>
+				</div> -->
+	<hr>
+<!-- </div>card-Correlations -->
+
+<div *ngIf="withoutQuotesAnomalyesPhaseHeaders">
+	<hr>
+	<mat-tab-group dynamicHeight mat-align-tabs="center">
+		<mat-tab label="{{ 'DispersionGLM.text' | translate}}">
+			<div class="container">
+			<table *ngIf="withoutQuotesAnomalyesPhaseHeaders || csvDataPhaseBody" id="table-DataPhase" datatable [dtOptions]="dtOptions" class="row-border hover">
+				<thead>
+					<tr>
+	
+						<th *ngFor="let it of withoutQuotesAnomalyesPhaseHeaders ; let j = index">
+                           
+                         {{it}}
+                          
+						</th>
+	
+					</tr>
+				</thead>
+				<tbody style="width: 100%;">
+	
+					<tr *ngFor="let item of csvDataPhaseBody ; let i = index">
+						<td *ngFor="let it of item ; let j = index" >
+								
+								
+									{{it}}
+							
+								
+	
+						</td>
+					</tr>
+	
+                </tbody>
+                <tfoot>
+							<tr>
+								<th *ngFor="let it of withoutQuotesAnomalyesPhaseHeaders ; let j = index">						
+												{{it}}
+								</th>	
+							</tr>
+						</tfoot>
+	
+			</table>
+            </div>
+            
+
+			
+				
+		</mat-tab>
+	
+		
+	</mat-tab-group>
+	<hr>
+	  <div class="container">
+					<div id="chartPoints">
+						<apx-chart *ngIf="chartArrayPhaseGraphics"
+							[series]="chartArrayPhaseGraphics"
+							[chart]="chartOptionsPoints.chart"
+							[xaxis]="chartOptionsPoints.xaxis"
+							[yaxis]="chartOptionsPoints.yaxis"
+						></apx-chart>
+						</div>
+
+				</div>
+				 <!-- <div class="container">
+					<div id="chartPoints2">
+						<apx-chart *ngIf="chartArrayPhaseGraphics2"
+							[series]="chartArrayPhaseGraphics2"
+							[chart]="chartOptionsPoints2.chart"
+							[xaxis]="chartOptionsPoints2.xaxis"
+							[yaxis]="chartOptionsPoints2.yaxis"
+						></apx-chart>
+						</div>
+
+				</div> -->
+	<hr>
+</div><!-- card-Correlations -->
+
+<!-- <div *ngIf="withoutQuotesAnomalyesPredictorHeaders">
+	<hr>
+	<mat-tab-group dynamicHeight mat-align-tabs="center">
+		<mat-tab label="Best Cluster Predictor">
+			<div class="">
+			<table *ngIf="withoutQuotesAnomalyesPredictorHeaders || csvDataPredictorBody" id="table-DataPredictor" datatable class="row-border hover">
+				<thead>
+					<tr>
+	
+						<th *ngFor="let it of withoutQuotesAnomalyesPredictorHeaders ; let j = index">
+                           
+                         {{it}}
+                          
+						</th>
+	
+					</tr>
+				</thead>
+				<tbody style="width: 100%;">
+	
+					<tr *ngFor="let item of csvDataPredictorBodyJustTwentyRows ; let i = index">
+						<td *ngFor="let it of item ; let j = index" >
+								
+								
+									{{it}}
+							
+								
+	
+						</td>
+					</tr>
+	
+                </tbody>
+                <tfoot>
+							<tr>
+								<th *ngFor="let it of withoutQuotesAnomalyesPredictorHeaders ; let j = index">						
+												{{it}}
+								</th>	
+							</tr>
+						</tfoot>
+	
+			</table>
+            </div>
+            
+
+			
+				
+		</mat-tab>
+	
+		
+	</mat-tab-group>
+	   <div class="container">
+					<div id="chartMatrix">
+						<apx-chart *ngIf="true" 
+							  	[series]="chartOptionsMatrix.series"
+								[chart]="chartOptionsMatrix.chart"
+								[xaxis]="chartOptionsMatrix.xaxis"
+								[fill]="chartOptionsMatrix.fill"
+								[dataLabels]="chartOptionsMatrix.dataLabels"
+								[title]="chartOptionsMatrix.title"
+								[yaxis]="chartOptionsMatrix.yaxis"
+								[tooltip]="chartOptionsMatrix.tooltip"
+								[theme]="chartOptionsMatrix.theme">
+						</apx-chart>
+					</div>
+				</div>
+	<hr>
+</div> -->
+<hr>
+	<div *ngIf="chartArrayPhaseGraphics && !mymodels" class="container">
+		<div  class="container col-3 col-md-1 contenidoButton"  >
+			<div>
+				<button 
+						class="btn btn-secondary btn-lg back"  style="width: 200%;">
+						<a style="color: aliceblue;" [routerLink]="['/home']" (click)="saveFinish()">
+						<i class="fas fa-angle-double-left"></i>{{ 'FinishSave.text' | translate}}
+						</a>
+				</button>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+	<div  *ngIf="mymodels" class="container">
+		<div  class="container col-3 col-md-1 contenidoButton"  >
+			<div>
+				<button 
+						class="btn btn-secondary btn-lg back"  >
+						<a style="color: aliceblue;" [routerLink]="['/mymodels']">
+						<i class="fas fa-angle-double-left"></i>{{ 'Back.text' | translate}}
+						</a>
+				</button>
+			</div>
+			<div>
+				<button 
+						
+						class="btn btn-secondary btn-lg back" style="background-color: #4A4A4A; width: 200%; ">
+						<a style="color: aliceblue;" (click)="deleteModels()" [routerLink]="['/mymodels']">{{ 'DeleteModel.text' | translate}}<i class="fas fa-angle-double-right"></i></a>
+				</button>		
+			</div>	
+		</div>
+		<hr>
+	</div>

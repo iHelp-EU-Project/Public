@@ -1,0 +1,270 @@
+
+
+
+	<div *ngIf="!viewtable" align="center">
+		<img src="assets/images/833.gif"/>
+		<hr>
+	</div>
+<div [className]="viewtable ? 'visible' : 'invisible'" align= "center">
+<hr>
+
+	<!-- <mat-tab-group dynamicHeight mat-align-tabs="center" (selectedTabChange)="onTabChanged($event);">
+		<mat-tab label="{{ 'Clustering.text' | translate}}"> -->
+			<div class="" *ngIf="correlationTrainHeaders">
+			<em *ngIf="!checktable && !uploadFileDataset">{{ 'RequiredTable.text' | translate}}</em>		
+			<table  datatable [dtOptions]="dtOptions" id="table-train" class="row-border hover table-responsive display compact justify-content-center" style="height: 99%; width: 99%;">
+				<input  type="checkbox"  (change)="OnCheckboxSelectKmeansChooseIDBuildModelsALL($event)" mdbInput/> <b> {{ 'AllColumnsForTrainModel.Text' | translate}} </b>
+				<input  type="checkbox"  id="button_del"  (change)="OnCheckboxSelectKmeansChooseIDBuildModelsDeleteALL($event)" mdbInput/> <b> {{ 'DeleteAllColumns.text' | translate}} </b>
+						<tr>
+							<!-- <cdk-virtual-scroll-viewport itemSize="correlationTrainHeaders.length()" class="example-viewport"> -->
+								<th *ngFor="let it of correlationTrainHeaders  ; let j = index" >
+                                   
+									<input type="checkbox" [checked]="it.selected" #name value="{{it}}" name="{{it}}" id="{{it}}"
+                                                    (change)="OnCheckboxSelectKmeansChooseIDBuildModels(it, $event)" mdbInput/>&nbsp;{{it}}
+                                   
+								</th>
+							<!-- </cdk-virtual-scroll-viewport> -->
+						</tr>
+						 <thead>
+							
+							<tr>
+									<th *ngFor="let it of correlationTrainHeaders  ; let j = index" >	
+
+									{{it}}
+													
+									</th>	
+							</tr>
+							
+						</thead>
+						<tfoot>
+							<tr>
+								<th *ngFor="let it of correlationTrainHeaders ; let j = index" >	
+														
+									<input  type="checkbox" [checked]="it.selected" #name value="{{it}}" name="{{it}}_del" id="{{it}}_del"
+													(change)="OnCheckboxSelectDeleteColumns(it, $event)" mdbInput/>&nbsp; delete
+								</th>	
+							</tr>
+
+						</tfoot>
+					</table>
+				
+            </div>
+            
+
+			
+				
+		<!-- </mat-tab>
+	
+		
+	</mat-tab-group> -->
+	<hr>
+<!-- card-Correlations -->
+
+              
+<hr>
+
+<div *ngIf="checktable && uploadFileDataset">	 
+	 <form id="model-kmeans" [formControl]="selected" [formGroup]="reactiveForm" >
+			<div class="container" title="{{ 'TitleKmeans.Text' | translate}}">
+				<div class="" role="alert"> <!---->
+					<h5>
+						<h3 class="text-center text-muted">{{ 'DescriptionKmeans.text' | translate}}</h3>
+					</h5>
+				</div>   
+				<div>
+				<hr>
+						<table style="width:100%" class="table-responsive row d-flex justify-content-center">
+							<tr>
+								<td>
+								<div class="form-group col-12 col-md-offset-2" >
+									<label for="split"
+		            	       			class="text-info">
+                                       <strong style="color: black;">{{ 'SklearnClusteringTWardaffinityState.Text' | translate}}</strong></label>&nbsp;
+                                       <em *ngIf="affinity == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+									<!-- <input matInput type="text" [(ngModel)]="affinity" class ="" list="items-affinity" required  id="affinity" name="affinity" 
+									title="{{ 'SklearnClusteringTWardaffinityTitle.Text' | translate}}">  -->
+									<select matInput type="text" [(ngModel)]="affinity" class ="" list="items-affinity" required  id="affinity" name="affinity"  formControlName="affinity"
+									title="{{ 'SklearnClusteringTWardaffinityTitle.Text' | translate}}"> 
+										<option value="euclidean">Euclidean</option>
+										<option value="l1">L1</option>
+										<option value="l2">L2</option>
+										<option value="manhattan">Manhattan</option>
+										<option value="cosine">Cosine</option>
+										<option value="precomputed">Precomputed</option>
+									</select>
+							</div>
+							</td>
+							<td>
+								<div class="form-group col-12 col-md-offset-2" >
+									<label for="seed"
+		            	       			class="text-info">
+									   <strong style="color: black;">{{ 'SklearnWardcomputeFullTree.Text' | translate}}</strong></label>&nbsp;
+									   <em *ngIf="computeFullTree == null">{{ 'Required.text' | translate}} &nbsp; </em><br>
+									<!-- <input matInput  type="text" [(ngModel)]="computeFullTree" class ="" list="items-computeFullTree" required  id="computeFullTree" name="computeFullTree"  
+									title="{{ 'SklearnWardcomputeFullTreeTitle.Text' | translate}}">  -->
+									<select  matInput  type="text" [(ngModel)]="computeFullTree" class ="" list="items-computeFullTree" required  id="computeFullTree" name="computeFullTree"  formControlName="computeFullTree"
+									title="{{ 'SklearnWardcomputeFullTreeTitle.Text' | translate}}"> 
+										<option value="auto">Auto</option>
+										<option value="True">True</option>
+										<option value="False">False</option>
+										
+										
+								</select>
+							</div>
+							</td>
+							<td>
+								<div class="form-group col-12 col-md-offset-2" >
+									<label for="init"
+		            	       			class="text-info">
+									   <strong style="color: black;">{{ 'SklearnWardcomputeDistances.Text' | translate}} </strong></label>&nbsp;
+									   <em *ngIf="computeDistances == null">{{ 'Required.text' | translate}}  &nbsp; </em><br>
+									<select   matInput  type="text" [(ngModel)]="computeDistances" class ="" list="items-computeDistances" required  id="computeDistances" name="computeDistances" formControlName="computeDistances"
+									title="{{ 'SklearnWardcomputeDistancesTitle.Text' | translate}} "> 
+										<option value="True">True</option>
+										<option value="False">False</option>
+								</select>
+							</div>
+							</td>
+							<td>
+								<div class="form-group col-12 col-md-offset-2">
+									<label for="init" class="text-info">
+										<strong style="color: black;">{{ 'SklearnBirchAdvancedModel.Text' | translate}}
+										</strong></label>&nbsp;
+									<em *ngIf="advancedModel == null">{{ 'Required.text' | translate}} &nbsp; </em><br>
+									<!-- <input matInput  type="text" [(ngModel)]="advancedModel" class ="" list="items-advancedModel" required  id="advancedModel" name="advancedModel"  formControlName="advancedModel"
+									title="{{ 'SklearnBirchAdvancedModelTitle.Text' | translate}} ">  -->
+									<select id="items-advancedModel" matInput type="text" [(ngModel)]="advancedModel"
+										class="" list="items-advancedModel" required id="advancedModel"
+										name="advancedModel" formControlName="advancedModel"
+										title="{{ 'AdvancedModelTitle.Text' | translate}} ">
+										<option value="True">True</option>
+										<option value="False">False</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+						
+							<td>
+								<div class="form-group col-12 col-md-offset-2" >
+									<label for="cluster_k"
+		            	       			class="text-info">
+									   <strong style="color: black;">{{ 'KmeansClusters.text' | translate}}</strong></label>&nbsp;
+									   <em *ngIf="clusterK == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+									<input matInput  type="text" [(ngModel)]="clusterK" class ="" list="items-cluster_k" required  id="cluster_k" name="cluster_k"  formControlName="cluster_k"
+									title="{{ 'KmeansClustersTitle.text' | translate}}"> 
+									<datalist id="items-cluster_k"> 
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										
+								</datalist>
+							</div>
+							</td>
+							<td>
+								<div class="form-group col-12 col-md-offset-2" >
+									<label for="link"
+		            	       			class="text-info">
+									   <strong style="color: black;">{{ 'LinkName.Text' | translate}}</strong></label>&nbsp;
+									   <em *ngIf="link == null">{{ 'Required.text' | translate}} &nbsp; </em><br>
+									<select matInput [(ngModel)]="link" class ="" id="link"  name="link" formControlName="link"
+											title="{{ 'linkTitle.Text' | translate}}">
+											<option value="single">Single</option>
+											<option value="complete">Complete</option>
+											<option value="ward">Ward</option>
+											<option value="average">Average</option>
+											<!-- <option value="all">All</option> -->
+
+									</select>
+							</div>
+							</td>
+							 <td>
+                                    <div class="form-group col-12 col-md-offset-2">
+                                        <label for="columnDepentVar" class="text-info">
+                                            <strong style="color: black;">{{ 'KmeansClassColumn.text' | translate}}</strong></label>&nbsp;
+                                        <em *ngIf="classColumn == null">{{ 'Required.text' | translate}} &nbsp; </em><br>
+                                        <input matInput [(ngModel)]="classColumn" class="" id="classColumn" name="classColumn" list="items-classColumn" required formControlName="classColumn"
+                                            title="{{ 'KmeansClassColumnTitle.text' | translate}}">
+                                                <datalist id="items-classColumn" *ngIf="correlationTrainHeaders">
+                                                    <div *ngFor="let op of correlationTrainHeaders ; let i = index">
+                                                            <option value="{{op}}">{{op}}</option>
+                                                    </div>
+                                                </datalist>
+                                            </div>
+                                   
+                                </td>
+						
+							<td>
+								<div class="form-group col-12 col-md-offset-2" >
+									<label for="valuesNan"
+		            	       			class="text-info">
+									   <strong style="color: black;">{{ 'ValuesNan.Text' | translate}}</strong></label>&nbsp;
+									   <em *ngIf="valuesNan == null">{{ 'Required.text' | translate}} &nbsp; </em><br>
+									<select matInput [(ngModel)]="valuesNan" class ="" id="valuesNan"  name="valuesNan" formControlName="valuesNan"
+											title="{{ 'ValuesNanTitle.Text' | translate}}">
+											<option value="drop">Drop rows</option>
+											<option value="with0">Fill With 0</option>
+											<option value="with1">Fill With 1</option>
+											<option value="mean">Mean</option>
+											<option value="median">Median</option>
+											<option value="mode">Mode</option>
+											<option value="fill">Propagate values forward or backward</option>
+											<option value="0.0">Quartile Min</option>
+											<option value="0.25">Quartile 25%</option>
+											<option value="0.75">Quartile 75%</option>
+											<option value="0.100">Quartile Max</option>
+
+											
+									</select>
+							</div>
+							</td>
+						</tr>	
+					</table>
+					<hr>
+				</div>
+			</div>
+			
+	</form>
+</div>
+</div>
+    
+	<div *ngIf="!corrView" class="container">
+		<div  class="container col-3 col-md-1 contenidoButton"  >
+			<div>
+				<button 
+						class="btn btn-secondary btn-lg back">
+						<a style="color: aliceblue;" [routerLink]="['/clustering']">
+						<i class="fas fa-angle-double-left"></i>{{ 'Back.text' | translate}}
+						</a>
+				</button>
+			</div>
+			<div>
+				<button 
+						*ngIf="!corrView"  
+						class="btn btn-secondary btn-lg back" style="background-color: #4A4A4A; width: 125%; "
+						[disabled]="reactiveForm.invalid" >
+						<a style="color: aliceblue;" (click)="runningScriptsMLKmeansEnd()">{{ 'Next.text' | translate}}<i class="fas fa-angle-double-right"></i></a>
+				</button>		
+			</div>	
+		</div>
+		<hr>
+		<br>
+	</div>
+
+	<div *ngIf="gifCorr" align="center">
+		<div>
+			<img src="assets/images/833.gif"/>
+		</div>	
+		<div style="margin-top: 0.7%;">
+			<app-progressbar *ngIf="loading.loadNumberProgress" [value] = "loading.loadNumberProgress.progress" [state] = "loading.loadNumberProgress.state"></app-progressbar>
+		</div>
+		<hr>
+	</div>
+
+<div *ngIf="nextNeu" >
+	<app-warddeploy 
+						[modelName]="modelName"
+						[dateModelCreateModels] = "dateModelCreateModels"
+						[classColumn] = "getNameClases()"></app-warddeploy>
+</div>

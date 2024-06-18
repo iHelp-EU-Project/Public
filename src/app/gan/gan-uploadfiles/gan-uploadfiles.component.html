@@ -1,0 +1,839 @@
+<!-- <div *ngIf="selecClasses" class="row" >
+	<div class="col-md-3">
+		<div style="position: fixed;">
+			<div style="position: fixed ;left: 20; z-index:9999; margin-left: 10%; margin-top: 15%; width: 20%;">
+				<div id="container" *ngIf="endRadioCheckBox">
+					
+					<div style="margin-left: -5%;">
+						<h6>{{ 'InserClasses1.text' | translate}} {{30 * numberClasses}}{{ 'InserClasses2.text' | translate}} {{numberImages}}</h6>
+					</div>
+					<div *ngFor="let it of numberchooseRadio ; let j = index" [style.color]="color[j]"  class="row ">
+						<div class="col-xs-6 row">
+							<div class="col-xs-1">
+								<input class="form-control col-xs-6" type="checkbox"  [checked]="it.selected" #name value="{{it}}" name="{{it}}" id="{{it}}"
+								(change)="OnCheckboxSelectKmeansChooseIDBuildModels(it, $event)" mdbInput
+								style="margin: 2%;" />
+							</div>
+							<div class="col-xs-1" style="margin-top: -12%; margin-left: 0%;">
+								<label style="margin-bottom: 2%;">&nbsp;Class {{it}}</label>
+							</div>
+						</div>
+						<div class="col-xs-6 row" style="margin-left: 5%">	
+							<div class="col-xs-6">
+								<input type="text" id="{{it}}_name" class="form-control col-xs-6" style="width: auto;"/>
+							</div>  
+							<div class="col-xs-1" style="margin-top: -5%; margin-right: -20%;" >
+								<label style="margin-bottom: 2%;">&nbsp;&rarr;&nbsp;{{typeClassFiles[j + 1].length - 1}}</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div class="container col-15 col-md-18" id="card-form">
+	<div class="col-md-10 col-md-offset-1" style="margin-bottom:8% ; margin-top: 7%;">
+		<!-- Form asking for Model-name and the data sets for train & test -->
+		<form id="datasetsForm">
+			<h3 align="center">{{ 'GANText.Text' | translate}}</h3>
+			<!-- modelName field: Name used to name the model  that will be generated -->
+			<div class="form-group col-12 col-md-offset-2">
+				<label for="modelName" class="text-info"> <strong
+						style="color: #4A4A4A;">{{ 'NameForMachineLearning.text' | translate}}
+					</strong><em *ngIf="modelName == null">{{ 'Required.text' | translate}}</em> </label>
+				<input [(ngModel)]="modelName" type="text" class="form-control" id="modelName" name="modelName" value=""
+					accept=".csv" placeholder="{{ 'FileNameWithoutExtension.text' | translate}}" required
+					data-toggle="tooltip" data-placement="top"
+					title="{{ 'FileNameWithoutExtensionTitle.text' | translate}}">
+				<small id="modelNameHelp" class="form-text text-muted">
+					e.g.: myModel, anomalies, etc.
+				</small>
+			</div> <!-- ModelName field -->
+
+			<div *ngIf="normalTrain" id="normalTrainPather">
+
+				<div *ngIf="currentFile" class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" style="background-color: #4A4A4A;" role="progressbar"
+						attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"
+						[ngStyle]="{ width: progress + '%' }">
+						{{ progress }}%
+					</div>
+				</div>
+				<div *ngIf="endRadioCheckBox">
+					<br>
+					<hr>
+					<br>
+				</div>
+				<!-- dataFile field: The filename of the training dataset -->
+				<div *ngIf="!endRadioCheckBox" class="form-group col-12 col-md-offset-2">
+					<label for="trainFile" class="text-info"> <strong
+							style="color: #4A4A4A;">{{ 'PicturesTraining.text' | translate}}-{{ 'normalTrain.text' | translate}}-{{ 'normalTrain.text' | translate}}</strong>
+						<em *ngIf="!inputFileTrain">{{ 'Required.text' | translate}}</em></label>
+					<input *ngIf="!endRadioCheckBox" (change)="selectFile($event)" type="file" class="form-control" multiple id="trainFile"
+						name="trainFile" value="DLE_testModel" accept=".png,.jpg,.jpeg" placeholder="Full/path/to/the/fileName"
+						required data-toggle="tooltip" data-placement="top" title="{{ 'SelectCSVTrain.text' | translate}}">
+					<small id="trainFilelHelp" class="form-text text-muted">
+
+						<div>
+							{{ 'TodownloadTrain.text' | translate}}
+						</div>
+					</small>
+
+					<button *ngIf="!endRadioCheckBox" class="btn btn-primary btn-lg back" [disabled]="!selectedFiles" (click)="uploadImagesNormalTrain()"
+						style="margin-top: 1%; margin-left: 80%; background-color: #4A4A4A; width: 20%; height: 62%;">
+						{{ 'LoadImagesUI.text' | translate}}
+					</button>
+				</div> <!-- trainFile field -->
+				<br>
+				<hr>
+				<br>
+				<!-- <div class="alert alert-light" role="alert">{{ message }}</div> -->
+				<div *ngIf="imagesViewMenu">
+					<!-- <div class=" ">
+						<div *ngIf="!endRadioCheckBox">
+							<input type="number" id="member" name="member" value="2" min="2" max="10" class="form-control" >&nbsp; {{ 'NumberImages.text' | translate}}<br />
+							<button class="btn btn-primary btn-lg back" id="filldetails" [disabled]="!endRadioCheck"
+								(click)="addInputs()"
+								style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'GenerareClass.text' | translate}}</button>
+						</div>
+
+					</div> -->
+					<br>
+					<hr>
+					<br>
+					<div class="container" id="normalTrain">
+						<div class="first" >
+							<div class="card-header" align="center" style="background-color: #4A4A4A;"><h4 style="color: azure;">{{ 'ListImagesMenu.text' | translate}}-{{ 'normalTrain.text' | translate}}</h4></div>
+							<div  class="list">
+								<ul *ngFor="let file of fileInfos | async ; let j = index">
+									<li>
+										<input [disabled]="choseClassCheckBox.length < 1" type="checkbox" [id]="'cb_' + file.name" name="{{ file.name }}"/>
+											<!-- (change)="AddTypeFileList($event, file.name)" /> -->
+										<label [for]="'cb_' + file.name">
+										<img src="http://{{this.host}}:3001/users/files/download/{{ file.name }}?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/xray/train/normal/"
+												[id]="file.name" />
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button *ngIf="activeNormalTrainTOnormalTest" 
+				class="btn btn-primary btn-lg back" id="uploadImagesNormalTrain" 
+				(click)="normalTrain_TO_NormalTest()"
+				style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'NormalTrain_TO_NormalTest.text' | translate}}</button>
+			</div>
+				
+				<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+			<div *ngIf="normalTest">
+
+				<div *ngIf="currentFile" class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" style="background-color: #4A4A4A;" role="progressbar"
+						attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"
+						[ngStyle]="{ width: progress + '%' }">
+						{{ progress }}%
+					</div>
+				</div>
+				<div *ngIf="endRadioCheckBox">
+					<br>
+					<hr>
+					<br>
+				</div>
+				<!-- dataFile field: The filename of the training dataset -->
+				<div *ngIf="!endRadioCheckBox" class="form-group col-12 col-md-offset-2">
+					<label for="trainFile" class="text-info"> <strong
+							style="color: #4A4A4A;">{{ 'PicturesTraining.text' | translate}}-{{ 'normalTest.text' | translate}}</strong>
+						<em *ngIf="!inputFileTrain">{{ 'Required.text' | translate}}</em></label>
+					<input *ngIf="!endRadioCheckBox" (change)="selectFile($event)" type="file" class="form-control" multiple id="trainFile"
+						name="trainFile" value="DLE_testModel" accept=".png,.jpg,.jpeg" placeholder="Full/path/to/the/fileName"
+						required data-toggle="tooltip" data-placement="top" title="{{ 'SelectCSVTrain.text' | translate}}">
+					<small id="trainFilelHelp" class="form-text text-muted">
+
+						<div>
+							{{ 'TodownloadTrain.text' | translate}}
+						</div>
+					</small>
+
+					<button *ngIf="!endRadioCheckBox" class="btn btn-primary btn-lg back" [disabled]="!selectedFiles" (click)="uploadImagesNormalTest()"
+						style="margin-top: 1%; margin-left: 80%; background-color: #4A4A4A; width: 20%; height: 62%;">
+						{{ 'LoadImagesUI.text' | translate}}
+					</button>
+				</div> <!-- trainFile field -->
+				<br>
+				<hr>
+				<br>
+				<!-- <div class="alert alert-light" role="alert">{{ message }}</div> -->
+				<div *ngIf="imagesViewMenu">
+					<!-- <div class=" ">
+						<div *ngIf="!endRadioCheckBox">
+							<input type="number" id="member" name="member" value="2" min="2" max="10" class="form-control" >&nbsp; {{ 'NumberImages.text' | translate}}<br />
+							<button class="btn btn-primary btn-lg back" id="filldetails" [disabled]="!endRadioCheck"
+								(click)="addInputs()"
+								style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'GenerareClass.text' | translate}}</button>
+						</div>
+
+					</div> -->
+					<br>
+					<hr>
+					<br>
+					<div *ngIf="activeNormalTestTOnormalValid" class="container" id="normalTest">
+						<div class="first" >
+							<div class="card-header" align="center" style="background-color: #4A4A4A;"><h4 style="color: azure;">{{ 'ListImagesMenu.text' | translate}}-{{ 'normalTest.text' | translate}}</h4></div>
+							<div  class="list">
+								<ul *ngFor="let file of fileInfos | async ; let j = index">
+									<li>
+										<input [disabled]="choseClassCheckBox.length < 1" type="checkbox" [id]="'cb_' + file.name" name="{{ file.name }}"/>
+											<!-- (change)="AddTypeFileList($event, file.name)" /> -->
+										<label [for]="'cb_' + file.name">
+										<img src="http://{{this.host}}:3001/users/files/download/{{ file.name }}?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/xray/test/normal/"
+												[id]="file.name" />
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<button *ngIf="activeNormalTestTOnormalValid" 
+			class="btn btn-primary btn-lg back" id="uploadImagesTestTrain" 
+				(click)="normalTest_TO_NormalValid()"
+				style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'normalTest_TO_NormalValid.text' | translate}}</button>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div *ngIf="normalValid">
+
+				<div *ngIf="currentFile" class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" style="background-color: #4A4A4A;" role="progressbar"
+						attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"
+						[ngStyle]="{ width: progress + '%' }">
+						{{ progress }}%
+					</div>
+				</div>
+				<div *ngIf="endRadioCheckBox">
+					<br>
+					<hr>
+					<br>
+				</div>
+				<!-- dataFile field: The filename of the training dataset -->
+				<div *ngIf="!endRadioCheckBox" class="form-group col-12 col-md-offset-2">
+					<label for="trainFile" class="text-info"> <strong
+							style="color: #4A4A4A;">{{ 'PicturesTraining.text' | translate}}-{{ 'normalValid.text' | translate}}</strong>
+						<em *ngIf="!inputFileTrain">{{ 'Required.text' | translate}}</em></label>
+					<input *ngIf="!endRadioCheckBox" (change)="selectFile($event)" type="file" class="form-control" multiple id="trainFile"
+						name="trainFile" value="DLE_testModel" accept=".png,.jpg,.jpeg" placeholder="Full/path/to/the/fileName"
+						required data-toggle="tooltip" data-placement="top" title="{{ 'SelectCSVTrain.text' | translate}}">
+					<small id="trainFilelHelp" class="form-text text-muted">
+
+						<div>
+							{{ 'TodownloadTrain.text' | translate}}
+						</div>
+					</small>
+
+					<button *ngIf="!endRadioCheckBox" class="btn btn-primary btn-lg back" [disabled]="!selectedFiles" (click)="uploadImagesNormalValid()"
+						style="margin-top: 1%; margin-left: 80%; background-color: #4A4A4A; width: 20%; height: 62%;">
+						{{ 'LoadImagesUI.text' | translate}}
+					</button>
+				</div> <!-- trainFile field -->
+				<br>
+				<hr>
+				<br>
+				<!-- <div class="alert alert-light" role="alert">{{ message }}</div> -->
+				<div *ngIf="imagesViewMenu">
+					<!-- <div class=" ">
+						<div *ngIf="!endRadioCheckBox">
+							<input type="number" id="member" name="member" value="2" min="2" max="10" class="form-control" >&nbsp; {{ 'NumberImages.text' | translate}}<br />
+							<button class="btn btn-primary btn-lg back" id="filldetails" [disabled]="!endRadioCheck"
+								(click)="addInputs()"
+								style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'GenerareClass.text' | translate}}</button>
+						</div>
+
+					</div> -->
+					<br>
+					<hr>
+					<br>
+					<div *ngIf="activeNormalValidTObadTrain" class="container" id="normalValid">
+						<div class="first" >
+							<div class="card-header" align="center" style="background-color: #4A4A4A;"><h4 style="color: azure;">{{ 'ListImagesMenu.text' | translate}}-{{ 'normalValid.text' | translate}}</h4></div>
+							<div  class="list">
+								<ul *ngFor="let file of fileInfos | async ; let j = index">
+									<li>
+										<input [disabled]="choseClassCheckBox.length < 1" type="checkbox" [id]="'cb_' + file.name" name="{{ file.name }}"/>
+											<!-- (change)="AddTypeFileList($event, file.name)" /> -->
+										<label [for]="'cb_' + file.name">
+										<img src="http://{{this.host}}:3001/users/files/download/{{ file.name }}?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/xray/valid/normal/"
+												[id]="file.name" />
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button *ngIf="activeNormalValidTObadTrain" 
+				class="btn btn-primary btn-lg back" id="uploadImagesNormalTrain" 
+				(click)="normalValid_TO_BadTrain()"
+				style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'normalValid_TO_BadTrain.text' | translate}}</button>
+			</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div *ngIf="badTrain">
+
+				<div *ngIf="currentFile" class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" style="background-color: #4A4A4A;" role="progressbar"
+						attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"
+						[ngStyle]="{ width: progress + '%' }">
+						{{ progress }}%
+					</div>
+				</div>
+				<div *ngIf="endRadioCheckBox">
+					<br>
+					<hr>
+					<br>
+				</div>
+				<!-- dataFile field: The filename of the training dataset -->
+				<div *ngIf="!endRadioCheckBox" class="form-group col-12 col-md-offset-2">
+					<label for="trainFile" class="text-info"> <strong
+							style="color: #4A4A4A;">{{ 'PicturesTraining.text' | translate}}-{{ 'BadTrain.text' | translate}}</strong>
+						<em *ngIf="!inputFileTrain">{{ 'Required.text' | translate}}</em></label>
+					<input *ngIf="!endRadioCheckBox" (change)="selectFile($event)" type="file" class="form-control" multiple id="trainFile"
+						name="trainFile" value="DLE_testModel" accept=".png,.jpg,.jpeg" placeholder="Full/path/to/the/fileName"
+						required data-toggle="tooltip" data-placement="top" title="{{ 'SelectCSVTrain.text' | translate}}">
+					<small id="trainFilelHelp" class="form-text text-muted">
+
+						<div>
+							{{ 'TodownloadTrain.text' | translate}}
+						</div>
+					</small>
+
+					<button *ngIf="!endRadioCheckBox" class="btn btn-primary btn-lg back" [disabled]="!selectedFiles" (click)="uploadImagesBadTrain()"
+						style="margin-top: 1%; margin-left: 80%; background-color: #4A4A4A; width: 20%; height: 62%;">
+						{{ 'LoadImagesUI.text' | translate}}
+					</button>
+				</div> <!-- trainFile field -->
+				<br>
+				<hr>
+				<br>
+				<!-- <div class="alert alert-light" role="alert">{{ message }}</div> -->
+				<div *ngIf="imagesViewMenu">
+					<!-- <div class=" ">
+						<div *ngIf="!endRadioCheckBox">
+							<input type="number" id="member" name="member" value="2" min="2" max="10" class="form-control" >&nbsp; {{ 'NumberImages.text' | translate}}<br />
+							<button class="btn btn-primary btn-lg back" id="filldetails" [disabled]="!endRadioCheck"
+								(click)="addInputs()"
+								style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'GenerareClass.text' | translate}}</button>
+						</div>
+
+					</div> -->
+					<br>
+					<hr>
+					<br>
+					<div *ngIf="activeBadTrainTObadTest" class="container" id="badTrain">
+						<div class="first" >
+							<div class="card-header" align="center" style="background-color: #4A4A4A;"><h4 style="color: azure;">{{ 'ListImagesMenu.text' | translate}}-{{ 'badTrain.text' | translate}}</h4></div>
+							<div  class="list">
+								<ul *ngFor="let file of fileInfos | async ; let j = index">
+									<li>
+										<input [disabled]="choseClassCheckBox.length < 1" type="checkbox" [id]="'cb_' + file.name" name="{{ file.name }}"/>
+											<!-- (change)="AddTypeFileList($event, file.name)" /> -->
+										<label [for]="'cb_' + file.name">
+										<img src="http://{{this.host}}:3001/users/files/download/{{ file.name }}?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/xray/train/bad/"
+												[id]="file.name" />
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button *ngIf="activeBadTrainTObadTest"
+				 class="btn btn-primary btn-lg back" id="uploadImagesNormalTrain" 
+				(click)="badTrain_TO_BadTest()"
+				style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'badTrain_TO_BadTest.text' | translate}}</button>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div *ngIf="badTest">
+
+				<div *ngIf="currentFile" class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" style="background-color: #4A4A4A;" role="progressbar"
+						attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"
+						[ngStyle]="{ width: progress + '%' }">
+						{{ progress }}%
+					</div>
+				</div>
+				<div *ngIf="endRadioCheckBox">
+					<br>
+					<hr>
+					<br>
+				</div>
+				<!-- dataFile field: The filename of the training dataset -->
+				<div *ngIf="!endRadioCheckBox" class="form-group col-12 col-md-offset-2">
+					<label for="trainFile" class="text-info"> <strong
+							style="color: #4A4A4A;">{{ 'PicturesTraining.text' | translate}}-{{ 'BadTest.text' | translate}}</strong>
+						<em *ngIf="!inputFileTrain">{{ 'Required.text' | translate}}</em></label>
+					<input *ngIf="!endRadioCheckBox" (change)="selectFile($event)" type="file" class="form-control" multiple id="trainFile"
+						name="trainFile" value="DLE_testModel" accept=".png,.jpg,.jpeg" placeholder="Full/path/to/the/fileName"
+						required data-toggle="tooltip" data-placement="top" title="{{ 'SelectCSVTrain.text' | translate}}">
+					<small id="trainFilelHelp" class="form-text text-muted">
+
+						<div>
+							{{ 'TodownloadTrain.text' | translate}}
+						</div>
+					</small>
+
+					<button *ngIf="!endRadioCheckBox" class="btn btn-primary btn-lg back" [disabled]="!selectedFiles" (click)="uploadImagesBadTest()"
+						style="margin-top: 1%; margin-left: 80%; background-color: #4A4A4A; width: 20%; height: 62%;">
+						{{ 'LoadImagesUI.text' | translate}}
+					</button>
+				</div> <!-- trainFile field -->
+				<br>
+				<hr>
+				<br>
+				<!-- <div class="alert alert-light" role="alert">{{ message }}</div> -->
+				<div *ngIf="imagesViewMenu">
+					<!-- <div class=" ">
+						<div *ngIf="!endRadioCheckBox">
+							<input type="number" id="member" name="member" value="2" min="2" max="10" class="form-control" >&nbsp; {{ 'NumberImages.text' | translate}}<br />
+							<button class="btn btn-primary btn-lg back" id="filldetails" [disabled]="!endRadioCheck"
+								(click)="addInputs()"
+								style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'GenerareClass.text' | translate}}</button>
+						</div>
+
+					</div> -->
+					<br>
+					<hr>
+					<br>
+					<div *ngIf="activeBadTestTObadValid" class="container" id="badTest">
+						<div class="first" >
+							<div class="card-header" align="center" style="background-color: #4A4A4A;"><h4 style="color: azure;">{{ 'ListImagesMenu.text' | translate}}-{{ 'badTest.text' | translate}}</h4></div>
+							<div  class="list">
+								<ul *ngFor="let file of fileInfos | async ; let j = index">
+									<li>
+										<input [disabled]="choseClassCheckBox.length < 1" type="checkbox" [id]="'cb_' + file.name" name="{{ file.name }}"/>
+											<!-- (change)="AddTypeFileList($event, file.name)" /> -->
+										<label [for]="'cb_' + file.name">
+										<img src="http://{{this.host}}:3001/users/files/download/{{ file.name }}?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/xray/test/bad/"
+												[id]="file.name" width="10%" height="10%"/>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button *ngIf="activeBadTestTObadValid"
+				 class="btn btn-primary btn-lg back" id="uploadImagesNormalTrain" 
+				(click)="badTest_TO_BadValid()"
+				style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'badTest_TO_BadValid.text' | translate}}</button>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div *ngIf="badValid">
+
+				<div *ngIf="currentFile" class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" style="background-color: #4A4A4A;" role="progressbar"
+						attr.aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"
+						[ngStyle]="{ width: progress + '%' }">
+						{{ progress }}%
+					</div>
+				</div>
+				<div *ngIf="endRadioCheckBox">
+					<br>
+					<hr>
+					<br>
+				</div>
+				<!-- dataFile field: The filename of the training dataset -->
+				<div *ngIf="!endRadioCheckBox" class="form-group col-12 col-md-offset-2">
+					<label for="trainFile" class="text-info"> <strong
+							style="color: #4A4A4A;">{{ 'PicturesTraining.text' | translate}}-{{ 'BadValid.text' | translate}}</strong>
+						<em *ngIf="!inputFileTrain">{{ 'Required.text' | translate}}</em></label>
+					<input *ngIf="!endRadioCheckBox" (change)="selectFile($event)" type="file" class="form-control" multiple id="trainFile"
+						name="trainFile" value="DLE_testModel" accept=".png,.jpg,.jpeg" placeholder="Full/path/to/the/fileName"
+						required data-toggle="tooltip" data-placement="top" title="{{ 'SelectCSVTrain.text' | translate}}">
+					<small id="trainFilelHelp" class="form-text text-muted">
+
+						<div>
+							{{ 'TodownloadTrain.text' | translate}}
+						</div>
+					</small>
+
+					<button *ngIf="!endRadioCheckBox" class="btn btn-primary btn-lg back" [disabled]="!selectedFiles" (click)="uploadImagesbadValid()"
+						style="margin-top: 1%; margin-left: 80%; background-color: #4A4A4A; width: 20%; height: 62%;">
+						{{ 'LoadImagesUI.text' | translate}}
+					</button>
+				</div> <!-- trainFile field -->
+				<br>
+				<hr>
+				<br>
+				<!-- <div class="alert alert-light" role="alert">{{ message }}</div> -->
+				<div *ngIf="imagesViewMenu">
+					<!-- <div class=" ">
+						<div *ngIf="!endRadioCheckBox">
+							<input type="number" id="member" name="member" value="2" min="2" max="10" class="form-control" >&nbsp; {{ 'NumberImages.text' | translate}}<br />
+							<button class="btn btn-primary btn-lg back" id="filldetails" [disabled]="!endRadioCheck"
+								(click)="addInputs()"
+								style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'GenerareClass.text' | translate}}</button>
+						</div>
+
+					</div> -->
+					<br>
+					<hr>
+					<br>
+					<div *ngIf="activeBadValidTOGAN" class="container" id="badValid">
+						<div class="first" >
+							<div class="card-header" align="center" style="background-color: #4A4A4A;"><h4 style="color: azure;">{{ 'ListImagesMenu.text' | translate}}-{{ 'badValid.text' | translate}}</h4></div>
+							<div  class="list">
+								<ul *ngFor="let file of fileInfos | async ; let j = index">
+									<li>
+										<input [disabled]="choseClassCheckBox.length < 1" type="checkbox" [id]="'cb_' + file.name" name="{{ file.name }}"/>
+											<!-- (change)="AddTypeFileList($event, file.name)" /> -->
+										<label [for]="'cb_' + file.name">
+										<img src="http://{{this.host}}:3001/users/files/download/{{ file.name }}?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/xray/valid/bad/"
+												[id]="file.name" width="100%" height="100%"/>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button *ngIf="activeBadValidTOGAN"
+				 class="btn btn-primary btn-lg back" id="uploadImagesNormalTrain" 
+				(click)="badValid_TO_ScriptGAN()"
+				style="margin-top: 1%; margin-left: 78%; margin-bottom: 1%; background-color: #4A4A4A; width: 20%; height: 62%; ">{{ 'badValid_TO_ScriptGAN.text' | translate}}</button>
+			</div>
+
+			<hr>
+				
+				<div *ngIf="endRadioCheckBox && !nextNeu" class="wrapper4">
+				
+
+					<!-- <div class="margininputwrapper">
+						<em *ngIf="BatchNormalization == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+						<select matInput [(ngModel)]="BatchNormalization" id="BatchNormalization" name="BatchNormalization" class="form-control">
+												<option value="True" selected="selected">True</option>
+												<option value="False">False</option>
+						</select> &nbsp; {{ 'BatchNormalization.text' | translate}}
+					</div>-->
+					
+
+
+					<div class="margininputwrapper" >
+						<em *ngIf="learningRate == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+						<select matInput [(ngModel)]="learningRate" id="learningRate" name="learningRate" title="{{ 'learningRateTitle.text' | translate}}" class="form-control">
+													<option select value="0.01"> 0.01 - Default</option>
+													<option value="0.1"> 0.1 - Aggressive</option>
+													<option value="0.001"> 0.001 - Conservative</option>
+													<option value="0.0002"> 0.0002 - More Conservative</option>
+
+						</select> &nbsp; {{ 'learningRate.text' | translate}}
+					</div>
+
+					<div class="margininputwrapper" >
+						<em *ngIf="channels == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+						<select matInput [(ngModel)]="channels" id="channels" name="channels" title="{{ 'channelsTitle.text' | translate}}" class="form-control">
+													<option select value="1"> 0.1</option>
+													<option value="2"> 2</option>
+													<option value="3"> 3</option>
+													<option value="4"> 4</option>
+													<option value="5"> 5</option>
+													<option value="6"> 6</option>
+													<option value="7"> 7</option>
+													<option value="8"> 8</option>
+													<option value="9"> 9</option>
+													<option value="10"> 10</option>
+						</select> &nbsp; {{ 'channels.text' | translate}}
+					</div>
+					<div class="margininputwrapper" >
+						<em *ngIf="batchSize == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+						<select matInput [(ngModel)]="batchSize" id="batch_size" name="batchSize" title="{{ 'batchSizeTitle.text' | translate}}" class="form-control">
+													<option select value="8"> 8</option>
+													<option value="16"> 16</option>
+													<option value="32"> 32</option>
+													<option value="64"> 64</option>
+													<option value="128"> 128</option>
+													<option value="256"> 256</option>
+													<option value="512"> 512</option>
+													<option value="1024"> 1024</option>
+													
+						</select> &nbsp; {{ 'batchSize.text' | translate}}
+					</div>
+
+
+
+					<div class="margininputwrapper" >
+						<em *ngIf="latent_dim == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+						<select matInput [(ngModel)]="latent_dim" id="cols" name="latent_dim" title="{{ 'latent_dimTitle.text' | translate}}" class="form-control">
+							<option select value="100"> 100</option>
+							<option value="1"> 25</option>
+							<option value="1"> 50</option>
+							<option value="1"> 100</option>
+							<option value="1"> 150</option>
+						</select> &nbsp; {{ 'latent_dim.text' | translate}}
+					</div>
+
+					
+
+
+					
+					
+					<div class="margininputwrapper" >
+						<em *ngIf="cols == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+						<input  class="form-control" type="number" [(ngModel)]="cols" id="cols" name="cols" value="128" min="1" max="256" matInput title="{{ 'colsTitle.text' | translate}}"/>&nbsp;{{ 'rows.text' | translate}}
+					</div>	
+					<div class="margininputwrapper" >
+						<em *ngIf="rows == null">{{ 'Required.text' | translate}} &nbsp;</em><br>
+						<input class="form-control" type="number" [(ngModel)]="rows" id="rows" name="rows" value="128" min="1" max="265" matInput title="{{ 'rowsTitle.text' | translate}}"/>&nbsp;{{ 'rows.text' | translate}}
+					</div>
+					<div class="margininputwrapper">
+						<em *ngIf="epochs == null">{{ 'Required.text' | translate}} &nbsp;</em><br>				
+						<input class="form-control" type="number" [(ngModel)]="epochs" id="epochs" name="epochs" value="1" min="1" max="1000" matInput/>&nbsp;{{ 'epochs.text' | translate}}
+					</div>
+					
+					
+
+
+
+				</div>
+				<div *ngIf="endRadioCheckBox && !nextNeu" class="container col-5 col-md-2 contenido">
+					<div>
+						<button class="btn btn-secondary btn-lg back">
+							<a style="color: aliceblue;" [routerLink]="['/imagesrecognition']">
+								<i class="fas fa-angle-double-left"></i>{{ 'Back.text' | translate}}
+							</a>
+						</button>
+					</div>
+					<div>
+						<button id="btn-reset" type="reset" class="btn btn-primary btn-lg back">
+							{{ 'Reset.text' | translate}}
+						</button>
+					</div>
+					<div>
+						<button  id="btn-submit" (click)="uploadClasses()"
+							class="btn btn-primary btn-lg back"
+							style="background-color: #4A4A4A; width: 125%; height: 62%;">
+							{{ 'Next.text' | translate}}<i class="fas fa-angle-double-right"></i>
+						</button>
+					</div>
+
+				</div>
+
+				<div align="center" *ngIf="gifTimer">
+						<img src="assets/images/833.gif"/>
+				</div>	
+		</form>
+	</div>
+	<div class="container" *ngIf="loadImages">
+		<div class="wrapper3" >
+			<div>
+				<h6 class="text">{{ 'FirstLayerConvolution.text' | translate}}</h6>
+				<img class="drop" width="75%" height="75%"
+					src="http://{{this.host}}:3001/users/files/download/{{modelName}}.{{pipeDate}}_grid.png?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/"
+					id="{{modelName}}_1.png" />
+			</div>
+			<div>
+				<h6 class="text">{{ 'SecondLayerConvolution.text' | translate}}</h6>
+				<img class="drop" width="75%" height="75%"
+					src="http://{{this.host}}:3001/users/files/download/{{modelName}}.{{pipeDate}}.png?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/"
+					id="{{modelName}}_2.png" />
+			</div>
+			<div>
+				<h6 class="text"> {{ 'SingleTestCNN.text' | translate}}</h6>
+				<img class="drop" width="75%" height="75%"
+					src="http://{{this.host}}:3001/users/files/download/{{modelName}}.{{pipeDate}}_generator&discriminator.png?username={{currentUser.username}}&modelsname={{modelName}}.{{pipeDate}}&algorithm=/"
+					id="{{modelName}}_3.png" />
+			</div>
+			<!-- <div>
+				<h6 class="text"> {{ 'GroupTestCNN.text' | translate}}</h6>
+				<img class="drop" width="75%" height="75%"
+					src="http://{{this.host}}:3001/users/files/download/{{modelnameDate}}_4.png?username={{currentUser.username}}&modelsname={{modelnameDate}}&algorithm=/"
+					id="{{modelnameDate}}_4.png" />
+			</div> -->
+		</div>
+	</div>
+	
+</div>
+
+<!-- <div class="container" *ngIf="loadImages" style="margin-left: 31%;" >
+    <br>
+    <div class="text-center align-items-center margincontainer" > <strong class="box">Model: {{modelnameDate}}</strong></div>
+    <br>
+    <br>
+    <div class="wrapper3" >
+        <div>
+            <h6 class="text">{{ 'FirstLayerConvolution.text' | translate}}</h6>
+            <img class="drop" width="75%" height="75%"
+                src="http://{{this.host}}:3001/users/files/downloadPicturesModelsCNN/{{modelnameDate}}_1.png?username={{currentUser.username}}&modelsname={{modelnameDate}}"
+                id="{{modelnameDate}}_1.png" />
+        </div>
+        <div>
+            <h6 class="text">{{ 'SecondLayerConvolution.text' | translate}}</h6>
+            <img class="drop" width="75%" height="75%"
+                src="http://{{this.host}}:3001/users/files/downloadPicturesModelsCNN/{{modelnameDate}}_2.png?username={{currentUser.username}}&modelsname={{modelnameDate}}"
+                id="{{modelnameDate}}_2.png" />
+        </div>
+        <div>
+            <h6 class="text"> {{ 'SingleTestCNN.text' | translate}}</h6>
+            <img class="drop" width="75%" height="75%"
+                src="http://{{this.host}}:3001/users/files/downloadPicturesModelsCNN/{{modelnameDate}}_3.png?username={{currentUser.username}}&modelsname={{modelnameDate}}"
+                id="{{modelnameDate}}_3.png" />
+        </div>
+        <div *ngIf="Images == 'NormalImages' || Images == 'SimpleImages'">
+            <h6 class="text"> {{ 'GroupTestCNN.text' | translate}}</h6>
+            <img class="drop" width="75%" height="75%"
+                src="http://{{this.host}}:3001/users/files/downloadPicturesModelsCNN/{{modelnameDate}}_4.png?username={{currentUser.username}}&modelsname={{modelnameDate}}"
+                id="{{modelnameDate}}_4.png" />
+        </div>
+	</div>
+	<div class="margincontainer " style="margin-bottom: 5%;">
+		<div class="margininputwrapper">
+			<h5 class="text text-center" style="margin-top: 5%;"> {{ 'RedTestCNN.text' | translate}}</h5>
+		</div>
+		<div class="">
+			<h5 class="text text-center" style="margin-top: 1%;"> {{ 'Accuracy.text' | translate}}
+			<div *ngIf="accuracy < 80; else numberAcc">
+				<h6 class="text" style="color: red;"> {{accuracy}} &nbsp; %</h6>
+			</div>
+			<ng-template #numberAcc>
+				<h6 class="text" style="color: green;"> {{accuracy}} &nbsp; %</h6>
+			</ng-template></h5>
+
+		</div>
+		<div class="">
+			<h5 class="text text-center" style="margin-top: 1%;"> {{ 'Loss.text' | translate}}
+			<div *ngIf="loss > 20; else numberLoss">
+				<h6 class="text" style="color: red;"> {{loss}} &nbsp; %</h6>
+			</div>
+			<ng-template #numberLoss>
+				<h6 class="text" style="color: green;"> {{loss}} &nbsp; %</h6>
+			</ng-template></h5>
+
+		</div>
+		<div class="margininputwrapper">
+			<h5 class="text text-center" style="margin-top: 1%;"> {{ 'InformationCNN.text' | translate}}</h5>
+			<button id="btn-mymodels" type="models" class="btn btn-primary btn-lg back " [routerLink]="['/mymodels']" align="center" style="margin-left: 45%;  margin-bottom: 2%;">
+								{{ 'MyModels.text' | translate}}
+							</button>
+		</div>
+	</div>
+</div> -->
+
+<!-- <app-cnn-model *ngIf="nextNeu"
+		[modelName] = "modelnameDate"
+		[classes] = "classFilesJSON"
+		[layerConvolution] = "layerConvolution"
+		[layer]= "layer">
+</app-cnn-model> -->

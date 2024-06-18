@@ -1,0 +1,122 @@
+{
+    "configurations": [
+
+
+        {
+            "name": "Debug Angular App",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "start"
+            ],
+            "restart": true,
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+            "console": "integratedTerminal"
+        },
+
+        {
+            "name": "Servidor Flask v2",
+            "type": "python",
+            "request": "launch",
+            // "program": "python3.9",
+            "module": "initServer",
+            "args": [
+                "${workspaceFolder}/scriptsML/initServer.py",
+                "debug"
+            ],
+            "cwd": "${workspaceFolder}/scriptsML",
+            "stopOnEntry": false,
+            // "python": "${workspaceFolder}/scriptsML/python3",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env",
+            // "debugOptions": [
+            //     "WaitOnAbnormalExit",
+            //     "WaitOnNormalExit",
+            //     "RedirectOutput"
+            // ]
+        },
+        // {
+        //     "name": "Servidor Flask v1",
+        //     "type": "python",
+        //     "request": "launch",
+        //     // "program": "${workspaceFolder}/scriptsML/",
+        //     "module": "initServer",
+        //     "justMyCode": true,
+        //     "env": {"PYTHONPATH": "${workspaceFolder}/scriptsML/"},
+        //     "console": "integratedTerminal"
+        // },
+        // {
+        //     "console": "integratedTerminal",
+        //     "internalConsoleOptions": "neverOpen",
+        //     "name": "Flask como en terminal",
+        //     "cwd": "${workspaceFolder}/scriptsML",
+        //     "request": "launch",
+        //     "restart": true,
+        //     "runtimeExecutable": "python3.9",
+        //     "runtimeArgs": [
+        //         "initServer.py",
+        //         "debug"
+        //     ],
+        //     "type": "node"
+        // },
+        {
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "name": "Back-End",
+            "cwd": "${workspaceFolder}/scriptsML",
+            "request": "launch",
+            "restart": true,
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "../app.js",
+                "run",
+                "debug"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "type": "firefox",
+            "request": "attach",
+            "name": "Lanzar Firefox "
+        },
+        {
+            "name": "Python: File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "justMyCode": true
+        },
+        
+        {
+           
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://192.168.1.122:4200/",
+            "webRoot": "${workspaceFolder}"
+            
+        },
+
+        {
+           
+            "type": "firefox",
+            "request": "launch",
+            "name": "Launch firefox against localhost",
+            "url": "http://192.168.1.122:4200/",
+            "webRoot": "${workspaceFolder}"
+    
+        },
+
+       
+        
+        
+    ]
+}

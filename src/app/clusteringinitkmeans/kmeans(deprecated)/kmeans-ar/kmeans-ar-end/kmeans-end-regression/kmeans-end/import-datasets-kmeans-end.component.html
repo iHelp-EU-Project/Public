@@ -1,0 +1,131 @@
+<hr *ngIf="!corrView" >
+
+
+
+	<!-- <div *ngIf="gifCorr" align="center">
+		<img src="assets/images/833.gif"/>
+		<hr>
+	</div> -->
+
+<div *ngIf="csvDataTrainHeader">
+	<!-- <hr>
+	<mat-tab-group dynamicHeight mat-align-tabs="center">
+		<mat-tab label="Train">
+			<div class="">
+			<table *ngIf="csvDataTrainHeader || csvDataTrainBody" id="table-Train" datatable [dtOptions]="dtOptions" class="row-border hover">
+				<thead>
+					<tr>
+	
+						<th *ngFor="let it of csvDataTrainHeader ; let j = index">
+                           
+                           {{it}}
+						</th>
+	
+					</tr>
+				</thead>
+				<tbody style="width: 100%;">
+	
+					<tr *ngFor="let item of csvDataTrainBody ; let i = index">
+						<td *ngFor="let it of item ; let j = index" >
+								
+								
+									{{it}}
+							
+								
+	
+						</td>
+					</tr>
+	
+                </tbody>
+                <tfoot>
+							<tr>
+								<th *ngFor="let it of csvDataTrainHeader ; let j = index">						
+												{{it}}
+								</th>	
+							</tr>
+						</tfoot>
+	
+			</table>
+            </div>
+            
+
+			
+				
+		</mat-tab>
+	
+		
+	</mat-tab-group> -->
+	  <div class="container">
+					<div id="chartRegression">
+						<apx-chart *ngIf="chartArrayRegressionGraphics" 
+							[series]="chartArrayRegressionGraphics"
+							[chart]="chartOptionsRegression.chart" 
+							[plotOptions]="chartOptionsRegression.plotOptions"
+							[title]="chartOptionsRegression.title">
+						</apx-chart>
+					</div>
+				</div>
+				 <!-- <div class="container">
+					<div id="chartRegression2">
+						<apx-chart *ngIf="chartArrayRegressionGraphics2" 
+							[series]="chartArrayRegressionGraphics2"
+							[chart]="chartOptions.chart"
+							[xaxis]="chartOptions.xaxis"
+							[yaxis]="chartOptions.yaxis"
+							[title]="chartOptions.title"
+						></apx-chart>
+					</div>
+				</div> -->
+
+	<hr>
+</div><!-- card-Correlations -->
+
+              
+<hr>
+	<div *ngIf="!corrView" class="container">
+		<div  class="container col-3 col-md-1 contenidoButton"  >
+			<div>
+				<button 
+						class="btn btn-secondary btn-lg back"  >
+						<a style="color: aliceblue;" [routerLink]="['/unsupervised']">
+						<i class="fas fa-angle-double-left"></i>{{ 'Back.text' | translate}}
+						</a>
+				</button>
+			</div>
+			<div>
+				<button 
+						*ngIf="!corrView" 
+						class="btn btn-secondary btn-lg back"  style=" width: 125%; "
+						[disabled]="!buttonCorreWorking" >
+						<a style="color: aliceblue;" (click)="runningScriptsMLKmeansEnd()">{{ 'Next.text' | translate}}<i class="fas fa-angle-double-right"></i></a>
+				</button>		
+			</div>	
+		</div>
+		<hr>
+	</div>
+
+	<div *ngIf="gifCorr" align="center">
+		<div>
+			<img src="assets/images/833.gif"/>
+		</div>	
+		<div style="margin-top: 0.7%;">
+			<app-progressbar *ngIf="loading.loadNumberProgress" [value] = "loading.loadNumberProgress.progress" [state] = "loading.loadNumberProgress.state"></app-progressbar>
+		</div>
+		<hr>
+	</div>
+	
+
+
+<app-kmeans-model *ngIf="nextNeu" 
+							[modelName]="modelName" 
+							[uploadedFilesTrain]="uploadedFilesTrain" 
+							[selIds]= "selIds" 
+							[selectedIdsRows]= "selectedIdsRows"
+							[selectedIdsRowsSecondworkflow]= "selectedIdsRowsSecondworkflow"
+                            [selectedIdsRowsSecondworkflowEnd]= "selectedIdsRowsSecondworkflowEnd"
+                            [choseRegresionColumns]= "choseRegresionColumns"
+							[buttonCorreWorking] = "checktable" 
+							[dateModelCreateModels] = "dateModelCreateModels"
+							[csvDataTrainBody]="csvDataTrainBodyJustTwentyRows"
+							[withoutQuotesAnomalyesTrainHeaders]="withoutQuotesAnomalyesTrainHeaders">
+						</app-kmeans-model>

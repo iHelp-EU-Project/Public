@@ -1,0 +1,44 @@
+.backcolor {
+    background-color:#6DC18D
+}
+
+.nav.navbar-nav {
+    font-size: 15px;
+}
+#searchForm {
+    margin-right: 100px;
+}
+@media (max-width: 1200px) {
+    #searchForm {display:none}
+}
+li > a.active {
+    color: #F97924; 
+}
+html,
+body,
+.container-fluid {
+  height: 100%;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre los botones */
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-container {
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+

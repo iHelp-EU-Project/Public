@@ -1,0 +1,77 @@
+
+
+th,
+td {
+
+    width: 250;
+
+}
+
+svg {
+    font: 12px sans-serif;
+    text-anchor: middle;
+}
+
+rect {
+    stroke: lightgray;
+    stoke-width: 1px;
+    fill: none;
+}
+
+.y.axis path {
+    fill: none;
+    stroke: none;
+}
+
+#chart {
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+
+@media screen and (max-width: 480px) {
+    .contenido {
+        grid-template-columns: 1fr;
+        color: red;
+    }
+}
+
+.contenidoButton {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-right: 150px;
+
+   
+    
+
+}
+
+ em {color:#E05C65; padding-left:10px;}
+
+ .box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate {
+  box-sizing: border-box;
+}
+   
+
+.dataTables_wrapper .dt-buttons {
+  float:none;  
+  text-align:center;
+}
+
+.dataTables_info {
+  text-align: center;
+}

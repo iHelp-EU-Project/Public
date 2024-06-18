@@ -1,0 +1,124 @@
+<div class="container-fluid col-10" style="margin-left: 15%;">
+
+     
+
+   
+    <div class="col-md-10" style="margin-bottom:8% ; margin-top: 2%;" >
+    <!-- card-body -->
+
+            <div class="box" style="margin: 100 auto; width: 98%; margin-top: 100px; ">
+            <h2 class="text-center" style="margin-bottom: 2%;">{{ 'Recognition.text' | translate}}</h2>
+                <div class="text-center card-deck" id="cardDeck">
+                <!-- In the card-deck all the card has the same id ( id="card-algorithm" )because they are showing a -shadow- by the .hover event controlled by a JS function  [ $( "div#card-algorithm" ).hover( ) ]-->
+                    
+                    
+                  
+                <main class="container-fluid col-12" style="">
+
+                        
+                    <!-- CNN -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3" style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="{{ 'DescriptionCNN.text' | translate}}">
+                        <br/>
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/CNN.png" style="width:100%" alt="CNN">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'CNNText.text' | translate}}</h4>
+                        <h6 class="card-text"> {{ 'CNNs.text' | translate}}<br/></h6>
+                        <a  class="stretched-link" [routerLink]="['/cnn']"></a>
+                        </div>
+                    </div>
+
+                      <!-- RNN -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3 " style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="{{ 'DescriptionRNN.text' | translate}}">
+                        <br/>
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/RNN.png" style="width:100%" alt="RNN">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'RNNText.text' | translate}}</h4>
+                        <h6 class="card-text"> {{ 'RNNs.text' | translate}}<br/></h6>
+                        <a  class="stretched-link" [routerLink]="['/rnn']"></a>
+                        </div>
+                    </div>
+
+
+                      <!-- RBN -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3 " style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="{{ 'DescriptionRBN.text' | translate}}">
+                        <br/>
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/RBM.png" style="width:100%" alt="RBM">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'RBMText.text' | translate}}</h4>
+                        <h6 class="card-text"> {{ 'RBMs.text' | translate}}<br/></h6>
+                        <a  class="stretched-link" [routerLink]="['/rbn']"></a>
+                        </div>
+                    </div>
+
+                   
+
+
+                      <!-- Autoencoders -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3 " style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="{{ 'DescriptionAutoencoder.text' | translate}}">
+                        <br/>
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/autoencoder.png" style="width:100%" alt="autoencoder">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'AutoencodersText.text' | translate}}</h4>
+                        <a  class="stretched-link" [routerLink]="['/autoencoder']"></a>
+                        </div>
+                    </div>
+
+                       <!-- GAN X RAY -->
+                    <div id="card-algorithm" (resized)="onResized($event)"
+                        class="card align-items-center border border-0 efecto3"  style="height: 90%; width: 100%;"
+                        data-toggle="tooltip" data-placement="bottom" 
+                        title="{{ 'DescriptionGAN.text' | translate}}">
+                        <br/>
+                        <div class="box">
+                            <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/ganx.png" style="width:70.5%" alt="GAN">
+                        </div>
+                        <div class="card-body">
+                        <h4 class="card-title">{{ 'GANText.Text' | translate}}</h4>
+                        <h6 class="card-text"> {{ 'GANs.Text' | translate}}<br/></h6>
+                        <a  class="stretched-link" [routerLink]="['/gan']"></a>
+                        </div>
+                    </div>
+
+
+                </main>
+
+
+               
+                        
+                </div><!-- card-deck  -->
+
+
+            
+    </div>
+    <div  class="container col-5 col-md-2 contenido"  >
+			<div>
+				<button 
+						class="btn btn-secondary btn-lg back"  >
+						<a style="color: aliceblue;" [routerLink]="['/home']">{{ 'Back.text' | translate}}</a>
+				</button>
+			</div>
+		
+		
+		</div>
+</div>
+ 

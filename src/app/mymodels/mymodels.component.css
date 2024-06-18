@@ -1,0 +1,427 @@
+@charset "ISO-8859-1";
+/*------------------------------- Styles for Templates ------------------------------------*/
+
+
+/*-------------------------------Template tmpl_column_or_id--------------------------------*/
+
+
+.opacityCSV {
+    opacity: 0.6;
+    height: 75px;
+    width: 90px;
+    
+}
+
+.csv-text {
+    opacity: 0.6;
+    text-align: center;
+    font-weight: bold;
+    color:#000000;
+}
+.csv-text-select {
+    opacity: 0.6;
+    text-align: center;
+    font-weight: bold;
+    color:#FFFFFF;
+}
+
+.csv {
+    float: left;
+    width: 125px;
+    height: 160px;
+    border-style: solid;
+    border-color: #898fff;
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.csv-select {
+    border-width: 3px;
+    padding: 0px;
+    border-color: #898fff;
+    background-color: #898fff;
+
+}
+
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #47525d;
+}
+
+.col-md-3 {
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+.col-md-8 {
+    float: left;
+    margin: 1%;
+	padding: 10px;
+}
+
+
+::after1, ::before1 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.marTop {
+    margin-top: 15px;
+}
+.row_1 {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+
+
+.marTop {
+    margin-top: 15px;
+}
+
+.col-md-offset-5 {
+    margin-left: 41.66666667%;
+}
+.col-md-2 {
+    width: 16.66666667%;
+}
+
+.center{
+
+text-align:center
+
+}
+
+/*---------------------------Box modal-----------------------------------*/
+
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+.close {
+	background: #898fff;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 12px;
+	text-align: center;
+	top: 10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #FFF;
+	-webkit-box-shadow: 1px 1px 3px #FFF;
+	box-shadow: 1px 1px 3px #FFF;
+}
+.close:hover { background: #898fff; }
+
+.border-modal {
+  border: 6px solid #898fff;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+
+
+/*---------------------Template tmpl_display_files_csv_rabbit------------------------------*/
+
+
+
+
+svg {
+  font: 10px sans-serif;
+  padding: 10px;
+}
+
+.axis,
+.frame {
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #ddd;
+}
+
+
+.celda{
+	
+height: auto;
+width: 400px;
+	
+}
+
+
+
+.frame {
+  fill: none;
+  stroke: #aaa;
+}
+
+circle {
+  fill-opacity: .7;
+}
+
+circle.hidden {
+  fill: #ccc !important;
+}
+
+.extent {
+  fill: #000;
+  fill-opacity: .125;
+  stroke: #fff;
+}
+
+
+
+
+
+.table-bordered {
+	border: 1px solid #ddd;
+}
+.table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 40px;
+	
+	
+}
+table {
+	background-color: transparent;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+
+.col-md-12 {
+	float: left;
+	width: 92%;
+	height: 40%;
+}
+.col-md-4 {
+	float: left;
+	margin: 8.3%;
+	padding: 10px;
+}
+
+.center{
+
+text-align:center
+
+}
+
+
+/*---------------------------Box modal-----------------------------------*/
+
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+.close {
+	background: #898fff;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 12px;
+	text-align: center;
+	top: 10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #FFF;
+	-webkit-box-shadow: 1px 1px 3px #FFF;
+	box-shadow: 1px 1px 3px #FFF;
+}
+.close:hover { background: #898fff; }
+
+.border-modal {
+  border: 6px solid #898fff;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+/*
+Full screen Modal 
+*/
+.fullscreen-modal .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .fullscreen-modal .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .fullscreen-modal .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .fullscreen-modal .modal-dialog {
+     width: 1170px;
+  }
+}
+
+
+
+
+.inv {
+
+display: none;
+
+}
+
+div.thatShallNotBeNamed {
+   height: calc(100vh - 202px);
+}
+
+.box img{
+  width: 100%;
+  height: auto;
+}
+@supports(object-fit: cover){
+    .box img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: -113px;
+    margin-top: 50px;
+    float: right;
+}
+
+.efecto3:before, .efecto3:after
+{
+                /* no aplica contenidos */
+                content:"";
+    position:absolute;
+                /* posiciona la sombra por detras de la caja */
+    z-index:-1;
+                /* aplica una sombra centrada con un gris oscuro y 20px de difuminado */
+    -webkit-box-shadow:0 0 20px #777;
+    -moz-box-shadow:0 0 20px #777;
+    box-shadow:0 0 20px #777;
+                /* centra verticalmente y separa la sombra de los bordes izquierdo y derecho */
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+                /* redondea las esquinas de la sombra */
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+main {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  min-width: auto;
+  min-height: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.press{
+    background-color: #aaa;
+    border-radius: 20px;
+}
+.nopress{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    margin:1rem auto;
+    max-width: 600px;
+}    

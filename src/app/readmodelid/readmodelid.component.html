@@ -1,0 +1,179 @@
+<div style="margin-top: 100px;">
+
+<br>
+
+	<div class="text-center align-items-center"  > <strong>Model: {{modelName}}</strong></div>
+
+<br>
+<br>
+<div *ngIf="csvDataTrainHeader">
+	
+	<mat-tab-group dynamicHeight mat-align-tabs="center" (selectedTabChange)="onTabChanged($event);" >
+		<mat-tab label="{{ 'Train.text' | translate}}" align="center">
+			<div class="container">
+			<table *ngIf="csvDataTrainHeader || csvDataTrain" id="table-Train" datatable class="row-border hover">
+				<thead>
+					<tr>
+	
+						<th *ngFor="let it of csvDataTrainHeader ; let j = index">
+							{{it}}
+						</th>
+	
+					</tr>
+				</thead>
+				<tbody style="width: 100%;">
+	
+					<tr *ngFor="let item of csvDataTrainBody ; let i = index">
+						<td *ngFor="let it of item ; let j = index" >
+								{{it}}
+						
+							
+							
+	
+						</td>
+					</tr>
+	
+				</tbody>
+	
+			</table>
+			</div>
+			<div class="container">
+					<div id="chartTrain">
+						<apx-chart *ngIf="chartArrayTrainAnomaliesGraphics" 
+							[series]="chartArrayTrainAnomaliesGraphics"
+							[chart]="chartOptionsTrain.chart" 
+							[plotOptions]="chartOptionsTrain.plotOptions"
+							[title]="chartOptionsTrain.title">
+						</apx-chart>
+					</div>
+				</div>
+				
+				
+		</mat-tab>
+		
+	<mat-tab label="{{ 'Test.text' | translate}}" align="center">
+			<div class="container">
+			<table *ngIf="csvDataTestHeader || csvDataTest" id="table-Train" datatable class="row-border hover">
+				<thead>
+					<tr>
+	
+						<th *ngFor="let it of csvDataTestHeader ; let j = index">
+							{{it}}
+						</th>
+	
+					</tr>
+				</thead>
+				<tbody style="width: 100%;">
+	
+					<tr *ngFor="let item of csvDataTestBody ; let i = index">
+						<td *ngFor="let it of item ; let j = index" >
+								{{it}}
+						
+							
+							
+	
+						</td>
+					</tr>
+	
+				</tbody>
+	
+			</table>
+			</div>
+			<div class="container">
+					<div id="chartTesting">
+						<apx-chart *ngIf="chartArrayTestAnomaliesGraphicsRefresh" 
+							[series]="chartArrayTestAnomaliesGraphicsRefresh"
+							[chart]="chartOptionsTesting.chart" 
+							[plotOptions]="chartOptionsTesting.plotOptions"
+							[title]="chartOptionsTesting.title">
+						</apx-chart>
+					</div>
+				</div>
+				
+				
+		</mat-tab>
+	
+	</mat-tab-group>
+	<hr>
+	<div class="container" >
+ 			<div class="contenido">
+
+				
+
+				
+				
+						
+				
+			 </div>
+			 <div id="charArrayperfectMatrixheatmap1" align="center">
+							<apx-chart *ngIf="charArrayperfectMatrixheatmap1"
+								[series]="charArrayperfectMatrixheatmap1"
+								[chart]="chartOptionsHeadmapIDCorr.chart"
+								[dataLabels]="chartOptionsHeadmapIDCorr.dataLabels"
+								[colors]="chartOptionsHeadmapIDCorr.colors"
+								[stroke]="chartOptionsHeadmapIDCorr.stroke"
+								[plotOptions]="chartOptionsHeadmapIDCorr.plotOptions"
+								[xaxis]="chartOptionsHeadmapIDCorr.xaxis"
+								[title]="chartOptionsHeadmapIDCorr.title"
+							></apx-chart>
+					</div>
+		</div>
+	<div *ngIf="csvDataCoorHeader2">
+		<mat-tab-group dynamicHeight mat-align-tabs="center" >
+			<mat-tab label="{{ 'Prediction.text' | translate}}">
+				<div class="container">
+					<table *ngIf="csvDataCoorHeader2 || csvDataCoor2" id="table-Predictions" datatable class="row-border hover">
+						<thead>
+							<tr>
+			
+								<th *ngFor="let it of csvDataCoorHeader2 ; let j = index">
+									{{it}}
+								</th>
+			
+							</tr>
+						</thead>
+						<tbody style="width: 100%;">
+			
+							<tr *ngFor="let item of csvDataCoorBody2 ; let i = index">
+								<td *ngFor="let it of item ; let j = index" >
+										{{it}}
+								
+									
+									
+			
+								</td>
+							</tr>
+			
+						</tbody>
+			
+					</table>
+				</div>
+			</mat-tab> 
+		</mat-tab-group>
+	</div>
+</div><!-- card-Correlations -->
+
+
+<hr>	
+<div  class="container">
+		<div  class="container col-3 col-md-1 contenidoButton"  >
+			<div>
+				<button 
+						class="btn btn-secondary btn-lg back"  >
+						<a style="color: aliceblue;" [routerLink]="['/mymodels']">
+						<i class="fas fa-angle-double-left"></i>{{ 'Back.text' | translate}}
+						</a>
+				</button>
+			</div>
+			<div>
+				<button 
+						
+						class="btn btn-secondary btn-lg back" style="background-color: #4A4A4A; width: 200%; ">
+						<a style="color: aliceblue;" (click)="deleteModels()" [routerLink]="['/mymodels']">{{ 'DeleteModel.text' | translate}}<i class="fas fa-angle-double-right"></i></a>
+				</button>		
+			</div>	
+		</div>
+		<hr>
+	</div>
+
+</div>	

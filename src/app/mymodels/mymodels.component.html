@@ -1,0 +1,165 @@
+<div class="container-fluid col-10 col-md-15" style="margin-left: 15%;">
+
+
+    <div *ngIf="filesJSON">
+
+        <div class="col-md-11" style="margin-bottom:4% ; margin-top: 2%;">
+            <!-- card-body -->
+
+            <div class="box align-items-center" style="margin: 100 auto; width: 98%; margin-top: 100px;">
+                <h2 class="text-center align-items-center" style="margin-bottom: 2%; margin-left: -5%;"> {{ 'Models.text' | translate}} <strong> {{currentUser.firstName}}
+                        {{currentUser.lastName}} </strong></h2>
+                <div class="text-center align-items-center" style="margin-bottom: 2%;" align="center">
+                        <!-- <label  for="site-search"><strong>Search the model:</strong></label> -->
+                        <div style="margin-bottom: 2%; width: 50%;" class="container">
+                            <select  class="form-control"  [(ngModel)]="search" (change)="seachingDisplay()">
+                                                                <option value="all">{{ 'all.text' | translate}} </option>
+                                                                <option value="glm,id,kmeans,columns">{{ 'cnn.text' | translate}} </option>
+                                                                <option value="cnn,id,kmeans,columns">{{ 'glm.text' | translate}}</option>
+                                                                <option value="glm,cnn,kmeans,columns">{{ 'id.text' | translate}}</option>
+                                                                <option value="glm,id,cnn,columns ">{{ 'kmeans.text' | translate}}</option>
+                                                                <option value="glm,id,kmeans,cnn">{{ 'columns.text' | translate}} </option>
+                                                                
+                            </select> &nbsp; {{ 'SearchPerModel.text' | translate}} &nbsp;
+                        </div>
+                            <div style="margin-bottom: 2%;" class="cont">
+                                
+                                    <input class="form-control"  id="inputSearchNamesModels"  list="name" type="search" [(ngModel)]="searchName" placeholder="{{ 'SearchPerName.text' | translate}}"/>  &nbsp;  &nbsp;
+                               
+                            </div>
+                         <div *ngIf="(filesJSON | filter:searchName).length < 1">
+                           <label> <strong style="color: red;"> {{ 'NotFound.text' | translate}} </strong> </label>
+                        </div>
+                       
+                </div>
+                <div class="card-deck align-items-center" id="cardDeck" style="margin-left: 9%;">
+                    <!-- In the card-deck all the card has the same id ( id="card-algorithm" )because they are showing a -shadow- by the .hover event controlled by a JS function  [ $( "div#card-algorithm" ).hover( ) ]-->
+                    
+
+                    <main  class="col-md-10">
+
+
+                    <div *ngFor="let item of filesJSON | keyvalue | filter:searchName ; let j = index" id="card-algorithm"
+                        (resized)="onResized($event)" class="card align-items-center border border-0 efecto3" style="height: 85%; width: 100%;" 
+                        data-toggle="tooltip" data-placement="top" title=""  >
+                          <!-- <div class="box" style="text-align: center; margin-bottom: 2%;">
+                                <img class="card-img-top img-thumbnail rounded border-0" src="assets/images/preda.png"
+                                    style="width:50px" alt="Neuronal network">
+                            </div> -->
+                        <div class="card-body" style="text-align: center;" id="{{item.key}}">
+                          
+                            <h4 class="card-title"><strong>{{ 'ModelID.text' | translate}} </strong>{{j + 1}} </h4>
+                            <!-- <h6 class="card-text"> Values per columns<br/></h6> -->
+                            <div *ngFor="let e of item.value | keyvalue; let i = index">
+                               
+                                <span *ngIf="i === 2">
+                                    <h6><strong> {{ 'Type.text' | translate}} </strong> {{e.value}}</h6>
+                                </span>
+                                <!-- <span *ngIf="i === 5">
+                                    <h6><strong>MOJO: </strong>{{e.value}}</h6>
+                                </span>
+                                <span *ngIf="i === 6">
+                                    <h6><strong>POJO: </strong> {{e.value}}</h6>
+                                </span> -->
+                                <div *ngIf="i === 7">
+                                    <div *ngFor="let it of e.value | keyvalue ; let w = index">
+                                        <span *ngIf="w === 2">
+                                         <div *ngFor="let ee of item.value | keyvalue ; let x = index">
+                                             <span *ngIf="x === 12">
+                                            <h6><strong>{{ 'ModelName.text' | translate}}  </strong>{{it.value}}</h6>
+                                                <a class="stretched-link"  (click)="onUpdateModel(it.value,item.key,ee.value)" id="{{it.value}}"
+                                                                            [routerLink]="columns === ee.value ? ['/readmodels',it.value] :
+                                                                                          id === ee.value ? ['/readmodelsid',it.value] :
+                                                                                          kmeans === ee.value ? ['/clustering',it.value] : 
+                                                                                          glm === ee.value ? ['/glm',it.value] : 
+                                                                                          cnn === ee.value ? ['/cnn', it.value] : 
+                                                                                          sklearnClustering === ee.value ? ['/clusteringsklearn', it.value] :
+                                                                                          birchClustering === ee.value ? ['/birchdeploy', it.value] : 
+                                                                                          wardClustering == ee.value ? ['/warddeploy', it.value]:
+                                                                                          ['/gandeploy', it.value]"  routerLinkActive="active" ></a>
+                                                                            <!-- [routerLink]="['/readmodels',it.value]" routerLinkActive="active" ></a> -->
+                                                                            
+                                            </span> 
+                                        </div>
+                                        </span>
+                                        
+                                    </div>
+
+                                </div>
+
+                                <div *ngIf="i === 8">
+                                    <div *ngFor="let it of e.value | keyvalue; let k = index">
+                                        <!-- <span *ngIf="k === 16">
+                                            <h6><strong>Columns: </strong>{{it.value}}</h6>
+                                        </span> -->
+                                        <div *ngIf="k === 27">
+                                            <div *ngFor="let ite of it.value | keyvalue; let z = index">
+                                                <!-- <span *ngIf="z === 0">
+                                                    <h6><strong>{{ite.key}}: </strong> {{ite.value}}</h6>
+                                                </span> -->
+                                                <!-- <span *ngIf="z === 1">
+                                                    <h6><strong>{{ite.key}}: </strong> {{ite.value}}</h6>
+                                                </span> -->
+                                                <span *ngIf="z === 9">
+                                                    <h6><strong>{{ 'ModelCategory.text' | translate}} </strong> {{ite.value}}</h6>
+                                                </span>
+                                                <!-- <span *ngIf="z === 11">
+                                                    <h6><strong>Nobs: </strong> {{ite.value}}</h6>
+                                                </span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                 <span *ngIf="i === 11">
+                                    <h6><strong> {{ 'Date.text' | translate}} </strong> {{getDateTimeStamp(e.value)}}</h6>
+                                </span>
+                                  <span *ngIf="i === 12">
+                                    <div class="{{e.value}}">
+                                        <h6 ><strong> {{ 'TypeAlgorithm.text' | translate}} </strong> {{e.value}}</h6>
+                                    </div>
+                                </span>
+                                
+                            </div>
+                           
+                        </div>
+                    </div>
+                   
+                                    
+
+                </main>
+
+
+                </div><!-- card-deck  -->
+
+
+
+            </div>
+        </div>
+
+        <div style="text-align: right;width:90%; margin-bottom: 1%;">
+            <div>
+                <button class="btn btn-secondary btn-lg back">
+                    <a style="color: aliceblue;" [routerLink]="['/']">{{ 'Back.text' | translate}}</a>
+                </button>
+            </div>
+
+        </div>
+    </div>
+   
+</div>
+
+ 
+ <!-- <div class="container">
+    <app-readmodel *ngIf="typeAlgorithm"
+                    [modelName]="nameModels"></app-readmodel>
+
+    
+</div>
+
+<div class="container">
+    <app-readmodelid *ngIf="!typeAlgorithm"
+                    [modelName]="nameModels"></app-readmodelid>
+
+    
+</div> -->

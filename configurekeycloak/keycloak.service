@@ -1,0 +1,10 @@
+# /etc/systemd/system/keycloak.service
+[Unit]
+Description=Keycloak Server
+After=syslog.target network.target mysql.service
+Before=httpd.service[Service]
+User=keycloak
+Group=keycloak
+SuccessExitStatus=0 143
+ExecStart=!/opt/keycloak/keycloak/bin/kc.sh start[Install]
+WantedBy=multi-user.target
