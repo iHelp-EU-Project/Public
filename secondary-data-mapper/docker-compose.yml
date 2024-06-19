@@ -1,0 +1,12 @@
+version: '3'
+services:
+  secondaryMapper:
+    container_name: secondaryMapper
+    image: cloudgitlab.dslab.ece.ntua.gr:5050/ihelp/secondary-data-mapper
+    restart: always
+    ports:
+      - 8083:8083
+
+networks:
+  default:
+      name: mappingnw

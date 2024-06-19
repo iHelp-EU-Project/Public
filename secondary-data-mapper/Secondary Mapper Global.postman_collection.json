@@ -1,0 +1,1167 @@
+{
+	"info": {
+		"_postman_id": "f637a22d-de18-49cd-ac2e-35e964f92fa6",
+		"name": "Secondary Mapper Global",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15861568"
+	},
+	"item": [
+		{
+			"name": "Observation",
+			"item": [
+				{
+					"name": "DailyActivity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"stepsWalked\": {\r\n        \"id\": \"41950-7\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Steps Walked\",\r\n        \"value\": \"7892\"\r\n    },\r\n    \"distanceTravelled\": {\r\n        \"id\": \"41953-1\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Distance Travelled\"\r\n    },\r\n    \"caloriesBurned\": {\r\n        \"id\": \"41979-6\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Calories Burned\"\r\n    },\r\n    \"floorsClimbed\": {\r\n        \"id\": \"93833-2\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Floors Climbed\"\r\n    },\r\n    \"lightlyActiveMinutes\": {\r\n        \"id\": \"77591-6\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Lightly Active Minutes\"\r\n    },\r\n    \"moderatelyActiveMinutes\": {\r\n        \"id\": \"77592-4\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Moderately Active Minutes\"\r\n    },\r\n    \"highlyActiveMinutes\": {\r\n        \"id\": \"77593-2\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Highly Active Minutes\"\r\n    },\r\n    \"sedentaryMinutes\": {\r\n        \"id\": \"87705-0\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Sedentary Minutes\"\r\n    },\r\n    \"totalActiveMinutes\": {\r\n        \"id\": \"77594-0\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Total Active Minutes\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$dailyActivity",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$dailyActivity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DailyHeart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"restingHeartRate\":{\r\n            \"id\": \"40443-4\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Resting Heart Rate\"\r\n    },\r\n    \"minHeartRate\":{\r\n            \"id\": \"8883-1\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Minimum Heart Rate\"\r\n    },\r\n    \"maxHeartRate\":{\r\n            \"id\": \"8873-2\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Maximum Heart Rate\"\r\n    },\r\n    \"outOfRangeMinutes\":{\r\n            \"id\": \"heartRateOutOfRangeMinutes\",\r\n            \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n            \"name\": \"Out Of Range Minutes\"\r\n    },\r\n    \"fatBurnMinutes\":{\r\n            \"id\": \"heartRateFatBurnMinutes\",\r\n            \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n            \"name\": \"Fat Burn Minutes\"\r\n    },\r\n    \"cardioMinutes\":{\r\n            \"id\": \"heartRateCardioMinutes\",\r\n            \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n            \"name\": \"Cardio Minutes\"\r\n    },\r\n    \"peakMinutes\":{\r\n            \"id\": \"heartRatePeakMinutes\",\r\n            \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n            \"name\": \"Peak Minutes\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$dailyHeart",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$dailyHeart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DailySleep",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"sleepStart\":{\r\n            \"id\": \"sleepStart\",\r\n            \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n            \"name\": \"Sleep Start\"\r\n    },\r\n    \"sleepEnd\":{\r\n            \"id\": \"sleepEnd\",\r\n            \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n            \"name\": \"Sleep End\"\r\n    },\r\n    \"remMinutes\":{\r\n            \"id\": \"93829-0\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"REM Minutes\"\r\n    },\r\n    \"lightMinutes\":{\r\n            \"id\": \"93830-8\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Light Minutes\"\r\n    },\r\n    \"deepMinutes\":{\r\n            \"id\": \"93831-6\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Deep Minutes\"\r\n    },\r\n    \"awakeMinutes\":{\r\n            \"id\": \"45811-7\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Awake Minutes\"\r\n    },\r\n    \"totalMinutes\":{\r\n            \"id\": \"93832-4\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Total Minutes\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$dailySleep",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$dailySleep"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActivitySession",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"activityType\": {\r\n        \"id\": \"activityType\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Activity Type\"\r\n    },\r\n    \"startTime\": {\r\n        \"id\": \"startTime\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Start Time\",\r\n        \"value\": \"168000122344\"\r\n    },\r\n    \"activeDuration\": {\r\n        \"id\": \"activeDurationMilliseconds\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Active Duration\"\r\n    },\r\n    \"duration\": {\r\n        \"id\": \"activitySessionDurationMilliseconds\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Duration\"\r\n    },\r\n    \"calories\": {\r\n        \"id\": \"activitySessionCalories\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Calories\"\r\n    },\r\n    \"speed\": {\r\n        \"id\": \"activitySessionSpeed\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Speed\"\r\n    },\r\n    \"pace\": {\r\n        \"id\": \"activitySessionPace\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Pace\"\r\n    },\r\n    \"steps\": {\r\n        \"id\": \"activitySessionSteps\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Steps\"\r\n    },\r\n    \"distance\": {\r\n        \"id\": \"activitySessionDistance\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Distance\"\r\n    },\r\n    \"distanceUnit\": {\r\n        \"id\": \"activitySessionDistanceUnit\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Distance Unit\"\r\n    },\r\n    \"elevationGain\": {\r\n        \"id\": \"activitySessionElevation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Elevation Gain\"\r\n    },\r\n    \"averageHeartRate\": {\r\n        \"id\": \"activitySessionAverageHeartRate\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Average Heart Rate\"\r\n    },\r\n    \"outOfRangeMinutes\": {\r\n        \"id\": \"activitySessionHeartOutOfRange\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Heart Out Of Range\"\r\n    },\r\n    \"fatBurnMinutes\": {\r\n        \"id\": \"activitySessionFatBurn\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fat Burn Minutes\"\r\n    },\r\n    \"cardioMinutes\": {\r\n        \"id\": \"activitySessionCardio\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Cardio Minutes\"\r\n    },\r\n    \"peakMinutes\": {\r\n        \"id\": \"activitySessionHeartRatePeakMinutes\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Heart Rate Peak Minutes\"\r\n    },\r\n    \"heartRateZones\": {\r\n        \"id\": \"activitySessionHeartRateZones\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Heart Rate Zones\"\r\n    },\r\n    \"lightlyMinutes\": {\r\n        \"id\": \"activitySessionLightlyActive\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Lightly Minutes\"\r\n    },\r\n    \"fairlyMinutes\": {\r\n        \"id\": \"activitySessionModeratelyActive\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fairly Minutes\"\r\n    },\r\n    \"veryMinutes\": {\r\n        \"id\": \"activitySessionHighlyActive\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Very Minutes\"\r\n    },\r\n    \"sedentaryMinutes\": {\r\n        \"id\": \"activitySessionSedentary\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Sedentary Minutes\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$activitySession",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$activitySession"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weight",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"weight\": {\r\n        \"id\": \"29463-7\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Weight\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$observedWeight",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$observedWeight"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BloodPressure",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"diastolic\": {\r\n        \"id\": \"8462-4\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Diastolic\"\r\n    },\r\n    \"systolic\": {\r\n        \"id\": \"8480-6\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Systolic\"\r\n    },\r\n    \"heartRate\": {\r\n        \"id\": \"8867-4\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Heart Rate\"\r\n    },\r\n    \"arythmia\": {\r\n        \"id\": \"LA15419-7\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Arythmia\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$bloodPressure",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$bloodPressure"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OxygenSaturation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"oxygen\": {\r\n        \"id\": \"20564-1\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Oxygen\"\r\n    },\r\n    \"pulse\": {\r\n        \"id\": \"8867-4\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Pulse\"\r\n    },\r\n    \"pi\": {\r\n        \"id\": \"LP101982-9\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"PI\"\r\n    },\r\n    \"notes\": {\r\n        \"id\": \"oxygenSaturationNotes\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Notes\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$oxygenSaturation",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$oxygenSaturation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LiquidConsumption",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"water\": {\r\n        \"id\": \"226354008\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Water\"\r\n    },\r\n    \"coffee\": {\r\n        \"id\": \"226382001\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Coffee\"\r\n    },\r\n    \"tea\": {\r\n        \"id\": \"226383006\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Tea\"\r\n    },\r\n    \"refreshment\": {\r\n        \"id\": \"226380009\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Refreshment\"\r\n    },\r\n    \"alcohol\": {\r\n        \"id\": \"74013-4\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Alcohol\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$liquidConsumption",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$liquidConsumption"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TreatmentReminder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"dosesTaken\": {\r\n        \"id\": \"dosesTaken\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Doses Taken\"\r\n    },\r\n    \"dailyDoses\": {\r\n        \"id\": \"dailyDoses\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Daily Doses\"\r\n    },\r\n    \"unit\": {\r\n        \"id\": \"dosageUnit\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Unit\"\r\n    },\r\n    \"dose\": {\r\n        \"id\": \"LP6801-7\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Dose\"\r\n    },\r\n    \"treatmentName\": {\r\n        \"id\": \"treatmentName\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Treatment Name\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$treatmentReminder",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$treatmentReminder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nutrition",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"foodCategoryName\": {\r\n        \"id\": \"229956004\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Food Category\"\r\n    },\r\n    \"foodCategoryId\": {\r\n        \"id\": \"foodCategoryId\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Food Category Id\"\r\n    },\r\n    \"mealOfTheDay\": {\r\n        \"id\": \"mealOfTheDay\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Meal Of The Day\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$nutrition",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$nutrition"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BodyTemperature",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"bodyTemperature\": {\r\n        \"id\": \"386725007\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Body Temperature\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$bodyTemperature",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$bodyTemperature"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cough",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"cough\": {\r\n        \"id\": \"49727002\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Cough\"\r\n    },\r\n    \"coughType\": {\r\n        \"id\": \"coughType\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Cough Type\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$cough",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$cough"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Diarrhea",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"diarrhea\": {\r\n        \"id\": \"LA15424-7\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Diarrhea\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$diarrhea",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$diarrhea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Height",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"height\": {\r\n        \"id\": \"8302-2\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Height\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$height",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$height"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Questionnaire Response",
+			"item": [
+				{
+					"name": "AuditQuestionnaire",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"audit1\": {\r\n        \"id\": \"68518-0\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Audit 1\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"audit2\": {\r\n        \"id\": \"68519-8\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Audit 2\"\r\n    },\r\n    \"audit3\": {\r\n        \"id\": \"68520-6\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Audit 3\"\r\n    },\r\n    \"audit4\": {\r\n        \"id\": \"63600-1\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Audit 4\"\r\n    },\r\n    \"audit5\": {\r\n        \"id\": \"AUDITQuestionnaireFailedExpectations\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Audit 5\"\r\n    },\r\n    \"audit6\": {\r\n        \"id\": \"AUDITQuestionnaireMorningDrink\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Audit 6\"\r\n    },\r\n    \"audit7\": {\r\n        \"id\": \"AUDITQuestionnaireDrinkingGuilt\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Audit 7\"\r\n    },\r\n    \"audit8\": {\r\n        \"id\": \"AUDITQuestionnaireMemoryDrinking\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Audit 8\"\r\n    },\r\n    \"audit9\": {\r\n        \"id\": \"AUDITQuestionnaireInjuredDrinking\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Audit 9\"\r\n    },\r\n    \"audit10\": {\r\n        \"id\": \"95481-8\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Audit 10\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$auditQuestionnaire",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$auditQuestionnaire"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BodyAwareness",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"baq1\": {\r\n        \"id\": \"BAQBodyReactionFoods\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Body Reaction Foods\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq2\": {\r\n        \"id\": \"BAQBumpWillBruise\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Bump Will Bruise\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq3\": {\r\n        \"id\": \"BAQExcertionSoreness\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Excertion Soreness\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq4\": {\r\n        \"id\": \"BAQEnergyFoods\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Energy Foods\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq5\": {\r\n        \"id\": \"BAQFlu\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Flu\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq6\": {\r\n        \"id\": \"BAQFever\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Fever\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq7\": {\r\n        \"id\": \"BAQDistinguishTiredness\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Distinguish Tiredness\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq8\": {\r\n        \"id\": \"BAQPredictLackOfSleep\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Predict Lack Of Sleep\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq9\": {\r\n        \"id\": \"BAQCycleActivityLevel\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Cycle Activity Level\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq10\": {\r\n        \"id\": \"BAQSeasonalRhythms\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Seasonal Rhythms\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq11\": {\r\n        \"id\": \"BAQEnergyDuringDay\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Energy During Day\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq12\": {\r\n        \"id\": \"BAQQualityOfSleep\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Quality Of Sleep\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq13\": {\r\n        \"id\": \"BAQBodyReactionFatigue\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Body Reaction Fatigue\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq14\": {\r\n        \"id\": \"BAQBodyReactionWeather\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Body Reaction Weather\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq15\": {\r\n        \"id\": \"BAQSleepForRefreshment\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Sleep For Refreshment\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq16\": {\r\n        \"id\": \"BAQExerciseEnergy\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Exercise Energy\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq17\": {\r\n        \"id\": \"BAQBestSleepTime\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Best Sleep Time\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"baq18\": {\r\n        \"id\": \"BAQBodyReactionOverhungry\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"BAQ Body Reaction Overhungry\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$bodyAwareness",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$bodyAwareness"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comorbidity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"ulcerAge\": {\r\n        \"id\": \"comorbidityUlcerAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Ulcer Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"otherConditionName\": {\r\n        \"id\": \"comorbidityOtherConditionName\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Other Condition Name\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"peridontalAge\": {\r\n        \"id\": \"comorbidityPeriodontalAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Periodontal Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"acutePancreatitisAge\": {\r\n        \"id\": \"comorbidityAcutePancreatitisAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Acute Pancreatitis Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"choledocholithiasisAge\": {\r\n        \"id\": \"comorbidityCholedocholithiasisAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Choledocholithiasis Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"acuteGastroduodenitisAge\": {\r\n        \"id\": \"comorbidityAcuteGastroduodenitisAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Acute Gastroduodenitis Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"chronicPancreatitisAge\": {\r\n        \"id\": \"comorbidityChronicPancreatitisAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Chronic Pancreatitis Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"pancreasCystsAge\": {\r\n        \"id\": \"comorbidityPancreasCystsAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Pancreas Cysts Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hypertenstionAge\": {\r\n        \"id\": \"comorbidityHypertensionAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Hypertension Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"pancreasOperationsAge\": {\r\n        \"id\": \"comorbidityPancreasOperationsAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Pancreas Operations Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"type1DiabetesMellitusAge\": {\r\n        \"id\": \"comorbidityType1DiabetesMellitusAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Type1 Diabetes Mellitus Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"chronicGastroduodenitisAge\": {\r\n        \"id\": \"comorbidityChronicGastroduodenitisAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Chronic Gastroduodenitis Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"type2DiabetesMellitusAge\": {\r\n        \"id\": \"comorbidityType2DiabetesMellitusAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Type2 Diabetes Mellitus Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"gastricSurgeryAge\": {\r\n        \"id\": \"comorbidityGastricSurgeryAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Gastric Surgery Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"cholecystectomyAge\": {\r\n        \"id\": \"comorbidityCholecystectomyAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Cholecystectomy Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"liverCirrhosisAge\": {\r\n        \"id\": \"comorbidityLiverCirrhosisAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Liver Cirrhosis Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hepatitisOtherAge\": {\r\n        \"id\": \"comorbidityHepatitisOtherAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Hepatitis Other Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hpiAge\": {\r\n        \"id\": \"comorbidityHPIAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity HPI Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hepatitisTypeBAge\": {\r\n        \"id\": \"comorbidityHepatitisTypeBAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Hepatitis Type B Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hepatitisTypeCAge\": {\r\n        \"id\": \"comorbidityHepatitisTypeCAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Hepatitis Type C Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"cholecytitisAge\": {\r\n        \"id\": \"comorbidityCholecystitisAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Cholecystitis Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"ulcer\": {\r\n        \"id\": \"comorbidityUlcer\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Ulcer\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"sle\": {\r\n        \"id\": \"comorbiditySLE\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity SLE\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"acutePancreatitis\": {\r\n        \"id\": \"comorbidityAcutePancreatitis\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Acute Pancreatitis\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"chronicPancreatitis\": {\r\n        \"id\": \"comorbidityChronicPancreatitis\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Chronic Pancreatitis\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hypertension\": {\r\n        \"id\": \"comorbidityHypertension\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Hypertension\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"type1DiabetesMellitus\": {\r\n        \"id\": \"comorbidityType1DiabetesMellitus\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Type1 Diabetes Mellitus\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"type2DiabetesMellitus\": {\r\n        \"id\": \"comorbidityType2DiabetesMellitus\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Type2 Diabetes Mellitus\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"liverCirrhosis\": {\r\n        \"id\": \"comorbidityLiverCirrhosis\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Liver Cirrhosis\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hepatitisTypeB\": {\r\n        \"id\": \"comorbidityHepatitisTypeB\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Hepatitis Type B\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hepatitisTypeC\": {\r\n        \"id\": \"comorbidityHepatitisTypeC\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Hepatitis Type C\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hepatitisOther\": {\r\n        \"id\": \"comorbidityHepatitisOther\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Hepatitis Other\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"otherCondition\": {\r\n        \"id\": \"comorbidityOtherCondition\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Other Condition\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"cholecystitis\": {\r\n        \"id\": \"comorbidityCholecystitis\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Cholecystitis\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"cholecystectomy\": {\r\n        \"id\": \"comorbidityCholecystectomy\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Cholecystectomy\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"acuteGastroduodenitis\": {\r\n        \"id\": \"comorbidityAcuteGastroduodenitis\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Acute Gastroduodenitis\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"chronicGastroduodenitis\": {\r\n        \"id\": \"comorbidityChronicGastroduodenitis\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Chronic Gastroduodenitis\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"sleAge\": {\r\n        \"id\": \"comorbiditySLEAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity SLE Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hpi\": {\r\n        \"id\": \"comorbidityHPI\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity HPI\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"gastricSurgery\": {\r\n        \"id\": \"comorbidityGastricSurgery\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Gastric Surgery\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"pancreasOperations\": {\r\n        \"id\": \"comorbidityPancreasOperations\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Pancreas Operations\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"pancreasCysts\": {\r\n        \"id\": \"comorbidityPancreasCysts\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Pancreas Cysts\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"peridontalDisease\": {\r\n        \"id\": \"comorbidityPeriodontalDisease\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Periodontal Disease\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"choledocholithiasis\": {\r\n        \"id\": \"comorbidityCholedocholithiasis\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidity Choledocholithiasis\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"otherAge\": {\r\n        \"id\": \"comorbidityOtherAge\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"comorbidity Other Age\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$comorbidity",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$comorbidity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EdmontonAssessment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"edmontonSymptomAssessment1\": {\r\n        \"id\": \"EdmontonSymptomAssessment1\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment 1\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"edmontonSymptomAssessment2\": {\r\n        \"id\": \"EdmontonSymptomAssessment2\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment2\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"edmontonSymptomAssessment3\": {\r\n        \"id\": \"EdmontonSymptomAssessment3\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment 3\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"edmontonSymptomAssessment4\": {\r\n        \"id\": \"EdmontonSymptomAssessment4\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment 4\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"edmontonSymptomAssessment5\": {\r\n        \"id\": \"EdmontonSymptomAssessment5\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment 5\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"edmontonSymptomAssessment6\": {\r\n        \"id\": \"EdmontonSymptomAssessment6\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment 6\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"edmontonSymptomAssessment7\": {\r\n        \"id\": \"EdmontonSymptomAssessment7\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment 7\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"edmontonSymptomAssessment8\": {\r\n        \"id\": \"EdmontonSymptomAssessment8\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment 8\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"edmontonSymptomAssessment9\": {\r\n        \"id\": \"EdmontonSymptomAssessment9\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment 9\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hurtLocation\": {\r\n        \"id\": \"EdmontonSymptomAssessmentHurtLocation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment Hurt Location\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"otherSympotom\": {\r\n        \"id\": \"EdmontonSymptomAssessmentOther\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment Other\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"additionalSymptom\": {\r\n        \"id\": \"EdmontonSymptomAssessmentAdditionalSymptom\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment Additional Symptom\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"additionalSymptomDetails\": {\r\n        \"id\": \"EdmontonSymptomAssessmentAdditionalSymptomDetails\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Edmonton Symptom Assessment Additional Symptom Details\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$edmontonAssessment",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$edmontonAssessment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PAN26",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"treatmentInformation\": {\r\n        \"id\": \"EORTCTreatmentInformation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Treatment Information\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"adequateSupport\": {\r\n        \"id\": \"EORTCAdequateSupport\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Adequate Support\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"limitedPlanningActivity\": {\r\n        \"id\": \"EORTCLimitedPlanningActivity\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Limited Planning Activity\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"worryAboutHealth\": {\r\n        \"id\": \"EORTCWorryAboutHealth\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Worry About Health\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"sideEffects\": {\r\n        \"id\": \"EORTCSideEffects\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Side Effects\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"dissatisfiedBody\": {\r\n        \"id\": \"EORTCDissatisfiedBody\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Dissatisfied Body\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"lessAttractive\": {\r\n        \"id\": \"EORTCLessAttractive\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Less Attractive\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"quickBowels\": {\r\n        \"id\": \"EORTCQuickBowels\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Quick Bowels\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"frequentBowels\": {\r\n        \"id\": \"EORTCFrequentBowels\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Frequent Bowels\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"yellowSkin\": {\r\n        \"id\": \"EORTCYellowSkin\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Yellow Skin\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"itching\": {\r\n        \"id\": \"EORTCItching\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Itching\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"lessInterestSex\": {\r\n        \"id\": \"EORTCLessInterestSex\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Less Interest Sex\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"dryMouth\": {\r\n        \"id\": \"EORTCDryMouth\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Dry Mouth\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"worryLowWeight\": {\r\n        \"id\": \"EORTCWorryLowWeight\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Worry Low Weight\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"flatulence\": {\r\n        \"id\": \"EORTCFlatulence\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Flatulence\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"indegestion\": {\r\n        \"id\": \"EORTCIndegestion\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Indegestion\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"differentTaste\": {\r\n        \"id\": \"EORTCDifferentTaste\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Different Taste\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"restrictedAmmountFood\": {\r\n        \"id\": \"EORTCRestrictedAmmountFood\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Restricted Ammount Food\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"restrictedTypeFood\": {\r\n        \"id\": \"EORTCRestrictedTypeFood\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTCRestrictedTypeFood\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"uncomfortablePositions\": {\r\n        \"id\": \"EORTCUncomfortablePositions\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Uncomfortable Positions\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"nightPain\": {\r\n        \"id\": \"EORTCNightPain\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Night Pain\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"backPain\": {\r\n        \"id\": \"EORTCBackPain\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Back Pain\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"bloatedAbdomen\": {\r\n        \"id\": \"EORTCBloatedAbdomen\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTCBloatedAbdomen\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"abdominalDiscomfort\": {\r\n        \"id\": \"EORTCAbdominalDiscomfort\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTCAbdominalDiscomfort\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"weakArmsLegs\": {\r\n        \"id\": \"EORTCWeakArmsLegs\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Weak Arms Legs\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"sexualEnjoyment\": {\r\n        \"id\": \"EORTCSexualEnjoyment\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Sexual Enjoyment\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$pan26",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$pan26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QLQ30",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"financialDifficulty\": {\r\n        \"id\": \"EORTCFinancialDifficulty\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTCFinancialDifficulty\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"interferedSocialActivities\": {\r\n        \"id\": \"EORTCInterferedSocialActivities\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Interfered Social Activities\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"interferedFamilyLife\": {\r\n        \"id\": \"EORTCInterferedFamilyLife\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Interfered Family Life\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"difficultyRemembering\": {\r\n        \"id\": \"EORTCDifficultyRemembering\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Difficulty Remembering\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"depressed\": {\r\n        \"id\": \"EORTCDepressed\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Depressed\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"irritable\": {\r\n        \"id\": \"EORTCIrritable\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Irritable\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"worry\": {\r\n        \"id\": \"EORTCWorry\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Worry\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"tense\": {\r\n        \"id\": \"EORTCTense\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Tense\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"difficultyConcentrating\": {\r\n        \"id\": \"EORTCDifficultyConcentrating\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Difficulty Concentrating\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"painInterfereDailyActivities\": {\r\n        \"id\": \"EORTCPainIntefereDailyActivities\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Pain Intefere Daily Activities\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"tired\": {\r\n        \"id\": \"EORTCTired\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Tired\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"diarrhea\": {\r\n        \"id\": \"EORTCDiarrhea\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Diarrhea\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"constipated\": {\r\n        \"id\": \"EORTCConstipated\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Constipated\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"rateHealthWeek\": {\r\n        \"id\": \"EORTCRateHealthWeek\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Rate Health Week\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"vomited\": {\r\n        \"id\": \"EORTCVomited\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Vomited\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"lackedAppetite\": {\r\n        \"id\": \"EORTCLackedAppetite\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Lacked Appetite\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"feltWeak\": {\r\n        \"id\": \"EORTCFeltWeak\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Felt Weak\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleeping\": {\r\n        \"id\": \"EORTCTroubleSleeping\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Trouble Sleeping\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"needToRest\": {\r\n        \"id\": \"EORTCNeedToRest\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Need To Rest\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"pain\": {\r\n        \"id\": \"EORTCPain\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Pain\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"shortOfBreath\": {\r\n        \"id\": \"EORTCShortOfBreath\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Short Of Breath\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"limitedPursuingHobbies\": {\r\n        \"id\": \"EORTCLimitedPursuingHobbies\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Limited Pursuing Hobbies\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"limitedDoingWork\": {\r\n        \"id\": \"EORTCLimitedDoingWork\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Limited Doing Work\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"needHelp\": {\r\n        \"id\": \"EORTCNeedHelp\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Need Help\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"stayInBedOrChair\": {\r\n        \"id\": \"EORTCStayInBedOrChair\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Stay In Bed Or Chair\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleShortWalk\": {\r\n        \"id\": \"EORTCTroubleShortWalk\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Trouble Short Walk\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleLongWalk\": {\r\n        \"id\": \"EORTCTroubleLongWalk\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTCTroubleLongWalk\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"strenuousActivities\": {\r\n        \"id\": \"EORTCStrenuousActivities\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Strenuous Activities\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"nauseated\": {\r\n        \"id\": \"EORTCNauseated\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Nauseated\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"rateQOL\": {\r\n        \"id\": \"EORTCRateQOL\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"EORTC Rate QOL\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$qlq30",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$qlq30"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fagerstrom",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"firstCigarette\": {\r\n        \"id\": \"fagerstromFirstCigarette\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fagerstrom First Cigarette\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"forbiddenPlaces\": {\r\n        \"id\": \"fagerstromForbiddenPlaces\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fagerstrom Forbidden Places\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"cigaretteGiveUp\": {\r\n        \"id\": \"fagerstromCigaretteGiveUp\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fagerstrom Cigarette Give Up\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"dailyCigarettes\": {\r\n        \"id\": \"fagerstromDailyCigarettes\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fagerstrom Daily Cigarettes\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"firstHoursSmoking\": {\r\n        \"id\": \"fagerstromFirstHoursSmoking\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fagerstrom First Hours Smoking\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"illSmoking\": {\r\n        \"id\": \"fagerstromIllSmoking\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fagerstrom Ill Smoking\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$fagerstrom",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$fagerstrom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FamilyHistory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"person2Age\": {\r\n        \"id\": \"familyHistoryPerson2Age\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 2 Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person5Relation\": {\r\n        \"id\": \"familyHistoryPerson5Relation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 5 Relation\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person5Question\": {\r\n        \"id\": \"familyHistoryPerson5Question\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 5 Question\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person4Age\": {\r\n        \"id\": \"familyHistoryPerson4Age\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 4 Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person4Type\": {\r\n        \"id\": \"familyHistoryPerson4Type\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 4 Type\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person4Relation\": {\r\n        \"id\": \"familyHistoryPerson4Relation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 4 Relation\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person1Age\": {\r\n        \"id\": \"familyHistoryPerson1Age\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 1 Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person1Type\": {\r\n        \"id\": \"familyHistoryPerson1Type\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 1 Type\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person2Relation\": {\r\n        \"id\": \"familyHistoryPerson2Relation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 2 Relation\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person4Question\": {\r\n        \"id\": \"familyHistoryPerson4Question\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 4 Question\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person3Age\": {\r\n        \"id\": \"familyHistoryPerson3Age\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 3 Age\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person3Type\": {\r\n        \"id\": \"familyHistoryPerson3Type\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 3 Type\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person3Relation\": {\r\n        \"id\": \"familyHistoryPerson3Relation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 3 Relation\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person2Question\": {\r\n        \"id\": \"familyHistoryPerson2Question\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"family History Person 2 Question\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person5Type\": {\r\n        \"id\": \"familyHistoryPerson5Type\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 5 Type\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person3Question\": {\r\n        \"id\": \"familyHistoryPerson3Question\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 3 Question\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person2Type\": {\r\n        \"id\": \"familyHistoryPerson2Type\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 2 Type\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person1Relation\": {\r\n        \"id\": \"familyHistoryPerson1Relation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 1 Relation\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"person5Age\": {\r\n        \"id\": \"familyHistoryPerson5Age\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Family History Person 5 Age\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$familyHistoryPC",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$familyHistoryPC"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fatigue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"fatigue\": {\r\n        \"id\": \"fatigue\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fatigue\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$fatigue",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$fatigue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GeneralHealth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"description\": {\r\n        \"id\": \"GeneralHealthDescription\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"General Health Description\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$generalHealth",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$generalHealth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HealthBehaviour",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"smoking\": {\r\n        \"id\": \"healthBehaviourSmoking\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Behaviour Smoking\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"nutritionalConsultation\": {\r\n        \"id\": \"healthBehaviourNutritionalConsultation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Behaviour Nutritional Consultation\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"physicalActivity\": {\r\n        \"id\": \"healthBehaviourPhysicalActivity\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Behaviour Physical Activity\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"alcoholConsumption\": {\r\n        \"id\": \"healthBehaviourAlcoholConsumption\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Behaviour Alcohol Consumption\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"mammographyOrUltrasound\": {\r\n        \"id\": \"healthBehaviourMammographyOrUltrasound\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Behaviour Mammography Or Ultrasound\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$healthBehaviour",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$healthBehaviour"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HealthHabits",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"fruitsOrVegetables\": {\r\n        \"id\": \"healthHabitsFruitsOrVegetables\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Fruits Or Vegetables\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"change\": {\r\n        \"id\": \"healthHabitsChange\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Change\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"lowFatMilk\": {\r\n        \"id\": \"healthHabitsLowFatMilk\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Low Fat Milk\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"sodaOrPunch\": {\r\n        \"id\": \"healthHabitsSodaOrPunch\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"healthHabitsSodaOrPunch\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"fruitOrSportsDrink\": {\r\n        \"id\": \"healthHabitsFruitOrSportsDrink\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Fruit Or Sports Drink\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"water\": {\r\n        \"id\": \"healthHabitsWater\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Water\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"juice100\": {\r\n        \"id\": \"healthHabits100%Juice\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits 100% Juice\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"bedroomDevice\": {\r\n        \"id\": \"healthHabitsBedroomDevice\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Bedroom Device\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"fastFood\": {\r\n        \"id\": \"healthHabitsFastFood\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Fast Food\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"fastHeartRate\": {\r\n        \"id\": \"healthHabitsFastHeartRate\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Fast Heart Rate\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"timeActive\": {\r\n        \"id\": \"healthHabitsTimeActive\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Time Active\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"breakfast\": {\r\n        \"id\": \"healthHabitsBreakfast\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Breakfast\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"familyDinner\": {\r\n        \"id\": \"healthHabitsFamilyDinner\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Family Dinner\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"recreationalScreenTime\": {\r\n        \"id\": \"healthHabitsRecreationalScreenTime\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Recreational Screen Time\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"sleep\": {\r\n        \"id\": \"healthHabitsSleep\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Sleep\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"wholeMilk\": {\r\n        \"id\": \"healthHabitsWholeMilk\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Whole Milk\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"planConfidence\": {\r\n        \"id\": \"healthHabitsPlanConfidence\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Habits Plan Confidence\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$healthHabits",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$healthHabits"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HealthLiteracyScale",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"mediaUnderstanding\": {\r\n        \"id\": \"healthLiteracyMediaUnderstanding\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Media Understanding\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"familyAdviceUnderstanding\": {\r\n        \"id\": \"healthLiteracyFamilyAdviceUnderstanding\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Family Advice Understanding\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"findInformationMentalHealth\": {\r\n        \"id\": \"healthLiteracyFindInformationMentalHealth\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Find Information Mental Health\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"protectIllnessMediaInformation\": {\r\n        \"id\": \"protectIllnessMediaInformation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Protect Illness Media Information\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"mediaInformationRealiable\": {\r\n        \"id\": \"healthLiteracyMediaInformationReliable\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Media Information Reliable\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"understandHealthScreenings\": {\r\n        \"id\": \"healthLiteracyUnderstandHealthScreenings\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Understand Health Screenings\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"understandHealthWarnings\": {\r\n        \"id\": \"healthLiteracyUnderstandHealthWarnings\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Understand Health Warnings\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"followDoctorInstructions\": {\r\n        \"id\": \"healthLiteracyFollowDoctorInstructions\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Follow Doctor Instructions\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"makeDecisionsDoctorInformation\": {\r\n        \"id\": \"healthLiteracyMakeDecisionsDoctorInformation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Make Decisions Doctor Information\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"doctorSecondOpinion\": {\r\n        \"id\": \"healthLiteracyDoctorSecondOpinion\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Doctor Second Opinion\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"doctorInstructionPerscription\": {\r\n        \"id\": \"healthLiteracyDoctorInstructionPerscription\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"health Literacy Doctor Instruction Perscription\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"understandDoctor\": {\r\n        \"id\": \"healthLiteracyUnderstandDoctor\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Understand Doctor\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"whereProfessionalHelp\": {\r\n        \"id\": \"healthLiteracyWhereProfessionalHelp\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Where Professional Help\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"treatmentsAndIllnesses\": {\r\n        \"id\": \"healthLiteracyInformationTreatmentsAndIllnesses\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Information Treatments And Illnesses\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"mentalWellbeing\": {\r\n        \"id\": \"healthLiteracyActivitiesMentalWellBeing\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Activities Mental Well Being\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"everydayBehaviour\": {\r\n        \"id\": \"healthLiteracyEverydayBehaviour\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Health Literacy Everyday Behaviour\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$healthLiteracyScale",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$healthLiteracyScale"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LocusOfControl",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"ownDecisions\": {\r\n        \"id\": \"loucsOfControlOwnDecisions\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Own Decisions\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"resistPersuasion\": {\r\n        \"id\": \"loucsOfControlResistPersuasion\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Resist Persuasion\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"victim\": {\r\n        \"id\": \"loucsOfControlVictim\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Victim\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"pleaseOthers\": {\r\n        \"id\": \"loucsOfControlPleaseOthers\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"loucs Of Control Please Others\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"weightAndFitness\": {\r\n        \"id\": \"loucsOfControlWeightAndFitness\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Weight And Fitness\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"ownFault\": {\r\n        \"id\": \"loucsOfControlOwnFault\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Own Fault\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"changeDirection\": {\r\n        \"id\": \"loucsOfControlChangeDirection\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Change Direction\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"childhoodPersonality\": {\r\n        \"id\": \"loucsOfControlChildhoodPersonality\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Childhood Personality\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"breakBadHabit\": {\r\n        \"id\": \"loucsOfControlBreakBadHabit\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Break Bad Habit\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"scepticalAboutHoroscope\": {\r\n        \"id\": \"loucsOfControlScepticalAboutHoroscope\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Loucs Of Control Sceptical About Horoscope\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$locusOfControl",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$locusOfControl"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MoodAssessment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"moodAssessment\": {\r\n        \"id\": \"moodAssessment\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Mood Assessment\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$moodAssessment",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$moodAssessment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pain",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"experience\": {\r\n        \"id\": \"painExperience\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Pain Experience\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"location\": {\r\n        \"id\": \"painLocation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Pain Location\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$pain",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$pain"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PercievedStress",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"unexpectedUpset\": {\r\n        \"id\": \"percievedStressUnexpectedUpset\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Unexpected Upset\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"unableControlImportant\": {\r\n        \"id\": \"percievedStressUnableControlImportant\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Unable Control Important\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"nervousAndStressed\": {\r\n        \"id\": \"percievedStressNervousAndStressed\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Nervous And Stressed\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"confidentPersonalProblems\": {\r\n        \"id\": \"percievedStressConfidentPersonalProblems\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Confident Personal Problems\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"goingYourWay\": {\r\n        \"id\": \"percievedStressGoingYourWay\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Going Your Way\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"couldntCope\": {\r\n        \"id\": \"percievedStressCouldntCope\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Couldnt Cope\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"controlIrritations\": {\r\n        \"id\": \"percievedStressControlIrritations\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Control Irritations\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"onTopOfThings\": {\r\n        \"id\": \"percievedStressOnTopOfThings\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress On Top Of Things\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"angeredOutsideControl\": {\r\n        \"id\": \"percievedStressAngeredOutsideControl\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Angered Outside Control\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"pilingDifficulties\": {\r\n        \"id\": \"percievedStressPilingDifficulties\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Piling Difficulties\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"successfullyDealWithIrritation\": {\r\n        \"id\": \"percievedStressSuccessfullyDealWithIrritation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Successfully Deal With Irritation\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"copingWithChanges\": {\r\n        \"id\": \"percievedStressCopingWithChanges\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Coping With Changes\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"controlSpendingTime\": {\r\n        \"id\": \"percievedStressControlSpendingTime\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Control Spending Time\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"thinkingToAcomplish\": {\r\n        \"id\": \"percievedStressThinkingToAcomplish\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Percieved Stress Thinking To Acomplish\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$percievedStress",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$percievedStress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PSQI",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"roomMateDisorientation\": {\r\n        \"id\": \"PSQIRoomMateDisorientation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Room Mate Disorientation\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"roomMateTwitching\": {\r\n        \"id\": \"PSQIRoomMateTwitching\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Room Mate Twitching\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"roomMateLongPausesBetweenBreaths\": {\r\n        \"id\": \"PSQIRoomMateLongPausesBetweenBreaths\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Room Mate Long Pauses Between Breaths\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"roomMateLoudSnoring\": {\r\n        \"id\": \"PSQIRoomMateLoudSnoring\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Room Mate Loud Snoring\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"roomMate\": {\r\n        \"id\": \"PSQIRoomMate\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Room Mate\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"enthusiasm\": {\r\n        \"id\": \"PSQIEnthusiasm\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Enthusiasm\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleStayingAwake\": {\r\n        \"id\": \"PSQITroubleStayingAwake\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Staying Awake\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"sleepMedicine\": {\r\n        \"id\": \"PSQISleepMedicine\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Sleep Medicine\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"sleepQuality\": {\r\n        \"id\": \"PSQISleepQuality\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Sleep Quality\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"describeOtherAwake\": {\r\n        \"id\": \"PSQIDescribeOtherAwake\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Describe Other Awake\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingOther\": {\r\n        \"id\": \"PSQITroubleSleepingOther\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Other\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingPain\": {\r\n        \"id\": \"PSQITroubleSleepingPain\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Pain\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingBadDreams\": {\r\n        \"id\": \"PSQITroubleSleepingBadDreams\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Bad Dreams\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingTooHot\": {\r\n        \"id\": \"PSQITroubleSleepingTooHot\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Too Hot\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingTooCold\": {\r\n        \"id\": \"PSQITroubleSleepingTooCold\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Too Cold\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingCoughingOrSnoring\": {\r\n        \"id\": \"PSQITroubleSleepingCoughingOrSnoring\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Coughing Or Snoring\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingCantBreathe\": {\r\n        \"id\": \"PSQITroubleSleepingCantBreathe\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Cant Breathe\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingBathroom\": {\r\n        \"id\": \"PSQITroubleSleepingBathroom\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Bathroom\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingWakeUpEarly\": {\r\n        \"id\": \"PSQITroubleSleepingWakeUpEarly\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Wake Up Early\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"troubleSleepingCantFallAsleep\": {\r\n        \"id\": \"PSQITroubleSleepingCantFallAsleep\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Trouble Sleeping Cant Fall Asleep\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"hoursSleeping\": {\r\n        \"id\": \"PSQIHoursSleeping\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Hours Sleeping\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"getUpTime\": {\r\n        \"id\": \"PSQIGetUpTime\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Get Up Time\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"fallAsleep\": {\r\n        \"id\": \"PSQIFallAsleep\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQIFallAsleep\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"bedTime\": {\r\n        \"id\": \"PSQIBedTime\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Bed Time\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"roomMateRestlessness\": {\r\n        \"id\": \"PSQIRoomMateRestlessness\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Room Mate Restlessness\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"otherRestlessness\": {\r\n        \"id\": \"PSQIOtherRestlessness\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"PSQI Other Restlessness\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$psqi",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$psqi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QOL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"anxietyDepression\": {\r\n        \"id\": \"QualityOfLifeAnxietyDepression\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Quality Of Life Anxiety Depression\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"usualDiscomfort\": {\r\n        \"id\": \"QualityOfLifeUsualDiscomfort\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Quality Of Life Usual Discomfort\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"healthScale\": {\r\n        \"id\": \"QualityOfLifeHealthScale\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Quality Of Life Health Scale\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"selfCare\": {\r\n        \"id\": \"QualityOfLifeSelfCare\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Quality Of Life Self Care\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"usualActivity\": {\r\n        \"id\": \"QualityOfLifeUsualActivities\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Quality Of Life Usual Activities\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"mobility\": {\r\n        \"id\": \"QualityOfLifeMobility\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Quality Of Life Mobility\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$qol",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$qol"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SelfEsteem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"feelFailure\": {\r\n        \"id\": \"RosenbergFeelFailure\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Feel Failure\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"doThingsLikeOthers\": {\r\n        \"id\": \"RosenbergDoThingsLikeOthers\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Do Things Like Others\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"thinkNoGood\": {\r\n        \"id\": \"RosenbergThinkNoGood\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Think No Good\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"moreSelfRespect\": {\r\n        \"id\": \"RosenbergMoreSelfRespect\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg More Self Respect\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"personOfWorth\": {\r\n        \"id\": \"RosenbergPersonOfWorth\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Person Of Worth\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"uselessTimes\": {\r\n        \"id\": \"RosenbergUselessTimes\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Useless Times\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"goodQualities\": {\r\n        \"id\": \"RosenbergGoodQualities\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Good Qualities\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"notMuchProud\": {\r\n        \"id\": \"RosenbergNotMuchProud\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Not Much Proud\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"satisfiedSelf\": {\r\n        \"id\": \"RosenbergSatisfiedSelf\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Satisfied Self\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"positiveAttitude\": {\r\n        \"id\": \"RosenbergPositiveAttitude\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Rosenberg Positive Attitude\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$selfEsteem",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$selfEsteem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MentalWellbeing",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"optimistic\": {\r\n        \"id\": \"WarwickWellbeingScaleOptimistic\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Optimistic\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"useful\": {\r\n        \"id\": \"WarwickWellbeingScaleUseful\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Useful\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"relaxed\": {\r\n        \"id\": \"WarwickWellbeingScaleRelaxed\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Relaxed\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"interestedOthers\": {\r\n        \"id\": \"WarwickWellbeingScaleInterestedOthers\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Interested Others\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"energySpare\": {\r\n        \"id\": \"WarwickWellbeingScaleEnergySpare\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Energy Spare\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"dealingProblems\": {\r\n        \"id\": \"WarwickWellbeingScaleDealingProblems\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Dealing Problems\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"thinkingClearly\": {\r\n        \"id\": \"WarwickWellbeingScaleThinkingClearly\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Thinking Clearly\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"feelingGoodSelf\": {\r\n        \"id\": \"WarwickWellbeingScaleFeelingGoodSelf\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Feeling Good Self\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"closeOthers\": {\r\n        \"id\": \"WarwickWellbeingScaleCloseOthers\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Scale Close Others\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"confident\": {\r\n        \"id\": \"WarwickWellbeingConfident\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Confident\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"makeUpMind\": {\r\n        \"id\": \"WarwickWellbeingMakeUpMind\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Make Up Mind\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"loved\": {\r\n        \"id\": \"WarwickWellbeingLoved\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Loved\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"newThings\": {\r\n        \"id\": \"WarwickWellbeingNewThings\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing New Things\",\r\n        \"value\": \"test\"\r\n    },\r\n    \"cheerful\": {\r\n        \"id\": \"WarwickWellbeingCheerful\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Warwick Wellbeing Cheerful\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$mentalWellbeing",
+							"protocol": "https",
+							"host": [
+								"secondary-mapper",
+								"ihelp-project",
+								"eu"
+							],
+							"path": [
+								"fhir",
+								"secondary",
+								"$mentalWellbeing"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PatientInformation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"Test\",\r\n    \"patientID\": \"Patient\",\r\n    \"subjectIdentificationNumber\": {\r\n        \"id\": \"SubjectInformationIdentificationNumber\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Subject Identification Number\"\r\n    },\r\n    \"timeZone\": {\r\n        \"id\": \"SubjectInformationTimeZone\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Time Zone\"\r\n    },\r\n    \"trackerId\": {\r\n        \"id\": \"SubjectInformationTrackerID\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Tracker Id\"\r\n    },\r\n    \"baselineDate\": {\r\n        \"id\": \"SubjectInformationBaselineDate\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Baseline Date\"\r\n    },\r\n    \"terminationDate\": {\r\n        \"id\": \"SubjectInformationTerminationDate\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Termination Date\"\r\n    },\r\n    \"earlyTerminationDate\": {\r\n        \"id\": \"SubjectInformationEarlyTerminationDate\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Early Termination Date\"\r\n    },\r\n    \"status\": {\r\n        \"id\": \"LA18842-7\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Status\"\r\n    },\r\n    \"sex\": {\r\n        \"id\": \"184100006\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Sex\"\r\n    },\r\n    \"birthDate\": {\r\n        \"id\": \"184099003\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Birth Date\"\r\n    },\r\n    \"height\": {\r\n        \"id\": \"LP72681-7\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Height\"\r\n    },\r\n    \"weight\": {\r\n        \"id\": \"29463-7\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Weight\"\r\n    },\r\n    \"disease\": {\r\n        \"id\": \"64572001\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Disease\"\r\n    },\r\n    \"complexity\": {\r\n        \"id\": \"SubjectInformationComplexity\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Complexity\"\r\n    },\r\n    \"qtRobotId\": {\r\n        \"id\": \"SubjectInformationQtRobotId\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Qt Robot Id\"\r\n    },\r\n    \"gender\": {\r\n        \"id\": \"263495000\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Gender\"\r\n    },\r\n    \"siteId\": {\r\n        \"id\": \"SubjectInformationSiteId\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"SiteId\"\r\n    },\r\n    \"externalClinicalData\": {\r\n        \"id\": \"SubjectInformationExternalClinicalInformation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"External Clinical Data\"\r\n    },\r\n    \"externalDemographicData\": {\r\n        \"id\": \"SubjectInformationExternalDemographicInformation\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"External Demographic Data\"\r\n    },\r\n    \"email\": {\r\n        \"id\": \"76458-9\",\r\n        \"vocabulary\": \"LOINC\",\r\n        \"name\": \"Email\"\r\n    },\r\n    \"metadata\": {\r\n        \"id\": \"SubjectInformationMetadata\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Metadata\"\r\n    },\r\n    \"dischargedDateFromHospital\": {\r\n        \"id\": \"183665006\",\r\n        \"vocabulary\": \"SNOMED\",\r\n        \"name\": \"Discharged Date From Hospital\"\r\n    },\r\n    \"dischargedPeriodFromHealthentia\": {\r\n        \"id\": \"SubjectInformationDischargedPeriod\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Dicharged Period From Healthentia\"\r\n    },\r\n    \"externalCode\": {\r\n        \"id\": \"SubjectInformationExternalCode\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"External Code\"\r\n    },\r\n    \"comorbidities\": {\r\n        \"id\": \"SubjectInformationComorbidities\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Comorbidities\"\r\n    },\r\n    \"notes\": {\r\n        \"id\": \"SubjectInformationNotes\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Notes\"\r\n    },\r\n    \"fiscalNumber\": {\r\n        \"id\": \"SubjectInformationFiscalNumber\",\r\n        \"vocabulary\": \"https://fhir.ihelp-project.eu/CodeSystem/codes\",\r\n        \"name\": \"Fiscal Number\",\r\n        \"value\": \"test\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://secondary-mapper.ihelp-project.eu/fhir/secondary/$patientInformation",
+					"protocol": "https",
+					"host": [
+						"secondary-mapper",
+						"ihelp-project",
+						"eu"
+					],
+					"path": [
+						"fhir",
+						"secondary",
+						"$patientInformation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1234\",\r\n    \"patient\": {\r\n        \"patientID\": \"UFM79252\"\r\n    },\r\n    \"dailyActivity\": {\r\n        \"stepsWalked\": {\r\n            \"id\": \"41950-7\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Steps Walked\",\r\n            \"value\": \"7892\"\r\n        },\r\n        \"distanceTravelled\": {\r\n            \"id\": \"41953-1\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Distance Travelled\"\r\n        }\r\n    },\r\n    \"dailyHeart\": {\r\n        \"restingHeartRate\":{\r\n            \"id\": \"40443-4\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Resting Heart Rate\"\r\n        },\r\n        \"minHeartRate\":{\r\n            \"id\": \"8883-1\",\r\n            \"vocabulary\": \"LOINC\",\r\n            \"name\": \"Minimum Heart Rate\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://secondary-mapper.ihelp-project.eu/fhir/secondary/$all",
+					"protocol": "http",
+					"host": [
+						"secondary-mapper",
+						"ihelp-project",
+						"eu"
+					],
+					"path": [
+						"fhir",
+						"secondary",
+						"$all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
