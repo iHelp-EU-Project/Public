@@ -1,0 +1,1464 @@
+{
+  "datasourceID": "HEALTHENTIA",
+  "datasetID": "exercises",
+  "schema": {
+    "name": "exercises",
+    "namespace": "eu.ihelp.healthentia",
+    "type": "record",
+    "fields": [
+      {
+        "name": "subjectId",
+        "type": "string"
+      },
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "startTime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "duration",
+        "type": "long"
+      },
+      {
+        "name": "activeDuration",
+        "type": "long"
+      },
+      {
+        "name": "calories",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "speed",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "pace",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "steps",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "distance",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "distanceUnit",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "elevationGain",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "averageHeartRate",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "outOfRangeMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "fatBurnMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "cardioMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "peakMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "heartRateZones",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "sedentaryMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "lightlyMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "fairlyMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "veryMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "name": "exercisesPK",
+    "namespace": "eu.ihelp.healthentia",
+    "type": "record",
+    "fields": [
+      {
+        "name": "id",
+        "type": "long"
+      }
+    ]
+  },
+  "confParameters": {},
+  "values": [
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "304507003",
+                  "display": "title"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "BREATHWORK"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "activeDuration",
+                  "display": "activeDuration"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "334000"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "364274001",
+                  "display": "duration"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "334000"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "282407004",
+                  "display": "calories"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "61861001",
+                  "display": "speed"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "311572000",
+                  "display": "pace"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "217093000",
+                  "display": "steps"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "246132006",
+                  "display": "distance"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "distanceUnit",
+                  "display": "distanceUnit"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "None"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "elevationGain",
+                  "display": "elevationGain"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "None"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "averageHeartRate",
+                  "display": "averageHeartRate"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "67"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "outOfRangeMinutes",
+                  "display": "outOfRangeMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "fatBurnMinutes",
+                  "display": "fatBurnMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "cardioMinutes",
+                  "display": "cardioMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "peakMinutes",
+                  "display": "peakMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "heartRateZones",
+                  "display": "heartRateZones"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "None"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "lightlyMinutes",
+                  "display": "lightlyMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "fairlyMinutes",
+                  "display": "fairlyMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "veryMinutes",
+                  "display": "veryMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374925",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "sedentaryMinutes",
+                  "display": "sedentaryMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "304507003",
+                  "display": "title"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "BREATHWORK"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "activeDuration",
+                  "display": "activeDuration"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "334000"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "364274001",
+                  "display": "duration"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "334000"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "282407004",
+                  "display": "calories"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "61861001",
+                  "display": "speed"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "311572000",
+                  "display": "pace"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "217093000",
+                  "display": "steps"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "246132006",
+                  "display": "distance"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "distanceUnit",
+                  "display": "distanceUnit"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "None"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "elevationGain",
+                  "display": "elevationGain"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "None"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "averageHeartRate",
+                  "display": "averageHeartRate"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "66"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "outOfRangeMinutes",
+                  "display": "outOfRangeMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "fatBurnMinutes",
+                  "display": "fatBurnMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "cardioMinutes",
+                  "display": "cardioMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "peakMinutes",
+                  "display": "peakMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "heartRateZones",
+                  "display": "heartRateZones"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "None"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "lightlyMinutes",
+                  "display": "lightlyMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "fairlyMinutes",
+                  "display": "fairlyMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "veryMinutes",
+                  "display": "veryMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "id": "374926",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "activitySession",
+                    "display": "Activity Session"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "sedentaryMinutes",
+                  "display": "sedentaryMinutes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/VBUYL",
+              "type": "Patient"
+            },
+            "effectiveDateTime": "2023-09-18T00:00:00",
+            "valueString": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "faultyData": [],
+  "jobID": "20de54a4-1129-485e-891d-3b2144521615",
+  "batchSize": 2,
+  "currentBatchStart": 249,
+  "currentBatchEnd": 250,
+  "lastBatch": false,
+  "loggingURL": "http://147.102.230.182:30007/ihelp/datacapture/logs/"
+}

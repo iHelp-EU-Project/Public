@@ -1,0 +1,20 @@
+{
+    "id": {{visit_occurrence_id}},
+    "visitConcept": {
+        "id": {{visit_concept_id}}
+    },
+    "visitStartDateTime": "{{visit_start_datetime}}",
+    "visitEndDateTime": "{{visit_end_datetime}}",
+    "visitTypeConcept": {
+        "id": {{visit_type_concept_id}}
+    },
+    "provider": {
+        "id": {{provider_id}}
+    },
+    "careSite": {
+        "id": {{care_site_id}}
+    },
+    "fperson": {
+        "id": {{person_id}}
+    }
+}

@@ -1,0 +1,910 @@
+{
+  "datasourceID": "FPG",
+  "datasetID": "blood",
+  "schema": {
+    "name": "blood",
+    "namespace": "eu.ihelp.fpg",
+    "type": "record",
+    "fields": [
+      {
+        "name": "analysis_name",
+        "type": "string"
+      },
+      {
+        "name": "analysis_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "analysis_value",
+        "type": "double"
+      },
+      {
+        "name": "analysis_unit",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "name": "bloodPK",
+    "namespace": "eu.ihelp.fpg",
+    "type": "record",
+    "fields": [
+      {
+        "name": "patient_id",
+        "type": "string"
+      }
+    ]
+  },
+  "confParameters": {
+    "cleaning": [
+      {
+        "id": [
+          "int",
+          "not_null",
+          "max_5_digit"
+        ]
+      },
+      {
+        "patient_id": [
+          "string",
+          "not_null"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "values": [
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "180208003",
+                  "display": "Intravenous blood transfusion of platelets"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "350.816792866267 x10^9/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "87361006",
+                  "display": "Left shifted white blood cells"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "178.485507490623 x10^9/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "267543009",
+                  "display": "Functional disorders of polymorphonuclear neutrophils"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "674.576456063977 x10^9/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "3450007",
+                  "display": "Lymphocytes, T and B cell evaluation"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "848.582752675276 x10^9/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "81162002",
+                  "display": "Denaturation of lens proteins"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "379.9718952424 g/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "105011006",
+                  "display": "Blood urea nitrogen measurement"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "103.428076681578 mg/dL"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "61425002",
+                  "display": "C reactive protein"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "959.280213291136 mg/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "15373003",
+                  "display": "Creatinine"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "379.456953467291 mg/dL"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "71628007",
+                  "display": "Abnormal presence of albumin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "1.06974645644775 g/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "250637003",
+                  "display": "ALT - blood measurement"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "229.500617170709 UI/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "166667003",
+                  "display": "AST/SGOT level normal"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "470.05225166717 UI/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "60153001",
+                  "display": "Gamma-glutamyltransferase"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "518.184875838194 UI/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "57056007",
+                  "display": "Alkaline phosphatase"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "393.795090083186 UI/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "58163007",
+                  "display": "Lactic dehydrogenase isoenzyme"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "678.112490571682 UI/L"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "863931005",
+                  "display": "Direct bilirubin increased"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "938.673649370988 mg/dL"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "37852002",
+                  "display": "Indirect reacting bilirubin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "908.708008143346 mg/dL"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "417572006",
+                  "display": "Total bilirubin, neonatal measurement"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "40.3247592976857 mg/dL"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "313341008",
+                  "display": "INR raised"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "501.436162328675 ratio"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              },
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "laboratory",
+                    "display": "Laboratory"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "313785008",
+                  "display": "CA199 measurement"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/QNK98081",
+              "type": "Patient"
+            },
+            "valueString": "678.619001975085 U/ml"
+          }
+        }
+      ]
+    }
+  ],
+  "faultyData": [],
+  "jobID": "89b19d51-ec7f-42d2-8501-01022297d10a",
+  "batchSize": 50,
+  "currentBatchStart": 1,
+  "currentBatchEnd": 19,
+  "lastBatch": true,
+  "loggingURL": "http://127.0.0.1:54735/ihelp/datacapture/logs/"
+}

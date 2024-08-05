@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-enrollment
+  labels:
+    app: user-enrollment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-enrollment
+  template:
+    metadata:
+      labels:
+        app: user-enrollment
+    spec:
+      containers:
+        - image: cloudgitlab.dslab.ece.ntua.gr:5050/pkranas/user-enrollment:latest
+          imagePullPolicy: Always
+          name: user-enrollment
+          env:
+           - name: DATASTORE_HOST
+             value: "ihelp-store-service"
+           - name: DATASTORE_PORT
+             value: "1529"             
+           - name: swagger_path
+             value: "/tmp/"
+           - name: datacapture_url
+             value: "data-capture-capture-service"
+           - name: datacapture_port
+             value: "54735"
+          ports:
+            - containerPort: 54735  
+          resources: 
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 500m
+              memory: 512Mi
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: ihelpgit 
+

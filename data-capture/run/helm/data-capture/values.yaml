@@ -1,0 +1,50 @@
+capture:
+  dataCapture:
+    env:
+      dataGatewayIp: 147.102.230.182
+      dataGatewayPort: "30007"
+    image:
+      repository: cloudgitlab.dslab.ece.ntua.gr:5050/pkranas/data-capture
+      tag: latest
+    imagePullPolicy: Always
+    resources:
+      limits:
+        cpu: 500m
+        memory: 512Mi
+      requests:
+        cpu: 500m
+        memory: 512Mi
+  replicas: 1
+captureNp:
+  ports:
+  - name: "54735"
+    nodePort: 30007
+    port: 54735
+    protocol: TCP
+    targetPort: 54735
+  type: NodePort
+captureService:
+  ports:
+  - name: "54735"
+    port: 54735
+    targetPort: 54735
+  type: ClusterIP
+importer:
+  dataImporter:
+    image:
+      repository: cloudgitlab.dslab.ece.ntua.gr:5050/pkranas/data-importer
+      tag: latest
+    imagePullPolicy: Always
+    resources:
+      limits:
+        cpu: 500m
+        memory: 512Mi
+      requests:
+        cpu: 500m
+        memory: 512Mi
+  replicas: 1
+kubernetesClusterDomain: cluster.local
+pvc:
+  capatureNfsPvc:
+    storageClass: data-capature-nfs
+    storageRequest: 250Mi

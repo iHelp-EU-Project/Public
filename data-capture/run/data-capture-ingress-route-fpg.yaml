@@ -1,0 +1,60 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: ir-lxs
+spec:
+  entryPoints:
+    - web
+    - websecure
+  routes:
+    - kind: Rule  
+      match: Host(`lxs-ihelp.rmucsc.rm.unicatt.it`) && PathPrefix(`/ihelp/datacapture`)
+      services:
+      - kind: Service
+        name: data-capture-capture-service
+        passHostHeader: true
+        port: 54735
+    - kind: Rule  
+      match: Host(`lxs-ihelp.rmucsc.rm.unicatt.it`) && PathPrefix(`/ihelp/process`)
+      services:
+      - kind: Service
+        name: ihelp-store-rest-service
+        passHostHeader: true
+        port: 54735
+    - kind: Rule  
+      match: Host(`lxs-ihelp.rmucsc.rm.unicatt.it`) && PathPrefix(`/ihelp/metainfo`)
+      services:
+      - kind: Service
+        name: ihelp-store-rest-service
+        passHostHeader: true
+        port: 54735
+    - kind: Rule  
+      match: Host(`lxs-ihelp.rmucsc.rm.unicatt.it`) && PathPrefix(`/ihelp/baseR4`)
+      services:
+      - kind: Service
+        name: ihelp-store-rest-service
+        passHostHeader: true
+        port: 54735
+    - kind: Rule  
+      match: Host(`lxs-ihelp.rmucsc.rm.unicatt.it`) && PathPrefix(`/ihelp/userenrollment`)
+      services:
+      - kind: Service
+        name: user-enrollment-service
+        passHostHeader: true
+        port: 54735        
+    - kind: Rule  
+      match: Host(`lxs-ihelp.rmucsc.rm.unicatt.it`) && PathPrefix(`/ihelp/monitoringmessages`)
+      services:
+      - kind: Service
+        name: user-enrollment-service
+        passHostHeader: true
+        port: 54735                
+    - kind: Rule  
+      match: Host(`lxs-ihelp.rmucsc.rm.unicatt.it`) && PathPrefix(`/ihelp/modelmanagerparams`)
+      services:
+      - kind: Service
+        name: user-enrollment-service
+        passHostHeader: true
+        port: 54735                
+  tls:
+    certResolver: myresolver

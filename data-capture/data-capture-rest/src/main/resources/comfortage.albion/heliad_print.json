@@ -1,0 +1,6862 @@
+{
+  "datasourceID": "Eginitio",
+  "datasetID": "albion",
+  "schema": {
+    "type": "record",
+    "name": "heliad",
+    "namespace": "eu.comfortage.eginitio",
+    "fields": [
+      {
+        "name": "A1a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "A1b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A3",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "A9",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "A13",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "A30",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A30a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "A16",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A18",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A19",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A20",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A21",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A22",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A23",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "A24",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "A25",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A26",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A27",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A28",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "A29",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B1_other",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B2a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "B3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B6",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B7",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B11",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B12",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j13",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j14",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13j15",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "B13k",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13l",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B13m",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B14a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B14b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B14c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B14d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B15",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B16",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B17",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B17a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B17b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "B17c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C3a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C4a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C5a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C6",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C7",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C7a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C7b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C8",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C11",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C12",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C13",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C14",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C15",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C15a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C15b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C16",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C17",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C18",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C19",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C20",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C21",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C22",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C23",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C24a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C24b",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C25a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C25b",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C25c",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C25d",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C25e",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C26a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C26b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C26c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C26d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C26e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C26g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C26h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C27",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C28",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C29",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C30",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C31",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C32",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C33",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C39",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C41",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C41a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C41b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C42",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C42a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C42b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C43",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C43a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C43b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C44",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C44a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C44b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C45",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C46",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C47",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C48",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50k",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50l",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50m",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50n",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50o",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50p",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50q",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C50r",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C51",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C52",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C53",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C54",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C55i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C56",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C57",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C57a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C57b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C57c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C58",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C59",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C60",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C61",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C62",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C63",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C64",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C65",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C66",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C66a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C66b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C67",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C68",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C69",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C70",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C71",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C72",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C72a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C73",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C74",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C74a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C74b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C74c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C74d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C75",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C75a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C76",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C77",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C78",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C79",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C80",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C80a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C81",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C82",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C83",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C84",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C84a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C84b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C85",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C87",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C88",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C89",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C90",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C91",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C92",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C93",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C94",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C95",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C96",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C97",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "C86a1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "C86a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C86b",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C86c",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "C86d",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "D1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D2a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D2b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D3a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D3b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D3c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D3d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D4a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D4b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D6a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D6b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D6c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D6d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5c_1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5d_1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5e_1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D5f_1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D9f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D9g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D9h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D9i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D9j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D9a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "D9b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "D9c",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "D9d",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "D9e",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "D29",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29c_1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29d_1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29e_1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "D29f_1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E1a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E1b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E2a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E2b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E3a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E3b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E4a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E4b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E5a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E5b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E6a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E6b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E7a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E7b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E8a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E8b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E9a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E9b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E10a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E10b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E11a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E11b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E12a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E12b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E13a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E13b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E14a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E14b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E15a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E15b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E16a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E16b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E17a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E17b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E18a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E18b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E19a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E19b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E20a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E20b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E21a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E21b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E22a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E22b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E23a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E23b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E24a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E25a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E26",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "E26a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "F2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "F3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "F4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "F5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "F6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "F7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "F8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "F9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F11",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F12",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F13",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F14",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F15",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F16",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F17",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F18",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F19",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F20a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F20b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F20c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F21",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F22",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F23",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F24",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F25",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F26",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F27",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "F28",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F29",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F30",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F31",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F32",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F33",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F36",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F37",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F38",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F40a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F40b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F40c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "F40d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H2a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H2b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H6",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H7",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H8",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H11",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H12",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H21",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H22",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H23",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "H24",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J6",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J7",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J8",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J11",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J12",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J13",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J14",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J15",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J16",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J17",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J18",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J19",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J20",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J21",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J22",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J23",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J24a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J24b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J24c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J25",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J26",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J27a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J27b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J27c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J27d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J27e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J28",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J29a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J29b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J29c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J29d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J29e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J30",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J31a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J31b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J31c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J31d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J31e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32k",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J32l",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J33j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J34k",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J35k",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J36j",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "J37",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J37j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J38k",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J39j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J40j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J41j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J42k",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43f",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43g",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43h",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43i",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43j",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "J43k",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K3_D_1",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K3_D_2",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K3_D_3",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K6",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K7",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K8a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K8b",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K8c",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K8d",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K9a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K9b",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K9c",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K9d",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K11",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "K13",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K14",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K15",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K15a1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K15a2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K15a3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K15a4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K16a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K16b",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K16c",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K16d",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K16e",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K17a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K17b",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K17c",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K17d",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K17e",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K18a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K18b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K18c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K18d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K18e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K19",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K19_comment",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "K20",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K21",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K22",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K23",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K24",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K25",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K26",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K28a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K28b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K28c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K29",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K30",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K31a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K31b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K31c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K31d",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K32a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K32b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K33a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K33b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K33c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K33d",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K34",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K35",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K36",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K37",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "K38",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "K39",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K40",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "K41",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "K42",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "K43",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "K44",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "K45",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "L1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L6",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L7",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L8",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L11",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L12",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L13",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L14",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L15",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "LN",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L18",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L19",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L20",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L21",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L22",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L26",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L26a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L27",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L27a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42a1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42a2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42a3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42a4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42c1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42c2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L42d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L43",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L44",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L45",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "L46",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "L47",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "L48",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "L52",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "G1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "G2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "G3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "G4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "G5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "G6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "G6_TOTAL",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "G7",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G8",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G11",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G12",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G13",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G14",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G15",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G21",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G24",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G24a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G25",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G25a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G26",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G26a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G27",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G27a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G28",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G29",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G30",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G31",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G32",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G33",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G34",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G35",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G36",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G37",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G38",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G39",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G40",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G41",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "G41a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I1a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I1b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "I4a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I4b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I4c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I4d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I4e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "I5a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I5b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I6",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I6a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I9a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I10a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I11a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I11b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I11c",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I11d",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I11e",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "I12a",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I12b",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "I13",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M13",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M14",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M15",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M16",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M17",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M18",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M19",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M20",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M21",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M22",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M24",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M25",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M26",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M27",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M28",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M29",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M30",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M31",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M32",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M33",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M34",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M36",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "M37",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M38",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M39",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M40",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M41",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M42",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M43",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M44",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M45",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "M46",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE5",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE6",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE7",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE8",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE9",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE10",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DETERMINE_TOTAL",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DENTAL_PLATE",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DENTAL_PLATE_FOOD",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "EATING_IN_COMPANY",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "A1_neuropsycho",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "G16psy",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G17psy",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G18psy",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G19psy",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "G20psy",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "minimental30",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "miniper30",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "minimental23",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "mmper23",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MMSE28",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "MMSE29",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "SexC",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "EduC",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "APOE",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "APOEgen",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "e4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "e4dich",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "ZME",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZEX",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZVS",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZLA",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZAS",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZCO",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DEM",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "MCITYPE",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIME",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "MCILA",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIAS",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIEX",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIVS",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIDOMAIN",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "DEMTYPE",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "ADVASC",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "ADPS",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "ADPDDLB",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "ADOTHSING",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "ADMULT",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "ADTYPE",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Sleep_disturbance",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Snoring",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Short_of_breath",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Sleep_adequacy",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Daytime_sleepiness",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Sleep_index_I",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Sleep_index_II",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Sleep_Med_Sum",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepMed",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H2amin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepMin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "GSHA",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "TACA",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "GRON_tot",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "GRON_frail",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "TILB_tot",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "TILB_frail",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FSCALE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ROC_total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ROC_score",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Roc_frailty",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "energy_cho",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "energy_pro",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "energy_fat",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "energy_sfa",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "energy_mufa",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "energy_alc",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Energy",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "cho_per",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pro_per",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "fat_per",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "sfa_per",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "mufa_per",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "alc_per",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_non_ref_cer",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_ref_cer",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_potato",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_fruit",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_fruit_incl_juice",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_vegetables",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_vegetable_dishes",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_vegetables_as_salad",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_legumes",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_fish_and_fisheries",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_red_meat",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_poultry",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_full_dairy",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "olive_oil",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "other_seed_oil",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "margarine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "butter",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_alcohol",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_cold_cuts",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_eggs",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_sweets",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_sweeeteners",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_olives",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_reg_soft_drinks",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_diet_soft_drinks",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_total_soft_drinks",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_coffee_tea",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_nuts",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_full_fat_milk_yogurt",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_low_fat_milk_yogurt",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_low_fat_cheese",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_full_fat_cheese",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_salty_snacks",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_mmar_coffee",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_mmar_low_fat_dairy",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_mmar_all_dairy",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_mgeorg_all_dairy_incl_sweets",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_mmar_all_milk_yogurt",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_mmar_all_cheese",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_mmar_all_cereals",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FG_mmar_all_Fruits_and_Veggies",
+        "type": "double"
+      },
+      {
+        "name": "MedDietScore",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FHstroke",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "FHepilepsy",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "FHParkinson",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "FHtremor",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "FHHuntington",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "FHMS",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "FHdementia",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "FHhydrocephalus",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "FHDown",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "JobClass",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "SocStat",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "HachScore",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "GDS_TOTAL",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_TOTAL",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Depression_severe",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Anxiety_severe",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Gen_predisp",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "Standardized_MMSE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "GMD",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "SMD1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "SMD2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "SMD3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "ND",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "OD",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "CD",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "SAD",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "SADdich",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "WEIGHT",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HEIGHT",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "WAISTCIRCUMFERENCE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "BMI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "slow",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "shrinking",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "endurance",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "unknown_long_name",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "EE_household_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "EE_recr_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Work_min_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ComWork_min_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Househ_min_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Recr_min_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Sedent_min_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "EE_sedent_cal_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "TEE_day",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MET_min_work_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MET_min_household_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MET_min_recr_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MET_min_sedent_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MET_min_sleep_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MET_min_tot_wk",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MET_min_tot_wk_nosleep",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "AgeC",
+        "type": [
+          "double",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "heliadPK",
+    "namespace": "eu.comfortage.eginitio",
+    "fields": [
+      {
+        "name": "A1",
+        "type": "string"
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/Downloads/HELIAD_dataset.csv",
+    "datePattern": "d-MMM-yy",
+    "timePattern": "h:mm:ss a",
+    "delimiter": ";",
+    "nullString": "#NULL!",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

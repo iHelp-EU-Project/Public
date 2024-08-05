@@ -1,0 +1,136 @@
+{ "datasourceID": "HDM",
+  "datasetID": "Measurement",
+  "schema": {
+    "type": "record",
+    "name": "measurement",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "measurement_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "measurement_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "measurement_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "measurement_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "operator_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "value_as_number",
+        "type": "float"
+      },
+      {
+        "name": "value_as_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "unit_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "range_low",
+        "type": "float"
+      },
+      {
+        "name": "range_high",
+        "type": "float"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "measurementPK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "measurement_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+    "cleaning": [
+        {
+          "measurement_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "person_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "measurement_concept_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "range_low": [
+            "int",
+            "max_12_digits"
+          ]
+        },
+        {
+          "range_high": [
+            "int",        
+            "max_12_digits"
+          ]
+        }
+      ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM/Measurement.csv",
+    "datePattern": "dd/MM/yyyy",
+    "delimiter": ";",
+    "nullString": "NULL",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "KAFKA",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "147.102.230.182",
+    "port": "30003",    
+    "topic": "data_capture_input"
+  },
+  "batchSize": 100
+}

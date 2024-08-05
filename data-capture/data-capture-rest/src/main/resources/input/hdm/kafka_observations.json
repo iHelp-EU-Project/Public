@@ -1,0 +1,124 @@
+{
+  "datasourceID": "HDM",
+  "datasetID": "Observations",
+  "schema": {
+    "type": "record",
+    "name": "observation",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "observation_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "observation_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "observation_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "observation_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "value_as_number",
+        "type": "float"
+      },
+      {
+        "name": "value_as_string",
+        "type": "string"
+      },
+      {
+        "name": "qualifier_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "unit_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "observationPK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "observation_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+    "cleaning": [
+        {
+          "observation_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "person_id": [
+            "int",
+            "not_null",
+            "max_6_digits"
+          ]
+        },
+        {
+          "observation_concept_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "observation_type_concept_id": [
+            "int",
+            "not_null",
+            "max_6_digits"
+          ]
+        }
+      ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM/Observation.csv",
+    "datePattern": "dd/MM/yyyy",
+    "delimiter": ";",
+    "nullString": "NULL",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "KAFKA",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "147.102.230.182",
+    "port": "30003",    
+    "topic": "data_capture_input"
+  },
+  "batchSize": 100
+}

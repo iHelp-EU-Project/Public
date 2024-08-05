@@ -1,0 +1,24 @@
+{
+    "id": {{drug_exposure_id}},
+    "drugConcept": {
+        "id": {{drug_concept_id}}
+    },
+    "drugExposureStartDateTime": "{{drug_exposure_start_datetime}}",
+    "drugExposureEndDateTime": "{{drug_exposure_end_datetime}}",
+    "drugTypeConcept": {
+        "id": {{drug_type_concept_id}}
+    },
+    "quantity": {{quantity}},
+    "routeConcept": {
+        "id": {{route_concept_id}}
+    },
+    "provider": {
+        "id": {{provider_id}}
+    },
+    "visitOccurrence": {
+        "id": {{visit_occurrence_id}}
+    },
+    "fperson": {
+        "id": {{person_id}}
+    }
+}

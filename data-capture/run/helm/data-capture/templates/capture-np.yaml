@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "data-capture.fullname" . }}-capture-np
+  labels:
+  {{- include "data-capture.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.captureNp.type }}
+  selector:
+    app: data-capture
+  {{- include "data-capture.selectorLabels" . | nindent 4 }}
+  ports:
+	{{- .Values.captureNp.ports | toYaml | nindent 2 -}}

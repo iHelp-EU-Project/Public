@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ihelp-store-rest
+  labels:
+    app: ihelp-store-rest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ihelp-store-rest
+  template:
+    metadata:
+      labels:
+        app: ihelp-store-rest
+    spec:
+      containers:
+        - image: cloudgitlab.dslab.ece.ntua.gr:5050/pkranas/ihelp-store-rest:latest
+          imagePullPolicy: Always
+          name: ihelp-store-rest
+          env:
+           - name: DATASTORE_HOST
+             value: "ihelp-store-service"
+           - name: swagger_path
+             value: "/tmp/"
+          ports:
+            - containerPort: 54735  
+          resources: 
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 500m
+              memory: 512Mi
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: ihelpgit 
+

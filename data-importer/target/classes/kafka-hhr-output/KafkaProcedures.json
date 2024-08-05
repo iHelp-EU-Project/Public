@@ -1,0 +1,209 @@
+{
+  "schema": {
+    "name": "procedureOccurrence",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "procedure_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "procedure_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "procedure_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "procedure_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "modifier_concept_id",
+        "type": "int"
+      }
+    ]
+  },
+  "values": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "47534009",
+            "display": "Decompression of median nerve"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "164980",
+      "category": {
+        "coding": [
+          {
+            "system": "http://www.ohdsi.org/",
+            "code": "OMOP4976890",
+            "display": "EHR"
+          }
+        ]
+      },
+      "resourceType": "Procedure",
+      "status": "completed"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "47534009",
+            "display": "Decompression of median nerve"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "307749",
+      "category": {
+        "coding": [
+          {
+            "system": "http://www.ohdsi.org/",
+            "code": "OMOP4976890",
+            "display": "EHR"
+          }
+        ]
+      },
+      "resourceType": "Procedure",
+      "status": "completed"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "69639007",
+            "display": "Partial shoulder replacement"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "118314",
+      "category": {
+        "coding": [
+          {
+            "system": "http://www.ohdsi.org/",
+            "code": "OMOP4976890",
+            "display": "EHR"
+          }
+        ]
+      },
+      "resourceType": "Procedure",
+      "status": "completed"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "47534009",
+            "display": "Decompression of median nerve"
+          }
+        ]
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "928462",
+      "category": {
+        "coding": [
+          {
+            "system": "http://www.ohdsi.org/",
+            "code": "OMOP4976890",
+            "display": "EHR"
+          }
+        ]
+      },
+      "resourceType": "Procedure",
+      "status": "completed"
+    }
+  ],
+  "datasourceID": "HDM",
+  "datasetID": "ProcedureOccurrence",
+  "currentBatchStart": 1,
+  "confParameters": {
+    "cleaning": [
+      {
+        "procedure_occurrence_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "person_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "procedure_concept_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "procedure_datetime": [
+          "date",
+          "not_null"
+        ]
+      },
+      {
+        "procedure_date": [
+          "simple_date",
+          "not_null"
+        ]
+      },
+      {
+        "procedure_type_concept_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "batchSize": 5,
+  "currentBatchEnd": 5,
+  "schemaKey": {
+    "name": "procedureOccurrencePK",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "procedure_occurrence_id",
+        "type": "int"
+      }
+    ]
+  }
+}

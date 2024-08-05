@@ -1,0 +1,117 @@
+{
+  "datasourceID": "HDM",
+  "datasetID": "ConditionOccurrence",
+  "schema": {
+    "type": "record",
+    "name": "conditionOccurrence",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "condition_start_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "condition_end_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "condition_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "stop_reason",
+        "type": "string"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      },
+      {
+        "name": "condition_source_concept_id",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "conditionOccurrencePK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "condition_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+    "cleaning": [
+        {
+          "visit_occurrence_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "person_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "condition_concept_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "condition_start_datetime": [
+            "date",
+            "not_null"
+          ]
+        },
+        {
+          "condition_start_date": [
+            "simple_date",
+            "not_null"
+          ]
+        }
+      ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM_new/Condition_FullDataset_demo.csv",
+    "datePattern": "dd/MM/yyyy",
+    "delimiter": ",",
+    "nullString": "NULL",
+      "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "KAFKA",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "147.102.230.182",
+    "port": "30003",    
+    "topic": "data_capture_input"
+  },
+  "batchSize": 100
+}

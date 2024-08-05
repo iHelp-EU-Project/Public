@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data-importer
+  labels:
+    app: data-importer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data-importer
+  template:
+    metadata:
+      labels:
+        app: data-importer
+    spec:
+      containers:
+        - image: cloudgitlab.dslab.ece.ntua.gr:5050/pkranas/data-importer:latest
+          imagePullPolicy: Always
+          name: data-importer
+          resources: 
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 500m
+              memory: 512Mi
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: ihelpgit 
+

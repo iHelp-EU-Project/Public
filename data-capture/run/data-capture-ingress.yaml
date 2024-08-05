@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    #kubernetes.io/ingress.class: nginx
+    #nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+  name: data-capture-ingression
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: lxs.ihelp-project.eu
+    http:
+      paths:
+      - path: /ihelp/datacapture/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: data-capture-capture-service
+            port:
+              number: 54735

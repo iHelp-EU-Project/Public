@@ -1,0 +1,31 @@
+{
+    "id": {{measurement_id}},
+    "measurementConcept": {
+        "id": {{measurement_concept_id}}
+    },
+    "measurementDateTime": "{{measurement_datetime}}",
+    "measurementTypeConcept": {
+        "id": {{measurement_type_concept_id}}
+    },
+    "operatorConcept": {
+        "id": {{operator_concept_id}}
+    },
+    "valueAsNumber": {{value_as_number}},
+    "valueAsConcept": {
+        "id": {{value_as_number}}
+    },
+    "unitConcept": {
+        "id": {{unit_concept_id}}
+    },
+    "rangeLow": {{range_low}},
+    "rangeHigh": {{range_high}},
+    "provider": {
+        "id": {{provider_id}}
+    },
+    "visitOccurrence": {
+        "id": {{visit_occurrence_id}}
+    },
+    "fperson": {
+        "id": {{person_id}}
+    }
+}

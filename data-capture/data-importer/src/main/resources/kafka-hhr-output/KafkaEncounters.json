@@ -1,0 +1,284 @@
+{
+  "schema": {
+    "name": "visitOccurrence",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_start_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "visit_start_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "visit_end_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "visit_end_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "visit_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "care_site_id",
+        "type": "int"
+      },
+      {
+        "name": "discharge_to_concept_id",
+        "type": "int"
+      }
+    ]
+  },
+  "values": [
+    {
+      "period": {
+        "start": "2022-06-10T11:06:32+00:00",
+        "end": "2022-06-10T11:06:32+00:00"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "serviceProvider": {
+        "reference": "Organization/21"
+      },
+      "id": "933159",
+      "class": {
+        "system": "http://www.ohdsi.org/",
+        "code": "OP",
+        "display": "Outpatient Visit"
+      },
+      "participant": [
+        {
+          "individual": {
+            "reference": "Practitioner/77"
+          }
+        }
+      ],
+      "resourceType": "Encounter",
+      "status": "finished"
+    },
+    {
+      "period": {
+        "start": "2022-06-10T11:06:32+00:00",
+        "end": "2022-06-10T11:06:32+00:00"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "serviceProvider": {
+        "reference": "Organization/29"
+      },
+      "id": "996468",
+      "class": {
+        "system": "http://www.ohdsi.org/",
+        "code": "OP",
+        "display": "Outpatient Visit"
+      },
+      "participant": [
+        {
+          "individual": {
+            "reference": "Practitioner/390"
+          }
+        }
+      ],
+      "resourceType": "Encounter",
+      "status": "finished"
+    },
+    {
+      "period": {
+        "start": "2022-06-10T11:06:32+00:00",
+        "end": "2022-06-10T11:06:32+00:00"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "serviceProvider": {
+        "reference": "Organization/21"
+      },
+      "id": "1077575",
+      "class": {
+        "system": "http://www.ohdsi.org/",
+        "code": "OP",
+        "display": "Outpatient Visit"
+      },
+      "participant": [
+        {
+          "individual": {
+            "reference": "Practitioner/77"
+          }
+        }
+      ],
+      "resourceType": "Encounter",
+      "status": "finished"
+    },
+    {
+      "period": {
+        "start": "2022-06-10T11:06:32+00:00",
+        "end": "2022-06-10T11:06:32+00:00"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "serviceProvider": {
+        "reference": "Organization/19"
+      },
+      "id": "1530411",
+      "class": {
+        "system": "http://www.ohdsi.org/",
+        "code": "OP",
+        "display": "Outpatient Visit"
+      },
+      "participant": [
+        {
+          "individual": {
+            "reference": "Practitioner/19"
+          }
+        }
+      ],
+      "resourceType": "Encounter",
+      "status": "finished"
+    },
+    {
+      "period": {
+        "start": "2022-06-10T11:06:32+00:00",
+        "end": "2022-06-10T11:06:32+00:00"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "serviceProvider": {
+        "reference": "Organization/24"
+      },
+      "id": "316507",
+      "participant": [
+        {
+          "individual": {
+            "reference": "Practitioner/10"
+          }
+        }
+      ],
+      "resourceType": "Encounter",
+      "status": "finished"
+    }
+  ],
+  "datasourceID": "HDM",
+  "datasetID": "VisitOccurrence",
+  "currentBatchStart": 6,
+  "confParameters": {
+    "cleaning": [
+      {
+        "visit_occurrence_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "person_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "visit_concept_id": [
+          "int",
+          "not_null",
+          "max_6_digits"
+        ]
+      },
+      {
+        "visit_start_datetime": [
+          "date",
+          "not_null"
+        ]
+      },
+      {
+        "visit_start_date": [
+          "simple_date",
+          "not_null"
+        ]
+      },
+      {
+        "visit_end_date": [
+          "simple_date",
+          "not_null"
+        ]
+      },
+      {
+        "visit_end_datetime": [
+          "date",
+          "not_null"
+        ]
+      },
+      {
+        "visit_type_concept_id": [
+          "int",
+          "not_null",
+          "max_6_digits"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "batchSize": 5,
+  "currentBatchEnd": 10,
+  "schemaKey": {
+    "name": "visitOccurrencePK",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      }
+    ]
+  }
+}

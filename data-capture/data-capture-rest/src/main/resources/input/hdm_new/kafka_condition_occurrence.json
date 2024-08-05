@@ -1,0 +1,161 @@
+{
+  "datasourceID": "HDM",
+  "datasetID": "ConditionOccurrence",
+  "schema": {
+    "type": "record",
+    "name": "conditionOccurance",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "condition_start_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "condition_end_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "condition_type_concept_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "stop_reason",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "provider_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "source_code",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "source_code_description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "target_concept_name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "target_domain_id",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "target_vocabulary_id",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "vocabulary_item_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "conditionOccurrencePK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "condition_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+    "cleaning": [
+      {
+        "visit_occurrence_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "person_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "condition_type_concept_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "condition_start_datetime": [
+          "date",
+          "not_null"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM_new/Condition_FullDataset_demo_no_comas.csv",
+    "datePattern": "yyyy-MM-dd HH:mm:ss.SSS",
+    "delimiter": ",",
+    "nullString": "NULL",
+    "skipFirst": true
+  },  
+    "converterArguments": {
+    "type": "KAFKA",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "147.102.230.182",
+    "port": "30003",    
+    "topic": "data_capture_input"
+  },
+  "batchSize": 100
+}

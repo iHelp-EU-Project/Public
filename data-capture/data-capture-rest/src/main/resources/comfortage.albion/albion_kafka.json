@@ -1,0 +1,3863 @@
+{
+  "datasourceID": "Eginitio",
+  "datasetID": "albion",
+  "schema": {
+    "type": "record",
+    "name": "albion",
+    "namespace": "eu.comfortage.eginitio",
+    "fields": [
+      {
+        "name": "SEX",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "BIRTH_DAY",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "BIRTH_MONTH",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "BIRTH_YEAR",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "HAND",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "WorkStat",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH13",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH14",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH15",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH16",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH17",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH18",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH19",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH20",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH21",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MH22",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED13",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED14",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED15",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED16",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED17",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED18",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED19",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED20",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED21",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED22",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED23",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED24",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED25",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MED26",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH13",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH14",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH15",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "FH16",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NPI_TOT",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CDR1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CDR2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CDR3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CDR4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CDR5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CDR6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CDR_TOT",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "IADL_TOT",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HACH_TOT",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS3a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS3b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS3c",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS3d",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UODRS3e",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS4a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS4b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS5a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS5b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS5c",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS5d",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS5e",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS6a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS6b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS7a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS7b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS8a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS8b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS9a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS9b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS13",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS14",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "UPDRS_TOT",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAGNOSIS",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MEMORY",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "LANGUAGE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ATTENTION",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "EXECUTIVE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VISUOSPATIONAL",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_ADprob",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_ADposs",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_LBDprob",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_LBDposs",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_VADprob",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_VADposs",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_FTDbv",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_FTDpnfa",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_FTDsd",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_FTDlog",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_PDcert",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_PDprob",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_CBD",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_PSP",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_CVA",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_TBI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_HYDROC",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_DEPRES",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_ANXIETY",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_sleep",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_epil",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_HD",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_OTHER",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DIAG_OTHER2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ACE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MMSE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SMOKING",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ALCOHOL",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H2a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H2b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "H12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_A1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_D1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_A2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_D2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_A3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_D3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_A4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_D4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_A5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_D5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_A6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_D6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_A7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HADS_D7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E1a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E2a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E3a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E4a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E5a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E6a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E7a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E8a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E9a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E10a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E11a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E12a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E13a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E14a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E15a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E16a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E17a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E18a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E19a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E20a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E21a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E22a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "E23a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC13",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC14",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SCC15",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ0",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ7",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ8",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ9",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ10",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ11",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ13",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ14",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ15",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ16",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ17",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ17b",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ18a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ19a",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ20a",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ18",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ19",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ20",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "hAPAQ21",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SPEED_1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SPEED_2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "GRIP_1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "GRIP_2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "GRIP_3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "W2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "W3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "W4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "W5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CSF_AB4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CSF_T4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CSF_PHT4",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "CSF_AB5",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "alive",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "dateofdeath",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "cause_death",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "apoe_gen",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "AgeC",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ΜaritalC",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Living_Arrangement",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "WeightC",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "HeightC",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "AMYLOID_NOMINAL",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "TAU_NOMINAL",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "PHTAU_NOMINAL",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_refined_cereals",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_unrefined_cereals",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_potatoes",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_fruits",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_vegetables",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_legumes",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_fish",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_poultry",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_red_meat",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_cold_cuts",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_eggs",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_olive_oil",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_sweets",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_milk_sweets",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_sweet_spreads",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_sweeteners",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_spread_and_sauses",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_olives",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_soft_drinks_juices",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_soft_drinks_zero",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_beverages",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_beverages_decaf",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_nuts",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_plant_based_dairy",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_full_fat_dairy",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_low_fat_dairy",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_low_fat_cheese",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_full_fat_cheese",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_snacks",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_junk_food",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_alcohol_free_drinks",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_alcohol",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "kilocalories",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "protein",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "carbohydrate",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "available_carbohydrate",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "fat_total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "alcohol_nutritionist",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "cholesterol",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "saturated_fat",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "monounsaturated_fat",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "polyunsaturated_fat",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "sodium",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "potassium",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminA_RE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminA_IU",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminA_RAE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "total_carotenoid",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Beta_Carotene",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Alpha_Carotene",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Lutein_plus_Zeaxanthin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Beta_ryptoxanthin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Lycopene",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminC",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Calcium",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Iron",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminD_ug",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminD_IU",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminE_mg",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminE_IU",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Thiamin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Riboflavin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Niacin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Niacin_Equivalent",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Pyridoxine_VitaminB6",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Folate_Total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Folate_DFE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Folic_Acid",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Cobalamin_VitaminB12",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Biotin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Pantothenic_Acid",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VitaminK",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Phosphorus",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Magnesium",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Zinc",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Copper",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Manganese",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Selenium",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Fluoride",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Chromium",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Molybdenum",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Choline",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Dietary_Fiber_Total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Soluble_Fiber",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Insoluble_Fiber",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Crude_Fiber",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Sugar_Total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Added_Sugars",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Glucose",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Galactose",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Fructose",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Sucrose",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Lactose",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Maltose",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Tryptophan",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Threonine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Isoleucine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Leucine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Lysine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Methionine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Cystine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Phenylalanine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Tyrosine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Valine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Arginine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Histidine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Alanine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Aspartic_Acid",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Glutamic_Acid",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Glycine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Proline",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Serine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Glutamine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Taurine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Moisture",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Ash",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Caffeine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Osmolality",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Salt",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Sugar_Alcohol",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Other_Carbohydrate",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_full_fat_dairy_total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "daily_red_meat_total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MD_total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "Pacemaker",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "PatStart",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "PatEnd",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "SleepTime",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "SPSleepTime",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "PSleepTime",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "pRDI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pAHI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pAHICentral",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ODI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "PERC_DeepSleep",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "PERC_LightSleep",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "PERC_REM",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "REMRDI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "REMAHI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "REMAHICentral",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "REMODI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NREMRDI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NREMAHI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NREMAHICentral",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NREMODI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "PERC_CSR",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "RDITotalEventsNum",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "AHITotalEventsNum",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "AHICentralTotalEventsNum",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MeanSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MinSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MaxSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MeanREMSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MinREMSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MaxREMSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MeanNREMSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MinNREMSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MaxNREMSaturation",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MeanofDesaturationNadirs",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "TotalNumberofDesaturations",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SatBelow90",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SatBelowEqual88",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SatBelow88",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SatBelow85",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SatBelow80",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SatBelow70",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MeanPulserate",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MinPulserate",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MaxPulserate",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepDuringProne",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepInProne",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pRDIInProne",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pAHIInProne",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ODIInProne",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepDuringSupine",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepInSupine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pRDIInSupine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pAHIInSupine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ODIInSupine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepDuringLeft",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepInLeft",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pRDIInLeft",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pAHIInLeft",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ODIInLeft",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepDuringRight",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepInRight",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pRDIInRight",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pAHIInRight",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ODIInRight",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepDuringNonSupine",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepInNonSupine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pRDIInNonSupine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "pAHIInNonSupine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ODIInNonSupine",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MeanSnoreDB",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SnoreThreshold",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepOverThreshold",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepOverThreshold",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepOver40",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepOver40_A",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepOver50",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepOver50_A",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepOver60",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepOver60_A",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepOver70",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepOver70_A",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepOver80",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "perc_SleepOver80_A",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "SleepLatencymin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "REMpLatencymin",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "PERC_SleepEfficiency",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "NumberOfWakes",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zSum1_5correct1st",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zll7cor1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zll9cor1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zfigurecopy",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zfigureimmediate",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zfiguredelayed",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zTMTA_tmtAtime",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zTMTB_tmitBtime",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zhistory1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zhistory2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "znaming",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zdigit_for",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zdigit_back",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zstroop1",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zstroop2",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zstroop3",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zstroop_int",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zACE_ATTENTION",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zACE_MEMORY",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zACE_FLUENCY",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zACE_LANGUAGE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "zACE_VISUO",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZME",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZEX",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZVS",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZLA",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZAS",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ZCO",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DuFU",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DuFU_max",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "VisitNuA_total",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DEM",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MCI",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MCITYPE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIME",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MCILA",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIAS",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIEX",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIVS",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "MCIDOMAIN",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "DEMTYPE",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "ATN_classification",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "EDU",
+        "type": [
+          "double",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "albionPK",
+    "namespace": "eu.comfortage.eginitio",
+    "fields": [
+      {
+        "name": "ID",
+        "type": "string"
+      },
+      {
+        "name": "VisitNuA",
+        "type": [
+          "double",
+          "null"
+        ]
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/Downloads/ALBION_DATASET.csv",
+    "datePattern": "yyyy/MM/dd HH:mm:ss",
+    "timePattern": "h:mm:ss a",
+    "delimiter": ";",
+    "nullString": "#NULL!",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "KAFKA",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "192.168.1.144",
+    "port": "9092",    
+    "topic": "data_capture_input"
+  },
+  "batchSize": 20
+}

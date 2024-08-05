@@ -1,0 +1,90 @@
+{ "datasourceID": "HDM",
+  "datasetID": "Persons",
+  "schema": {
+    "type": "record",
+    "name": "person",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "gender_concept",
+        "type": "int"
+      },
+      {
+        "name": "year_of_birth",
+        "type": "int"
+      },
+      {
+        "name": "month_of_birth",
+        "type": "int"
+      },
+      {
+        "name": "day_of_birth",
+        "type": "int"
+      },
+      {
+        "name": "race_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "ethnicity_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "gender_source_value",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "personPK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+   "cleaning": [
+        {
+          "person_id": [
+            "int",
+            "not_null",
+            "max_6_digits"
+          ]
+        },
+        {
+          "year_of_birth": [
+            "int",
+            "not_null",
+            "1930_2022"
+          ]
+        },
+        {
+          "month_of_birth": [
+            "int",
+            "not_null",
+            "1_12"
+          ]
+        }
+      ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM_new/Person_FullDataset.csv",
+    "datePattern": "yyyy/MM/dd HH:mm:ss",
+    "delimiter": ";",
+    "nullString": "NULL",
+      "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

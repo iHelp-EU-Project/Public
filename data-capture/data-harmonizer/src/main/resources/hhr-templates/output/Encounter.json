@@ -1,0 +1,30 @@
+{
+  "period": {
+    "start": "2022-06-10T09:59:14+00:00",
+    "end": "2022-06-10T09:59:14+00:00"
+  },
+  "meta": {
+    "source": "http://www.ohdsi.org/OMOP4976890"
+  },
+  "subject": {
+    "reference": "Patient/12330"
+  },
+  "serviceProvider": {
+    "reference": "Organization/38"
+  },
+  "id": "157955",
+  "class": {
+    "system": "http://www.ohdsi.org/",
+    "code": "OP",
+    "display": "Outpatient Visit"
+  },
+  "participant": [
+    {
+      "individual": {
+        "reference": "Practitioner/10"
+      }
+    }
+  ],
+  "resourceType": "Encounter",
+  "status": "finished"
+}

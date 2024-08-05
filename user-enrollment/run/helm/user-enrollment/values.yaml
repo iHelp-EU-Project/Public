@@ -1,0 +1,35 @@
+kubernetesClusterDomain: cluster.local
+np:
+  ports:
+  - name: "54735"
+    nodePort: 30012
+    port: 54735
+    protocol: TCP
+    targetPort: 54735
+  type: NodePort
+service:
+  ports:
+  - name: "54735"
+    port: 54735
+    targetPort: 54735
+  type: ClusterIP
+userEnrollment:
+  replicas: 1
+  userEnrollment:
+    env:
+      datastoreHost: ihelp-store-service
+      datastorePort: "1529"
+      datacaptureUrl: data-capture-capture-service
+      datacapturePort: "54735"
+      swaggerPath: /tmp/
+    image:
+      repository: cloudgitlab.dslab.ece.ntua.gr:5050/pkranas/user-enrollment
+      tag: latest
+    imagePullPolicy: Always
+    resources:
+      limits:
+        cpu: 500m
+        memory: 512Mi
+      requests:
+        cpu: 500m
+        memory: 512Mi

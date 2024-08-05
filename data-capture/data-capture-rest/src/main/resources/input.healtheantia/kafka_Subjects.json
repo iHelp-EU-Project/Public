@@ -1,0 +1,124 @@
+{
+  "datasourceID": "HEALTHENTIA",
+  "datasetID": "Subjects",
+  "schema": {
+    "type": "record",
+    "name": "subject",
+    "namespace": "eu.ihelp.healthentia",
+    "fields": [
+      {
+        "name": "timeZone",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "trackerId",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "baselineDate",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "birthDate",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "status",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "sex",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "height",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "weight",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "disease",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "severity",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "qtRobotId",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "subjectPK",
+    "namespace": "eu.ihelp.healthentia",
+    "fields": [
+      {
+        "name": "subjectIdentificationNumber",
+        "type": "string"
+      }
+    ]
+  },
+  "confParameters": null,
+  "batchSize": 10,
+  "connectorArguments": {
+    "type": "HEALTHENTIA_PERSONS",
+    "url": "https://saas-api.healthentia.com/",
+    "username": "ihelpingestion@healthentia.com",
+    "password": "@GY+Rb3zTR",
+    "datePattern": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
+    "nullString": null,
+    "studies": [
+      59,
+      60,
+      61,
+      64,
+      65
+    ]
+  },
+  "converterArguments": {
+    "type": "KAFKA",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "147.102.230.182",
+    "port": "30003",    
+    "topic": "data_capture_input"
+  },
+  "batchSize": 20
+}

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data-capture
+  labels:
+    app: data-capture
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data-capture
+  template:
+    metadata:
+      labels:
+        app: data-capture
+    spec:
+      containers:
+        - image: cloudgitlab.dslab.ece.ntua.gr:5050/pkranas/data-capture:latest
+          imagePullPolicy: Always
+          name: data-capture
+          volumeMounts:
+            - name: data-capature-storage
+              mountPath: /datasets
+          ports:
+            - containerPort: 54735  
+          resources: 
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 500m
+              memory: 512Mi
+          env:
+          - name: DATA_GATEWAY_IP
+            value: "10.160.65.26"
+          - name: DATA_GATEWAY_PORT
+            value: "30007"
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: ihelpgit 
+      volumes: 
+        - name: data-capature-storage 
+          persistentVolumeClaim:
+            claimName: data-capature-nfs-pvc  
+

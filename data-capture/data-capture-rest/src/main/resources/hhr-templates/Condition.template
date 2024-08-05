@@ -1,0 +1,20 @@
+{
+    "id": {{condition_occurrence_id}},
+    "conditionConcept": {
+        "id": {{condition_concept_id}}
+    },
+    "conditionStartDateTime": "{{condition_start_datetime}}",
+    "conditionEndDateTime": "{{condition_end_datetime}}",
+    "conditionTypeConcept": {
+        "id": {{condition_type_concept_id}}
+    },
+    "provider": {
+        "id": {{provider_id}}
+    },
+    "visitOccurrence": {
+        "id": {{visit_occurrence_id}}
+    },
+    "fperson": {
+        "id": {{person_id}}
+    }
+}

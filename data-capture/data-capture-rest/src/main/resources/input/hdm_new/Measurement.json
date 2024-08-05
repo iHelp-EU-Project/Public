@@ -1,0 +1,141 @@
+{ "datasourceID": "HDM",
+  "datasetID": "Measurement",
+  "schema": {
+    "type": "record",
+    "name": "measurement",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "measurement_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "measurement_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "value_as_number",
+        "type": "float"
+      },
+      {
+        "name": "value_as_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "unit_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "range_low",
+        "type": "float"
+      },
+      {
+        "name": "range_high",
+        "type": "float"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      },
+      {
+        "name": "source_code",
+        "type": "string"
+      },
+      {
+        "name": "source_code_description",
+        "type": "string"
+      },
+      {
+        "name": "target_concept_name",
+        "type": "string"
+      },
+      {
+        "name": "target_domain_id",
+        "type": "string"
+      },
+      {
+        "name": "target_vocabulary_id",
+        "type": "string"
+      },
+      {
+        "name": "vocabulary_item_id",
+        "type": "string"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "measurementPK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "measurement_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+    "cleaning": [
+        {
+          "measurement_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "person_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "measurement_concept_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "range_low": [
+            "int",
+            "max_12_digits"
+          ]
+        },
+        {
+          "range_high": [
+            "int",        
+            "max_12_digits"
+          ]
+        }
+      ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM_new/test_measurement_limpios.csv",
+    "datePattern": "yyyy-MM-dd HH:mm:ss.SSSSSSS",
+    "delimiter": ";",
+    "nullString": "NULL",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

@@ -1,0 +1,511 @@
+{
+  "datasourceID": "MUP",
+  "datasetID": "all",
+  "schema": {
+    "type": "record",
+    "name": "all",
+    "namespace": "eu.ihelp.mup",
+    "fields": [
+      {
+        "name": "diagnosis",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "gender",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "age",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "symptoms",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "comorbidities",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "morbidity_history",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "family_history",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "negative_habits",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "physical_finding",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "Laboratory_tests",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "imaging_diagnostics",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "genotyping",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "label",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "allPK",
+    "namespace": "eu.ihelp.mup",
+    "fields": [
+      {
+        "name": "patient_id",
+        "type": "int"
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/MUP/all.csv",
+    "datePattern": "yyyy-MM-dd",
+    "delimiter": ";",
+    "nullString": "",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  },
+  "values": [
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "162236007",
+                  "display": "Weakness present"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "235494005",
+                  "display": "Chronic pancreatitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "197456007",
+                  "display": "Acute pancreatitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "FamilyMemberHistory",
+            "patient": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            },
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "SNOMED",
+                      "code": "700423003",
+                      "display": "Adenocarcinoma of pancreas"
+                    }
+                  ]
+                }
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "SNOMED",
+                      "code": "716318002",
+                      "display": "Lynch syndrome"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "15167005",
+                  "display": "Alcohol abuse (disorder)"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "266918002",
+                  "display": "Tobacco smoking consumption"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "16386004",
+                  "display": "Dry skin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/CodeSystem/ihelp/category",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "196731005",
+                  "display": "Gastroduodenitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Procedure",
+            "category": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/CodeSystem/ihelp/category",
+                  "code": "morbidityHistory",
+                  "display": "Morbidity History"
+                }
+              ]
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "53442002",
+                  "display": "Gastrectomy"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "LOINC",
+                  "code": "1798-8",
+                  "display": "Amylase [Enzymatic activity/volume] in Serum or Plasma"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "83033005",
+                    "display": "Fecal analysis"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "LOINC",
+                  "code": "2570-0",
+                  "display": "Fat [Mass/volume] in Stool"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "4201000179104",
+                    "display": "Imaging report (record artifact)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "168537006",
+                  "display": "Plain radiography (procedure)"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "LOINC",
+                    "code": "51969-4",
+                    "display": "Genetic analysis summary report"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "NCBI",
+                  "code": "3170",
+                  "display": "FOXA2"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/2345",
+              "type": "Patient"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

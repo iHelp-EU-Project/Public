@@ -1,0 +1,57 @@
+{
+  "datasourceID" : "FPG",    
+  "datasetID": "blood",
+  "schema": {
+    "type": "record",
+    "name": "blood",
+    "namespace": "eu.ihelp.fpg",
+    "fields": [
+      {
+        "name": "patient_id",
+        "type": "string"
+      },
+      {
+        "name": "analysis_name",
+        "type": "string"
+      },
+      {
+        "name": "analysis_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "analysis_value",
+        "type" : "double"
+      },
+      {
+        "name": "analysis_unit",
+        "type": ["string", "null"]
+      }
+    ]
+  },  
+  "schemaKey": {
+    "type": "record",
+    "name": "bloodPK",
+    "namespace": "eu.ihelp.fpg",
+    "fields": [
+      {
+        "name": "id",
+        "type": "int"
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/FPG/blood_exams_one.csv",
+    "datePattern": "yyyy-MM-dd",
+    "delimiter": ";",
+    "nullString": "NULL",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

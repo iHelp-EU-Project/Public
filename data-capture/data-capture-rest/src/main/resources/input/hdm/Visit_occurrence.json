@@ -1,0 +1,146 @@
+{
+  "datasourceID": "HDM",
+  "datasetID": "VisitOccurrence",
+  "schema": {
+    "type": "record",
+    "name": "visitOccurrence",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_start_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "visit_start_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "visit_end_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "visit_end_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "visit_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "care_site_id",
+        "type": "int"
+      },
+      {
+        "name": "discharge_to_concept_id",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "visitOccurrencePK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+   "cleaning": [
+        {
+          "visit_occurrence_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "person_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "visit_concept_id": [
+            "int",
+            "not_null",
+            "max_6_digits"
+          ]
+        },
+        {
+          "visit_start_datetime": [
+            "date",
+            "not_null"
+          ]
+        },
+        {
+          "visit_start_date": [
+            "simple_date",
+            "not_null"
+          ]
+        },
+        {
+          "visit_end_date": [
+            "simple_date",
+            "not_null"
+          ]
+        },
+        {
+          "visit_end_datetime": [
+            "date",
+            "not_null"
+          ]
+        },
+        {
+          "visit_type_concept_id": [
+            "int",
+            "not_null",
+            "max_6_digits"
+          ]
+        }
+      ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM/Visit_occurrence.csv",
+    "datePattern": "dd/MM/yyyy",
+    "delimiter": ";",
+    "nullString": "NULL",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

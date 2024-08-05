@@ -1,0 +1,13 @@
+{
+    "id": {{procedure_occurrence_id}},
+    "procedureConcept": {
+        "id": {{procedure_concept_id}}
+    },
+    "procedureDateTime": "{{procedure_datetime}}",
+    "procedureTypeConcept": {
+        "id": {{procedure_type_concept_id}}
+    },
+    "fperson": {
+        "id": {{person_id}}
+    }
+}

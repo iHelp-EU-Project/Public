@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "data-capture.fullname" . }}-capture
+  labels:
+    app: data-capture
+  {{- include "data-capture.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.capture.replicas }}
+  selector:
+    matchLabels:
+      app: data-capture
+    {{- include "data-capture.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: data-capture
+      {{- include "data-capture.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: DATA_GATEWAY_IP
+          value: {{ quote .Values.capture.dataCapture.env.dataGatewayIp }}
+        - name: DATA_GATEWAY_PORT
+          value: {{ quote .Values.capture.dataCapture.env.dataGatewayPort }}
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.capture.dataCapture.image.repository }}:{{ .Values.capture.dataCapture.image.tag
+          | default .Chart.AppVersion }}
+        imagePullPolicy: {{ .Values.capture.dataCapture.imagePullPolicy }}
+        name: data-capture
+        ports:
+        - containerPort: 54735
+        resources: {{- toYaml .Values.capture.dataCapture.resources | nindent 10 }}
+        volumeMounts:
+        - mountPath: /datasets
+          name: data-capature-storage
+      imagePullSecrets:
+      - name: ihelpgit
+      restartPolicy: Always
+      volumes:
+      - name: data-capature-storage
+        persistentVolumeClaim:
+          claimName: {{ include "data-capture.fullname" . }}-capature-nfs-pvc
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "data-capture.fullname" . }}-importer
+  labels:
+    app: data-importer
+  {{- include "data-capture.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.importer.replicas }}
+  selector:
+    matchLabels:
+      app: data-importer
+    {{- include "data-capture.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: data-importer
+      {{- include "data-capture.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.importer.dataImporter.image.repository }}:{{ .Values.importer.dataImporter.image.tag
+          | default .Chart.AppVersion }}
+        imagePullPolicy: {{ .Values.importer.dataImporter.imagePullPolicy }}
+        name: data-importer
+        resources: {{- toYaml .Values.importer.dataImporter.resources | nindent 10 }}
+      imagePullSecrets:
+      - name: ihelpgit
+      restartPolicy: Always

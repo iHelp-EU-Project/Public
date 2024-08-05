@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: data-capture-service
+  labels:
+    app: data-capture
+spec:
+  ports:
+    - name: "54735"
+      port: 54735
+      targetPort: 54735
+  selector:
+    app: data-capture

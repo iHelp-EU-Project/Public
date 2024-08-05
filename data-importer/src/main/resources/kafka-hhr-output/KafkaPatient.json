@@ -1,0 +1,184 @@
+{
+  "schema": {
+    "name": "person",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "gender_concept",
+        "type": "int"
+      },
+      {
+        "name": "year_of_birth",
+        "type": "int"
+      },
+      {
+        "name": "month_of_birth",
+        "type": "int"
+      },
+      {
+        "name": "day_of_birth",
+        "type": "int"
+      },
+      {
+        "name": "birth_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "race_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "ethnicity_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "location_id",
+        "type": "int"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "care_site_id",
+        "type": "int"
+      }
+    ]
+  },
+  "values": [
+    {
+      "identifier": [
+        {
+          "value": "4102"
+        }
+      ],
+      "gender": "male",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+        ]
+      },
+      "active": false,
+      "id": "4102",
+      "birthDate": "1993-01-01",
+      "resourceType": "Patient"
+    },
+    {
+      "identifier": [
+        {
+          "value": "12330"
+        }
+      ],
+      "gender": "female",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+        ]
+      },
+      "active": false,
+      "id": "12330",
+      "birthDate": "1958-01-01",
+      "resourceType": "Patient"
+    },
+    {
+      "identifier": [
+        {
+          "value": "12332"
+        }
+      ],
+      "gender": "male",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+        ]
+      },
+      "active": false,
+      "id": "12332",
+      "birthDate": "1960-01-01",
+      "resourceType": "Patient"
+    },
+    {
+      "identifier": [
+        {
+          "value": "12345"
+        }
+      ],
+      "gender": "male",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+        ]
+      },
+      "active": false,
+      "id": "12345",
+      "birthDate": "1951-01-01",
+      "resourceType": "Patient"
+    },
+    {
+      "identifier": [
+        {
+          "value": "12356"
+        }
+      ],
+      "gender": "male",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+        ]
+      },
+      "active": false,
+      "id": "12356",
+      "birthDate": "1956-01-01",
+      "resourceType": "Patient"
+    }
+  ],
+  "datasourceID": "HDM",
+  "datasetID": "Persons",
+  "currentBatchStart": 1,
+  "confParameters": {
+    "cleaning": [
+      {
+        "person_id": [
+          "int",
+          "not_null",
+          "max_6_digits"
+        ]
+      },
+      {
+        "year_of_birth": [
+          "int",
+          "not_null",
+          "1930_2022"
+        ]
+      },
+      {
+        "month_of_birth": [
+          "int",
+          "not_null",
+          "1_12"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "batchSize": 5,
+  "currentBatchEnd": 5,
+  "schemaKey": {
+    "name": "personPK",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      }
+    ]
+  }
+}

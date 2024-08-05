@@ -1,0 +1,80 @@
+{
+  "datasourceID": "HEALTHENTIA",
+  "datasetID": "physiological",
+  "schema": {
+    "type": "record",
+    "name": "physiological",
+    "namespace": "eu.ihelp.healthentia",
+    "fields": [
+      {
+        "name": "subjectId",
+        "type": "string"
+      },
+      {
+        "name": "date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "value",
+        "type": "int"
+      },
+      {
+        "name": "trend",
+        "type": "int"
+      },
+      {
+        "name": "meanLong",
+        "type": "long"
+      },
+      {
+        "name": "meanShort",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "physiologicalPK",
+    "namespace": "eu.ihelp.healthentia",
+    "fields": [
+      {
+        "name": "id",
+        "type": "long"
+      }
+    ]
+  },
+  "confParameters": null,
+  "batchSize": 10,
+  "connectorArguments": {
+    "type": "HEALTHENTIA",
+    "url": "https://saas-api.healthentia.com/",
+    "username": "ihelpingestion@healthentia.com",
+    "password": "@GY+Rb3zTR",
+    "dataset": "physiological",
+    "datePattern": "dd-MM-yy",
+    "nullString": null,
+    "studies": [
+      59,
+      60,
+      61,
+      64,
+      65
+    ],
+    "fromStart": true     
+  },
+  "converterArguments": {
+    "type": "KAFKA",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "147.102.230.182",
+    "port": "30003",    
+    "topic": "data_capture_input"
+  },
+  "batchSize": 200
+}

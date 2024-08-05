@@ -1,0 +1,61 @@
+{
+  "datasourceID": "AMT",
+  "datasetID": "canbus",
+  "schema": {
+    "type": "record",
+    "name": "canbus",
+    "namespace": "eu.mobispaces.amt",
+    "fields": [
+      {
+        "name": "valore",
+        "type": "float"
+      },
+      {
+        "name": "latitude",
+        "type": "float"
+      },
+      {
+        "name": "longitude",
+        "type": "float"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "canbusPK",
+    "namespace": "eu.mobispaces.amt",
+    "fields": [
+      {
+        "name": "id_autobus",
+        "type": "int"
+      },
+      {
+        "name": "signale",
+        "type": "string"
+      },
+      {
+        "name": "signale_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/MobiSpaces/datasets/2022_11_09_E310_livello.csv",
+    "datePattern": "yyyy/MM/dd HH:mm:ss",
+    "delimiter": ",",
+    "nullString": "NULL",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "KAFKA_AVRO",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "192.168.50.144",
+    "port": "9092",
+    "avroPort": "8081",
+    "topic": "amt_canbus"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "schema": {
+    "name": "measurement",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "measurement_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "measurement_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "measurement_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "measurement_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "operator_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "value_as_number",
+        "type": "float"
+      },
+      {
+        "name": "value_as_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "unit_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "range_low",
+        "type": "float"
+      },
+      {
+        "name": "range_high",
+        "type": "float"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "values": [
+    {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 150
+          },
+          "low": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 50
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "166832000",
+            "display": "Serum HDL cholesterol measurement"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/2485"
+        }
+      ],
+      "effectiveDateTime": "2022-06-14T13:21:57+00:00",
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "34660860",
+      "encounter": {
+        "reference": "Encounter/12380003"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "Procedure",
+        "system": "Domain",
+        "code": "OMOP generated",
+        "value": 371
+      }
+    },
+    {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 150
+          },
+          "low": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 50
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "166832000",
+            "display": "Serum HDL cholesterol measurement"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/1868"
+        }
+      ],
+      "effectiveDateTime": "2022-06-14T13:21:57+00:00",
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "34671715",
+      "encounter": {
+        "reference": "Encounter/12380003"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "Procedure",
+        "system": "Domain",
+        "code": "OMOP generated",
+        "value": 369
+      }
+    },
+    {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 2
+          },
+          "low": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 0
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "166832000",
+            "display": "Serum HDL cholesterol measurement"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/123"
+        }
+      ],
+      "effectiveDateTime": "2022-06-14T13:21:57+00:00",
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "35085512",
+      "encounter": {
+        "reference": "Encounter/18275068"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "Procedure",
+        "system": "Domain",
+        "code": "OMOP generated",
+        "value": 0.2
+      }
+    },
+    {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 0
+          },
+          "low": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 0
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "166832000",
+            "display": "Serum HDL cholesterol measurement"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/123"
+        }
+      ],
+      "effectiveDateTime": "2022-06-14T13:21:57+00:00",
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "35085513",
+      "encounter": {
+        "reference": "Encounter/18275068"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "Procedure",
+        "system": "Domain",
+        "code": "OMOP generated",
+        "value": 5.5
+      }
+    },
+    {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 0
+          },
+          "low": {
+            "unit": "Procedure",
+            "system": "Domain",
+            "code": "OMOP generated",
+            "value": 0
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "166832000",
+            "display": "Serum HDL cholesterol measurement"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/123"
+        }
+      ],
+      "effectiveDateTime": "2022-06-14T13:21:57+00:00",
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "id": "35085514",
+      "encounter": {
+        "reference": "Encounter/18275068"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final"
+    }
+  ],
+  "datasourceID": "HDM",
+  "datasetID": "Measurement",
+  "currentBatchStart": 6,
+  "confParameters": {
+    "cleaning": [
+      {
+        "measurement_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "person_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "measurement_concept_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "range_low": [
+          "int",
+          "max_12_digits"
+        ]
+      },
+      {
+        "range_high": [
+          "int",
+          "max_12_digits"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "batchSize": 5,
+  "currentBatchEnd": 10,
+  "schemaKey": {
+    "name": "measurementPK",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "measurement_id",
+        "type": "int"
+      }
+    ]
+  }
+}

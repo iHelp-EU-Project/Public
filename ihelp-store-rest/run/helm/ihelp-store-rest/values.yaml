@@ -1,0 +1,32 @@
+ihelpStoreRest:
+  ihelpStoreRest:
+    env:
+      datastoreHost: ihelp-store-service
+      swaggerPath: /tmp/
+    image:
+      repository: cloudgitlab.dslab.ece.ntua.gr:5050/pkranas/ihelp-store-rest
+      tag: latest
+    imagePullPolicy: Always
+    resources:
+      limits:
+        cpu: 500m
+        memory: 512Mi
+      requests:
+        cpu: 500m
+        memory: 512Mi
+  replicas: 1
+kubernetesClusterDomain: cluster.local
+np:
+  ports:
+  - name: "54735"
+    nodePort: 30005
+    port: 54735
+    protocol: TCP
+    targetPort: 54735
+  type: NodePort
+service:
+  ports:
+  - name: "54735"
+    port: 54735
+    targetPort: 54735
+  type: ClusterIP

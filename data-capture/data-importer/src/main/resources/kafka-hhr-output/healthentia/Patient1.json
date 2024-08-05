@@ -1,0 +1,183 @@
+{
+  "datasourceID": "HEALTHENTIA",
+  "datasetID": "Subjects",
+  "schema": {
+    "name": "subject",
+    "namespace": "eu.ihelp.healthentia",
+    "type": "record",
+    "fields": [
+      {
+        "name": "timeZone",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "trackerId",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "baselineDate",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "birthDate",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "status",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "sex",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "height",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "weight",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "disease",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "severity",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "qtRobotId",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "name": "subjectPK",
+    "namespace": "eu.ihelp.healthentia",
+    "type": "record",
+    "fields": [
+      {
+        "name": "subjectIdentificationNumber",
+        "type": "string"
+      }
+    ]
+  },
+  "confParameters": {},
+  "values": [
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Patient",
+            "id": "IFP1W",
+            "gender": "female",
+            "active": "true",
+            "birthDate": "1990-10-25",
+            "extension": [
+              {
+                "url": "https://fhir.ihelp-project.eu/StructureDefinition/",
+                "extension": [
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/height",
+                    "valueDecimal": 161
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/weight",
+                    "valueDecimal": 45
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/timezone",
+                    "valueString": "Europe/Rome"
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/baselineDate",
+                    "valueDateTime": "2022-06-28"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Patient",
+            "id": "117Z1",
+            "gender": "male",
+            "active": "true",
+            "birthDate": "1946-07-09",
+            "extension": [
+              {
+                "url": "https://fhir.ihelp-project.eu/StructureDefinition/",
+                "extension": [
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/height",
+                    "valueDecimal": 163
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/weight",
+                    "valueDecimal": 48
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/timezone",
+                    "valueString": "Europe/Rome"
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/baselineDate",
+                    "valueDateTime": "2023-09-12"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "faultyData": [],
+  "jobID": "b0b91946-b739-4efa-962c-9a26f7e2bec8",
+  "batchSize": 2,
+  "currentBatchStart": 1,
+  "currentBatchEnd": 2,
+  "lastBatch": false,
+  "loggingURL": "http://127.0.0.1:54735/ihelp/datacapture/logs/"
+}

@@ -1,0 +1,696 @@
+{
+  "datasourceID": "MUP",
+  "datasetID": "all",
+  "schema": {
+    "name": "all",
+    "namespace": "eu.ihelp.mup",
+    "type": "record",
+    "fields": [
+      {
+        "name": "gender",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "age",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "survey_indexes",
+        "type": {
+          "type": "array",
+          "items": "int"
+        }
+      }
+    ]
+  },
+  "schemaKey": {
+    "name": "allPK",
+    "namespace": "eu.ihelp.mup",
+    "type": "record",
+    "fields": [
+      {
+        "name": "patient_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {},
+  "values": [
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "394595002",
+                    "display": "Pathology"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "700423003",
+                  "display": "Adenocarcinoma of pancreas"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "99999"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "2",
+                  "display": "Quick fatigue"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "3",
+                  "display": "Does not feel well feels that he/she is sick"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "4",
+                  "display": "A feeling of bloating in the abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "5",
+                  "display": "Feeling warm or feverish"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "50177009",
+                  "display": "Increased body temperature"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "8",
+                  "display": "Frequent diarrheal stools"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "33",
+                  "display": "Chronic gastroduodenitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "64715009",
+                  "display": "Hypertensive disease"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "FamilyMemberHistory",
+            "patient": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            },
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "SNOMED",
+                      "code": "47009004",
+                      "display": "No family history of"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "63",
+                  "display": "Increased alcohol consumption"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "66562002",
+                  "display": "Smoking"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "65",
+                  "display": "Increased intake of medicinal preparations"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "66",
+                  "display": "Increased consumption of fat and fatty foods"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "67",
+                  "display": "Daily consumption of red meats"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "228777003",
+                  "display": "Grains source"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "71",
+                  "display": "Sedentary lifestyle reduced daily physical activity"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "73",
+                  "display": "Pale dry skin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "425244000",
+                  "display": "Decreased skin turgor"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "56",
+                  "display": "No data on specific past illnesses"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "96",
+                  "display": "No indicative paraclinical data"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "LOINC",
+                    "code": "51969-4",
+                    "display": "Genetic analysis summary report"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "142018005",
+                  "display": "No changes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/99999",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Patient",
+            "id": "99999",
+            "gender": "female",
+            "birthDate": "1961-01-01"
+          }
+        }
+      ]
+    }
+  ],
+  "faultyData": [],
+  "jobID": "e8256494-8a72-4db7-8ec2-7e202113a34e",
+  "batchSize": 2,
+  "currentBatchStart": 1,
+  "currentBatchEnd": 1,
+  "lastBatch": true,
+  "loggingURL": "http://127.0.0.1:54735/ihelp/datacapture/logs/"
+}

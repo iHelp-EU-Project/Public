@@ -1,0 +1,392 @@
+{
+  "name": "A combo job",
+  "schedule": {
+      "periodic": {
+      "time": 2,
+      "unit": "MINUTES"
+    }
+  },
+  "jobs": [
+    {
+      "order": 1,
+      "job": {
+        "datasourceID": "HDM",
+        "datasetID": "Persons",
+        "schema": {
+          "type": "record",
+          "name": "person",
+          "namespace": "eu.ihelp.hdm",
+          "fields": [
+            {
+              "name": "gender_concept",
+              "type": "int"
+            },
+            {
+              "name": "year_of_birth",
+              "type": "int"
+            },
+            {
+              "name": "month_of_birth",
+              "type": "int"
+            },
+            {
+              "name": "day_of_birth",
+              "type": "int"
+            },
+            {
+              "name": "birth_datetime",
+              "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+              }
+            },
+            {
+              "name": "race_concept_id",
+              "type": "int"
+            },
+            {
+              "name": "ethnicity_concept_id",
+              "type": "int"
+            },
+            {
+              "name": "location_id",
+              "type": "int"
+            },
+            {
+              "name": "provider_id",
+              "type": "int"
+            },
+            {
+              "name": "care_site_id",
+              "type": "int"
+            }
+          ]
+        },
+        "schemaKey": {
+          "type": "record",
+          "name": "personPK",
+          "namespace": "eu.ihelp.hdm",
+          "fields": [
+            {
+              "name": "person_id",
+              "type": "int"
+            }
+          ]
+        },
+        "confParameters": {
+          "cleaning": [
+            {
+              "person_id": [
+                "int",
+                "not_null",
+                "max_6_digits"
+              ]
+            },
+            {
+              "year_of_birth": [
+                "int",
+                "not_null",
+                "1930_2022"
+              ]
+            },
+            {
+              "month_of_birth": [
+                "int",
+                "not_null",
+                "1_12"
+              ]
+            }
+          ],
+          "harmonizer": {
+            "key1": "value1",
+            "key2": "value2"
+          }
+        },
+        "connectorArguments": {
+          "type": "FILE",
+          "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM/Person.csv",
+          "datePattern": "yyyy/MM/dd HH:mm:ss",
+          "delimiter": ";",
+          "nullString": "NULL",
+          "skipFirst": true
+        },
+        "converterArguments": {
+          "type": "PRINT",
+          "datePattern": "yyyy-MM-dd HH:mm:ss z"
+        }
+      }
+    },
+    {
+      "order": 2,
+      "job": {
+        "datasourceID": "HDM",
+        "datasetID": "VisitOccurrence",
+        "schema": {
+          "type": "record",
+          "name": "visitOccurrence",
+          "namespace": "eu.ihelp.hdm",
+          "fields": [
+            {
+              "name": "person_id",
+              "type": "int"
+            },
+            {
+              "name": "visit_concept_id",
+              "type": "int"
+            },
+            {
+              "name": "visit_start_date",
+              "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+              }
+            },
+            {
+              "name": "visit_start_datetime",
+              "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+              }
+            },
+            {
+              "name": "visit_end_date",
+              "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+              }
+            },
+            {
+              "name": "visit_end_datetime",
+              "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+              }
+            },
+            {
+              "name": "visit_type_concept_id",
+              "type": "int"
+            },
+            {
+              "name": "provider_id",
+              "type": "int"
+            },
+            {
+              "name": "care_site_id",
+              "type": "int"
+            },
+            {
+              "name": "discharge_to_concept_id",
+              "type": "int"
+            }
+          ]
+        },
+        "schemaKey": {
+          "type": "record",
+          "name": "visitOccurrencePK",
+          "namespace": "eu.ihelp.hdm",
+          "fields": [
+            {
+              "name": "visit_occurrence_id",
+              "type": "int"
+            }
+          ]
+        },
+        "confParameters": {
+          "cleaning": [
+            {
+              "visit_occurrence_id": [
+                "int",
+                "not_null",
+                "max_12_digits"
+              ]
+            },
+            {
+              "person_id": [
+                "int",
+                "not_null",
+                "max_12_digits"
+              ]
+            },
+            {
+              "visit_concept_id": [
+                "int",
+                "not_null",
+                "max_6_digits"
+              ]
+            },
+            {
+              "visit_start_datetime": [
+                "date",
+                "not_null"
+              ]
+            },
+            {
+              "visit_start_date": [
+                "simple_date",
+                "not_null"
+              ]
+            },
+            {
+              "visit_end_date": [
+                "simple_date",
+                "not_null"
+              ]
+            },
+            {
+              "visit_end_datetime": [
+                "date",
+                "not_null"
+              ]
+            },
+            {
+              "visit_type_concept_id": [
+                "int",
+                "not_null",
+                "max_6_digits"
+              ]
+            }
+          ],
+          "harmonizer": {
+            "key1": "value1",
+            "key2": "value2"
+          }
+        },
+        "connectorArguments": {
+          "type": "FILE",
+          "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM/Visit_occurrence.csv",
+          "datePattern": "dd/MM/yyyy",
+          "delimiter": ";",
+          "nullString": "NULL",
+          "skipFirst": true
+        },
+        "converterArguments": {
+          "type": "PRINT",
+          "datePattern": "yyyy-MM-dd HH:mm:ss z"
+        }
+      }
+    },
+    {
+      "order": 3,
+      "job": {
+        "datasourceID": "HDM",
+        "datasetID": "Observations",
+        "schema": {
+          "type": "record",
+          "name": "observation",
+          "namespace": "eu.ihelp.hdm",
+          "fields": [
+            {
+              "name": "person_id",
+              "type": "int"
+            },
+            {
+              "name": "observation_concept_id",
+              "type": "int"
+            },
+            {
+              "name": "observation_date",
+              "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+              }
+            },
+            {
+              "name": "observation_datetime",
+              "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+              }
+            },
+            {
+              "name": "observation_type_concept_id",
+              "type": "int"
+            },
+            {
+              "name": "value_as_number",
+              "type": "float"
+            },
+            {
+              "name": "value_as_string",
+              "type": "string"
+            },
+            {
+              "name": "qualifier_concept_id",
+              "type": "int"
+            },
+            {
+              "name": "unit_concept_id",
+              "type": "int"
+            },
+            {
+              "name": "provider_id",
+              "type": "int"
+            },
+            {
+              "name": "visit_occurrence_id",
+              "type": "int"
+            }
+          ]
+        },
+        "schemaKey": {
+          "type": "record",
+          "name": "observationPK",
+          "namespace": "eu.ihelp.hdm",
+          "fields": [
+            {
+              "name": "observation_id",
+              "type": "int"
+            }
+          ]
+        },
+        "confParameters": {
+          "cleaning": [
+            {
+              "observation_id": [
+                "int",
+                "not_null",
+                "max_12_digits"
+              ]
+            },
+            {
+              "person_id": [
+                "int",
+                "not_null",
+                "max_6_digits"
+              ]
+            },
+            {
+              "observation_concept_id": [
+                "int",
+                "not_null",
+                "max_12_digits"
+              ]
+            },
+            {
+              "observation_type_concept_id": [
+                "int",
+                "not_null",
+                "max_6_digits"
+              ]
+            }
+          ],
+          "harmonizer": {
+            "key1": "value1",
+            "key2": "value2"
+          }
+        },
+        "connectorArguments": {
+          "type": "FILE",
+          "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM/Observation.csv",
+          "datePattern": "dd/MM/yyyy",
+          "delimiter": ";",
+          "nullString": "NULL",
+          "skipFirst": true
+        },
+        "converterArguments": {
+          "type": "PRINT",
+          "datePattern": "yyyy-MM-dd HH:mm:ss z"
+        }
+      }
+    }
+  ]
+}

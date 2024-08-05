@@ -1,0 +1,79 @@
+{
+  "resourceType": "Communication",
+  "extension": [
+    {
+      "url": "https://fhir.ihelp-project.eu/StructureDefinition/",
+      "extension": [
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/comm_notification_msg",
+          "valueString": "Did you know that by walking for 30 minutes a day you can improve your health and wellbeing?"
+        },
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/comm_creation_time",
+          "valueDateTime": "2023-05-29T13:07:01+03:00"
+        },
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/coach_domain",
+          "valueString": "Physical Activity"
+        },
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/coach_element",
+          "valueString": "Health Education"
+        },
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/coach_intent",
+          "valueString": "Present Fact"
+        },
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/health_outcome",
+          "valueString": "positive"
+        },
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/msg_framing",
+          "valueString": "positive"
+        },
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/subj_ability",
+          "valueString": "medium"
+        },
+        {
+          "url": "https://fhir.ihelp-project.eu/StructureDefinition/health_orientation",
+          "valueString": "promotion"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://fhir.ihelp-project.eu/comm_trigger_id",
+      "value": "d1dfbd2c-f31b-11ed-9a8d-5405db968fab"
+    },
+    {
+      "system": "LOINC/78200-3",
+      "value": "manchester"
+    },
+    {
+      "system": "https://fhir.ihelp-project.eu/dialogue_id",
+      "value": "trigger-pa-edu-fact-1"
+    }
+  ],
+  "status": "in-progress",
+  "subject": {
+    "reference": "Patient/iHelp_account"
+  },
+  "topic": {
+    "coding": [
+      {
+        "system": "https://fhir.ihelp-project.eu",
+        "code": "trigger-pa-edu-fact-1",
+        "display": "Health Education Physical Activity - Did You Know? No. 1"
+      }
+    ]
+  },
+  "sent": "2023-05-29T13:07:04+03:00",
+  "note": [
+    {
+      "text": "Did you know that by walking for 30 minutes a day you can improve your health and wellbeing?"
+    }
+  ]
+}

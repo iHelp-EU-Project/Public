@@ -1,0 +1,202 @@
+[
+  {
+    "name": "MER_FLAG",
+    "possibleValues": [
+      "No",
+      "Yes"
+    ],
+    "realValues": [
+      "0",
+      "1"
+    ],
+    "snomed": {
+      "snomedCode": "39193"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "EDU_CODE",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": {
+      "snomedCode": "LA22185-5"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "avg_CBCI",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": {
+      "snomedCode": "26604007",
+      "description": "complete blood count indices"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "avg_Prothrombin_time_blood",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": {
+      "snomedCode": "409674002",
+      "description": "Prothrombin time increased"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "avg_creatinine",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": {
+      "snomedCode": "166717003",
+      "description": "Creatinine"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "avg_GOT_AST",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": {
+      "snomedCode": "26091008",
+      "description": "Aspartate aminotransferase"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "obesity",
+    "possibleValues": [
+      0,
+      1
+    ],
+    "realValues": [
+      "0",
+      "1"
+    ],
+    "snomed": {
+      "snomedCode": "414916001",
+      "description": "obesity"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "nafld",
+    "possibleValues": [
+      0,
+      1
+    ],
+    "realValues": [
+      "0",
+      "1"
+    ],
+    "snomed": {
+      "snomedCode": "197315008",
+      "description": "Non-alcoholic fatty liver"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "cirrhosis",
+    "possibleValues": [
+      0,
+      1
+    ],
+    "realValues": [
+      "0",
+      "1"
+    ],
+    "snomed": {
+      "snomedCode": "19943007",
+      "description": "Cirrhosis of liver"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "hemochromatosis",
+    "possibleValues": [
+      0
+    ],
+    "realValues": [
+      "0"
+    ],
+    "snomed": {
+      "snomedCode": "1186847009",
+      "description": "hemochromatosis"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "hepatitis_c",
+    "possibleValues": [
+      0,
+      1
+    ],
+    "realValues": [
+      "0",
+      "1"
+    ],
+    "snomed": {
+      "snomedCode": "50711007",
+      "description": "Viral hepatitis type C "
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "hepatitis_b",
+    "possibleValues": [
+      0,
+      1
+    ],
+    "realValues": [
+      "0",
+      "1"
+    ],
+    "snomed": {
+      "snomedCode": "111891008",
+      "description": "Viral hepatitis B"
+    },
+    "multipleValues": "False"
+  },
+  {
+    "name": "alcohol_SNOMED_53041004",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": "53041004",
+    "multipleValues": "False"
+  },
+  {
+    "name": "diabetes_SNOMED_73211009",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": "73211009",
+    "multipleValues": "False"
+  },
+  {
+    "name": "colesterol_SNOMED_84698008",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": "84698008",
+    "multipleValues": "False"
+  },
+  {
+    "name": "obesidad_SNOMED_414916001",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": "414916001",
+    "multipleValues": "False"
+  },
+  {
+    "name": "pancreas_SNOMED_181277001",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": "181277001",
+    "multipleValues": "False"
+  },
+  {
+    "name": "hpylori_SNOMED_80774000",
+    "possibleValues": [],
+    "realValues": [],
+    "snomed": "80774000",
+    "multipleValues": "False"
+  }
+]

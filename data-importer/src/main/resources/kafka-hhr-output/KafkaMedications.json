@@ -1,0 +1,322 @@
+{
+  "schema": {
+    "name": "drugExposure",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "drug_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "drug_exposure_start_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "drug_exposure_start_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "drug_exposure_end_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "drug_exposure_end_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "drug_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "stop_reason",
+        "type": "string"
+      },
+      {
+        "name": "quantity",
+        "type": "float"
+      },
+      {
+        "name": "days_supply",
+        "type": "int"
+      },
+      {
+        "name": "route_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "values": [
+    {
+      "dosage": [
+        {
+          "doseAndRate": [
+            {
+              "doseQuantity": {
+                "value": 50
+              }
+            }
+          ]
+        }
+      ],
+      "effectivePeriod": {
+        "start": "2022-06-10T11:00:12+00:00",
+        "end": "2022-06-10T11:00:12+00:00"
+      },
+      "informationSource": {
+        "reference": "Practitioner/2361"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976891"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "context": {
+        "reference": "Encounter/10"
+      },
+      "id": "6",
+      "medicationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2180",
+            "display": "cefazolin"
+          }
+        ]
+      },
+      "resourceType": "MedicationStatement",
+      "status": "active"
+    },
+    {
+      "dosage": [
+        {
+          "doseAndRate": [
+            {
+              "doseQuantity": {
+                "value": 50
+              }
+            }
+          ]
+        }
+      ],
+      "effectivePeriod": {
+        "start": "2022-06-10T11:00:12+00:00",
+        "end": "2022-06-10T11:00:12+00:00"
+      },
+      "informationSource": {
+        "reference": "Practitioner/3220"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976891"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "context": {
+        "reference": "Encounter/10"
+      },
+      "id": "7",
+      "medicationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "36453",
+            "display": "sevoflurane"
+          }
+        ]
+      },
+      "resourceType": "MedicationStatement",
+      "status": "active"
+    },
+    {
+      "dosage": [
+        {
+          "doseAndRate": [
+            {
+              "doseQuantity": {
+                "value": 50
+              }
+            }
+          ]
+        }
+      ],
+      "effectivePeriod": {
+        "start": "2022-06-10T11:00:12+00:00",
+        "end": "2022-06-10T11:00:12+00:00"
+      },
+      "informationSource": {
+        "reference": "Practitioner/3220"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976891"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "context": {
+        "reference": "Encounter/10"
+      },
+      "id": "8",
+      "medicationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "8782",
+            "display": "propofol"
+          }
+        ]
+      },
+      "resourceType": "MedicationStatement",
+      "status": "active"
+    },
+    {
+      "dosage": [
+        {
+          "doseAndRate": [
+            {
+              "doseQuantity": {
+                "value": 50
+              }
+            }
+          ]
+        }
+      ],
+      "effectivePeriod": {
+        "start": "2022-06-10T11:00:12+00:00",
+        "end": "2022-06-10T11:00:12+00:00"
+      },
+      "informationSource": {
+        "reference": "Practitioner/46"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976891"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "context": {
+        "reference": "Encounter/10"
+      },
+      "id": "9",
+      "medicationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "10689",
+            "display": "tramadol"
+          }
+        ]
+      },
+      "resourceType": "MedicationStatement",
+      "status": "active"
+    },
+    {
+      "dosage": [
+        {
+          "doseAndRate": [
+            {
+              "doseQuantity": {
+                "value": 50
+              }
+            }
+          ]
+        }
+      ],
+      "effectivePeriod": {
+        "start": "2022-06-10T11:00:12+00:00",
+        "end": "2022-06-10T11:00:12+00:00"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976906"
+      },
+      "subject": {
+        "reference": "Patient/12367"
+      },
+      "context": {
+        "reference": "Encounter/10"
+      },
+      "id": "10",
+      "medicationCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "8782",
+            "display": "propofol"
+          }
+        ]
+      },
+      "resourceType": "MedicationStatement",
+      "status": "active"
+    }
+  ],
+  "datasourceID": "HDM",
+  "datasetID": "DrugExposure",
+  "currentBatchStart": 6,
+  "confParameters": {
+    "cleaning": [
+      {
+        "drug_exposure_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "person_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "drug_concept_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "batchSize": 5,
+  "currentBatchEnd": 10,
+  "schemaKey": {
+    "name": "drugExposurePK",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "drug_exposure_id",
+        "type": "int"
+      }
+    ]
+  }
+}

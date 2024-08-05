@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Amilasa_SNOMED_89659001",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "89659001",
+        "multipleValues": "False"
+    },
+    {
+        "name": "Colesterol_total_Srm_SNOMED_909301000000101",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "909301000000101",
+        "multipleValues": "False"
+    },
+    {
+        "name": "GGT_SNOMED_313849004",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "313849004",
+        "multipleValues": "False"
+    },
+    {
+        "name": "Glucosa_SNOMED_1010611000000107",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "1010611000000107",
+        "multipleValues": "False"
+    },
+    {
+        "name": "HDL_SNOMED_166832000",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "166832000",
+        "multipleValues": "False"
+    },
+    {
+        "name": "LDL_SNOMED_395065005",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "395065005",
+        "multipleValues": "False"
+    },
+    {
+        "name": "Trigliceridos_Srm_SNOMED_908961000000105",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "908961000000105",
+        "multipleValues": "False"
+    },
+    {
+        "name": "vitamina_B12_en_suero_SNOMED_271216009",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "271216009",
+        "multipleValues": "False"
+    },
+    {
+        "name": "year_of_birth_SNOMED_277267003",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "277267003",
+        "multipleValues": "False"
+    },
+    {
+        "name": "gender_source_value_SNOMED_263495000",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "263495000",
+        "multipleValues": "False"
+    }
+]

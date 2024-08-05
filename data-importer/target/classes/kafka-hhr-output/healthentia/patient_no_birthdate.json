@@ -1,0 +1,146 @@
+{
+  "datasourceID": "HEALTHENTIA",
+  "datasetID": "Subjects",
+  "schema": {
+    "name": "subject",
+    "namespace": "eu.ihelp.healthentia",
+    "type": "record",
+    "fields": [
+      {
+        "name": "timeZone",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "trackerId",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "baselineDate",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "birthDate",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "status",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "sex",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "height",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "weight",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "disease",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "severity",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "qtRobotId",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "name": "subjectPK",
+    "namespace": "eu.ihelp.healthentia",
+    "type": "record",
+    "fields": [
+      {
+        "name": "subjectIdentificationNumber",
+        "type": "string"
+      }
+    ]
+  },
+  "confParameters": {},
+  "values": [
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Patient",
+            "id": "34YD8",
+            "gender": "none",
+            "active": "true",
+            "birthDate": "1970-01-01",
+            "extension": [
+              {
+                "url": "https://fhir.ihelp-project.eu/StructureDefinition/",
+                "extension": [
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/height",
+                    "valueDecimal": 0
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/weight",
+                    "valueDecimal": 0
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/timezone",
+                    "valueString": "Europe/Athens"
+                  },
+                  {
+                    "url": "https://fhir.ihelp-project.eu/StructureDefinition/baselineDate",
+                    "valueDateTime": "2024-01-08"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "faultyData": [],
+  "jobID": "15ae9cc4-7afd-4e94-a298-22416b5f77dd",
+  "batchSize": 200,
+  "currentBatchStart": 1,
+  "currentBatchEnd": 134,
+  "lastBatch": true,
+  "loggingURL": "http://127.0.0.1:54735/ihelp/datacapture/logs/"
+}

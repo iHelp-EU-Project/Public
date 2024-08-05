@@ -1,0 +1,17 @@
+{
+  "identifier": [
+    {
+      "value": "192608"
+    }
+  ],
+  "gender": "female",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"
+    ]
+  },
+  "active": false,
+  "id": "192608",
+  "birthDate": "1937-01-01",
+  "resourceType": "Patient"
+}

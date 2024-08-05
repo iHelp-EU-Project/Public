@@ -1,0 +1,186 @@
+{
+  "datasourceID": "HEALTHENTIA",
+  "datasetID": "exercises",
+  "schema": {
+    "type": "record",
+    "name": "exercises",
+    "namespace": "eu.ihelp.healthentia",
+    "fields": [
+      {
+        "name": "subjectId",
+        "type": "string"
+      },
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "startTime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "duration",
+        "type": "long"
+      },
+      {
+        "name": "activeDuration",
+        "type": "long"
+      },
+      {
+        "name": "calories",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "speed",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "pace",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "steps",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "distance",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "distanceUnit",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "elevationGain",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "averageHeartRate",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "outOfRangeMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "fatBurnMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "cardioMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "peakMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "heartRateZones",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "sedentaryMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "lightlyMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "fairlyMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "veryMinutes",
+        "type": [
+          "int",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "exercisesPK",
+    "namespace": "eu.ihelp.healthentia",
+    "fields": [
+      {
+        "name": "id",
+        "type": "long"
+      }
+    ]
+  },
+  "confParameters": null,
+  "batchSize": 10,
+  "connectorArguments": {
+    "type": "HEALTHENTIA",
+    "url": "https://saas-api.healthentia.com/",
+    "username": "ihelpingestion@healthentia.com",
+    "password": "@GY+Rb3zTR",
+    "dataset": "exercises",
+    "datePattern": "dd-MM-yy",
+    "nullString": null,
+    "studies": [
+      59,
+      60,
+      61,
+      64,
+      65
+    ]
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

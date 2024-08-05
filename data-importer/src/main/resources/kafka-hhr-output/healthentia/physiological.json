@@ -1,0 +1,213 @@
+{
+  "datasourceID": "HEALTHENTIA",
+  "datasetID": "physiological",
+  "schema": {
+    "name": "physiological",
+    "namespace": "eu.ihelp.healthentia",
+    "type": "record",
+    "fields": [
+      {
+        "name": "subjectId",
+        "type": "string"
+      },
+      {
+        "name": "date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "value",
+        "type": "int"
+      },
+      {
+        "name": "trend",
+        "type": "int"
+      },
+      {
+        "name": "meanLong",
+        "type": "long"
+      },
+      {
+        "name": "meanShort",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "name": "physiologicalPK",
+    "namespace": "eu.ihelp.healthentia",
+    "type": "record",
+    "fields": [
+      {
+        "name": "id",
+        "type": "long"
+      }
+    ]
+  },
+  "confParameters": {},
+  "values": [
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "id": "2034404",
+            "resourceType": "Observation",
+            "effectiveDateTime": "2023-08-29T00:00:00",
+            "valueString": "4163",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "272513004",
+                    "display": "Physiological action"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "217093000",
+                  "display": "Steps"
+                }
+              ]
+            },
+            "component": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "SNOMED",
+                      "code": "248339000",
+                      "display": "trend"
+                    }
+                  ]
+                },
+                "valueString": "0"
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "iHelp",
+                      "code": "meanLong",
+                      "display": "meanLong"
+                    }
+                  ]
+                },
+                "valueString": "4163"
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "iHelp",
+                      "code": "meanShort",
+                      "display": "meanShort"
+                    }
+                  ]
+                },
+                "valueString": "4163"
+              }
+            ],
+            "subject": {
+              "reference": "Patient/4GU7K",
+              "type": "Patient"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "id": "2034405",
+            "resourceType": "Observation",
+            "effectiveDateTime": "2023-08-29T00:00:00",
+            "valueString": "3182",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "272513004",
+                    "display": "Physiological action"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "246132006",
+                  "display": "Distance"
+                }
+              ]
+            },
+            "component": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "SNOMED",
+                      "code": "248339000",
+                      "display": "trend"
+                    }
+                  ]
+                },
+                "valueString": "0"
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "iHelp",
+                      "code": "meanLong",
+                      "display": "meanLong"
+                    }
+                  ]
+                },
+                "valueString": "3182"
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "iHelp",
+                      "code": "meanShort",
+                      "display": "meanShort"
+                    }
+                  ]
+                },
+                "valueString": "3182"
+              }
+            ],
+            "subject": {
+              "reference": "Patient/4GU7K",
+              "type": "Patient"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "faultyData": [],
+  "jobID": "bf522ea7-64d0-4126-96e4-cd24583eaea7",
+  "batchSize": 2,
+  "currentBatchStart": 1,
+  "currentBatchEnd": 2,
+  "lastBatch": false,
+  "loggingURL": "http://127.0.0.1:54735/ihelp/datacapture/logs/"
+}

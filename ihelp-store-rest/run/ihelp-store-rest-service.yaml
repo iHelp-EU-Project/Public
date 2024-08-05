@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ihelp-store-rest-service
+  labels:
+    app: ihelp-store-rest
+spec:
+  ports:
+    - name: "54735"
+      port: 54735
+      targetPort: 54735
+  selector:
+    app: ihelp-store-rest

@@ -1,0 +1,126 @@
+{ "datasourceID": "HDM",
+  "datasetID": "DrugExposure",
+  "schema": {
+    "type": "record",
+    "name": "drugExposure",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "drug_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "drug_exposure_start_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "drug_exposure_start_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "drug_exposure_end_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "drug_exposure_end_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "drug_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "stop_reason",
+        "type": "string"
+      },
+      {
+        "name": "quantity",
+        "type": "float"
+      },
+      {
+        "name": "days_supply",
+        "type": "int"
+      },
+      {
+        "name": "route_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "drugExposurePK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "drug_exposure_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+    "cleaning": [
+        {
+          "drug_exposure_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "person_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "drug_concept_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        }
+      ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM/Drug_exposure.csv",
+    "datePattern": "dd/MM/yyyy",
+    "delimiter": ";",
+    "nullString": "NULL",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

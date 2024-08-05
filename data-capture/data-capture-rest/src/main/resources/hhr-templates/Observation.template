@@ -1,0 +1,24 @@
+{
+    "id": {{observation_id}},
+    "observationConcept": {
+        "id": {{observation_concept_id}}
+    },
+    "observationDateTime": "{{observation_datetime}}",
+    "observationTypeConcept": {
+        "id": {{observation_type_concept_id}}
+    },
+    "valueAsNumber": {{value_as_number}},
+    "valueAsString": "{{value_as_string}}",
+    "unitConcept": {
+        "id": {{unit_concept_id}}
+    },
+    "provider": {
+        "id": {{provider_id}}
+    },
+    "visitOccurrence": {
+        "id": {{visit_occurrence_id}}
+    },
+    "fperson": {
+        "id": {{person_id}}
+    }
+}

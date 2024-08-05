@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: data-capature-nfs-pv
+spec:
+  storageClassName: data-capature-nfs
+  capacity:
+    storage: 250Mi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 10.10.2.120
+    path: "/storage/srv/datacapture"

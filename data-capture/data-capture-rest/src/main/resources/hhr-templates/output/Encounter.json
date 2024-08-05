@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "source": "http://www.ohdsi.org/OMOP4976890"
+  },
+  "subject": {
+    "reference": "Patient/12330"
+  },
+  "serviceProvider": {
+    "reference": "Organization/38"
+  },
+  "id": "157955",
+  "class": {
+    "system": "http://www.ohdsi.org/",
+    "code": "OP",
+    "display": "Outpatient Visit"
+  },
+  "resourceType": "Encounter",
+  "status": "finished"
+}

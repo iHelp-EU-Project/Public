@@ -1,0 +1,55 @@
+{
+  "datasourceID": "MUP",
+  "datasetID": "all",
+  "schema": {
+    "type": "record",
+    "name": "all",
+    "namespace": "eu.ihelp.mup",
+    "fields": [
+      {
+        "name": "gender",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "age",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "survey_indexes",
+        "type": {
+          "type" : "array",
+          "items" : "int"
+        }
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "allPK",
+    "namespace": "eu.ihelp.mup",
+    "fields": [
+      {
+        "name": "patient_id",
+        "type": "int"
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/MUP/iHelp_DB_Batch_1_22.06.2023.csv",
+    "datePattern": "yyyy-MM-dd",
+    "delimiter": ";",
+    "nullString": "",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "user-enrollment.fullname" . }}-user-enrollment
+  labels:
+    app: user-enrollment
+  {{- include "user-enrollment.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.userEnrollment.replicas }}
+  selector:
+    matchLabels:
+      app: user-enrollment
+    {{- include "user-enrollment.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: user-enrollment
+      {{- include "user-enrollment.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: DATASTORE_HOST
+          value: {{ quote .Values.userEnrollment.userEnrollment.env.datastoreHost }}
+        - name: DATASTORE_PORT
+          value: {{ quote .Values.userEnrollment.userEnrollment.env.datastorePort }}
+        - name: datacapture_url
+          value: {{ quote .Values.userEnrollment.userEnrollment.env.datacaptureUrl }}
+        - name: datacapture_port
+          value: {{ quote .Values.userEnrollment.userEnrollment.env.datacapturePort }}          
+        - name: swagger_path
+          value: {{ quote .Values.userEnrollment.userEnrollment.env.swaggerPath }}
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.userEnrollment.userEnrollment.image.repository }}:{{ .Values.userEnrollment.userEnrollment.image.tag
+          | default .Chart.AppVersion }}
+        imagePullPolicy: {{ .Values.userEnrollment.userEnrollment.imagePullPolicy }}
+        name: user-enrollment
+        ports:
+        - containerPort: 54735
+        resources: {{- toYaml .Values.userEnrollment.userEnrollment.resources | nindent
+          10 }}
+      imagePullSecrets:
+      - name: ihelpgit
+      restartPolicy: Always

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ include "data-capture.fullname" . }}-capature-nfs-pvc
+  labels:
+  {{- include "data-capture.labels" . | nindent 4 }}
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: {{ .Values.pvc.capatureNfsPvc.storageRequest | quote }}
+  storageClassName: {{ .Values.pvc.capatureNfsPvc.storageClass | quote }}

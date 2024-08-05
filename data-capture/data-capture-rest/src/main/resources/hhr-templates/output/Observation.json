@@ -1,0 +1,39 @@
+{
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "294469003",
+        "display": "Allergy to gentamicin"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/315"
+    }
+  ],
+  "subject": {
+    "reference": "Patient/4102"
+  },
+  "id": "224329",
+  "encounter": {
+    "reference": "Encounter/262437"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://www.ohdsi.org/",
+          "code": "OMOP4976890",
+          "display": "EHR"
+        }
+      ]
+    }
+  ],
+  "resourceType": "Observation",
+  "status": "final",
+  "valueQuantity": {
+    "value": 0
+  }
+}

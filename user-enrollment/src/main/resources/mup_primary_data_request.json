@@ -1,0 +1,59 @@
+{
+  "datasourceID": "MUP",
+  "datasetID": "all",
+  "schema": {
+    "type": "record",
+    "name": "all",
+    "namespace": "eu.ihelp.mup",
+    "fields": [
+      {
+        "name": "gender",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "age",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "survey_indexes",
+        "type": {
+          "type" : "array",
+          "items" : "int"
+        }
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "allPK",
+    "namespace": "eu.ihelp.mup",
+    "fields": [
+      {
+        "name": "patient_id",
+        "type": "int"
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "DATA",
+    "data": [],
+    "datePattern": "yyyy-MM-dd",
+    "delimiter": ";",
+    "nullString": "",
+    "skipFirst": false
+  },
+  "converterArguments": {
+    "type": "KAFKA",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z", 
+    "url": "147.102.230.182",
+    "port": "30003",    
+    "topic": "data_capture_input"
+  },
+  "batchSize": 2
+}

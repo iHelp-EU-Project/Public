@@ -1,0 +1,285 @@
+{
+  "schema": {
+    "name": "observation",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "observation_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "observation_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "observation_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "observation_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "value_as_number",
+        "type": "float"
+      },
+      {
+        "name": "value_as_string",
+        "type": "string"
+      },
+      {
+        "name": "qualifier_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "unit_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "values": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "294469003",
+            "display": "Allergy to gentamicin"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/315"
+        }
+      ],
+      "effectiveDateTime": "2022-06-10T11:02:58+00:00",
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "id": "224329",
+      "encounter": {
+        "reference": "Encounter/262437"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "Procedure",
+        "system": "Domain",
+        "code": "OMOP generated",
+        "value": 0
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "91936005",
+            "display": "Allergy to penicillin"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/315"
+        }
+      ],
+      "effectiveDateTime": "2022-06-10T11:02:58+00:00",
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "id": "226339",
+      "encounter": {
+        "reference": "Encounter/413879"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "Procedure",
+        "system": "Domain",
+        "code": "OMOP generated",
+        "value": 0
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "293584003",
+            "display": "Allergy to paracetamol"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/1092"
+        }
+      ],
+      "effectiveDateTime": "2022-06-10T11:02:58+00:00",
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "id": "228864",
+      "encounter": {
+        "reference": "Encounter/677780"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "Procedure",
+        "system": "Domain",
+        "code": "OMOP generated",
+        "value": 0
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "300916003",
+            "display": "Allergy to latex"
+          }
+        ]
+      },
+      "performer": [
+        {
+          "reference": "Practitioner/874"
+        }
+      ],
+      "effectiveDateTime": "2022-06-10T11:02:58+00:00",
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "id": "229539",
+      "encounter": {
+        "reference": "Encounter/677780"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://www.ohdsi.org/",
+              "code": "OMOP4976890",
+              "display": "EHR"
+            }
+          ]
+        }
+      ],
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "Procedure",
+        "system": "Domain",
+        "code": "OMOP generated",
+        "value": 0
+      }
+    }
+  ],
+  "datasourceID": "HDM",
+  "datasetID": "Observations",
+  "currentBatchStart": 1,
+  "confParameters": {
+    "cleaning": [
+      {
+        "observation_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "person_id": [
+          "int",
+          "not_null",
+          "max_6_digits"
+        ]
+      },
+      {
+        "observation_concept_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "observation_type_concept_id": [
+          "int",
+          "not_null",
+          "max_6_digits"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "batchSize": 5,
+  "currentBatchEnd": 5,
+  "schemaKey": {
+    "name": "observationPK",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "observation_id",
+        "type": "int"
+      }
+    ]
+  }
+}

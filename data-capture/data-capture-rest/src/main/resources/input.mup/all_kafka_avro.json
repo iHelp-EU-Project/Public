@@ -1,0 +1,129 @@
+{
+  "datasourceID": "MUP",
+  "datasetID": "all",
+  "schema": {
+    "type": "record",
+    "name": "all",
+    "namespace": "eu.ihelp.mup",
+    "fields": [
+      {
+        "name": "diagnosis",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "gender",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "age",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "symptoms",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "comorbidities",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "morbidity_history",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "family_history",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "negative_habits",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "physical_finding",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "Laboratory_tests",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "imaging_diagnostics",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "genotyping",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "label",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "allPK",
+    "namespace": "eu.ihelp.mup",
+    "fields": [
+      {
+        "name": "patient_id",
+        "type": "int"
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/MUP/all.csv",
+    "datePattern": "yyyy-MM-dd",
+    "delimiter": ";",
+    "nullString": "",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "KAFKA_AVRO",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "147.102.230.182",
+    "port": "30003",
+    "avroPort": "30004",        
+    "topic": "mup_all"
+  }
+}

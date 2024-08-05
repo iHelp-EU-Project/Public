@@ -1,0 +1,126 @@
+{
+  "datasourceID": "MUP",
+  "datasetID": "all",
+  "schema": {
+    "type": "record",
+    "name": "conditionOccurance",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "condition_start_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "condition_end_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "condition_type_concept_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "stop_reason",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "provider_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "source_code",
+        "type": [
+          "double",
+          "null"
+        ]
+      },
+      {
+        "name": "source_code_description",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "target_concept_name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "target_domain_id",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "target_vocabulary_id",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "vocabulary_item_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "conditionOccurrencePK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "condition_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "DATA",
+    "data": [
+      "1826,4701,2014-09-30 10:34:00.0000000,NULL,32817,NULL,232,NULL,157.2,Malignant neoplasm of tail of pancreas,Malignant neoplasm of tail of pancreas,Condition,ICD9CM,44820602",
+      "6447,6547,2019-11-05 14:16:00.0000000,NULL,32817,NULL,232,NULL,197.0,Secondary malignant neoplasm of lung,Secondary malignant neoplasm of lung,Condition,ICD9CM,44832136"
+    ],
+    "datePattern": "yyyy-MM-dd",
+    "delimiter": ",",
+    "nullString": "",
+    "skipFirst": false
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  },
+  "batchSize": 2
+}

@@ -1,0 +1,18 @@
+<configuration debug="true">
+
+  <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender" >
+    <encoder>
+      <pattern>%date{ISO8601} %-5level-[%thread]/[%class{40}@%line] - %m%n </pattern>
+    </encoder>
+  </appender>
+
+  <logger name="com.leanxcale.jdbc.ElasticDriver" level="warn">
+      <appender-ref ref="STDOUT" />
+  </logger>
+
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

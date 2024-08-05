@@ -1,0 +1,108 @@
+{
+  "datasourceID": "HEALTHENTIA",
+  "datasetID": "Answers",
+  "schema": {
+    "type": "record",
+    "name": "answer",
+    "namespace": "eu.ihelp.healthentia",
+    "fields": [
+      {
+        "name": "subjectId",
+        "type": "string"
+      },
+      {
+        "name": "date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "sentDate",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "questionnaireId",
+        "type": "int"
+      },
+      {
+        "name": "questionnaireTitle",
+        "type": "string"
+      },
+      {
+        "name": "questionnaireCodename",
+        "type": "string"
+      },
+      {
+        "name": "questionId",
+        "type": "int"
+      },
+      {
+        "name": "questionTitle",
+        "type": "string"
+      },
+      {
+        "name": "questionCodename",
+        "type": "string"
+      },
+      {
+        "name": "answer",
+        "type": "string"
+      },
+      {
+        "name": "score",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "parentQuestion",
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "answerPK",
+    "namespace": "eu.ihelp.healthentia",
+    "fields": [
+      {
+        "name": "id",
+        "type": "long"
+      }
+    ]
+  },
+  "confParameters": null,
+  "batchSize": 10,
+  "connectorArguments": {
+    "type": "HEALTHENTIA",
+    "url": "https://saas-api.healthentia.com/",
+    "username": "ihelpingestion@healthentia.com",
+    "password": "@GY+Rb3zTR",
+    "dataset": "answers",
+    "datePattern": "dd-MM-yy",
+    "nullString": null,
+    "studies": [
+      59,
+      60,
+      61,
+      64,
+      65
+    ]
+  },
+  "converterArguments": {
+    "type": "KAFKA_AVRO",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "147.102.230.182",
+    "port": "30003",
+    "avroPort": "30004",
+    "topic": "healthentia_answers"
+  }
+}

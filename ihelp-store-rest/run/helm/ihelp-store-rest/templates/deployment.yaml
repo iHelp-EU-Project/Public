@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "ihelp-store-rest.fullname" . }}-ihelp-store-rest
+  labels:
+    app: ihelp-store-rest
+  {{- include "ihelp-store-rest.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.ihelpStoreRest.replicas }}
+  selector:
+    matchLabels:
+      app: ihelp-store-rest
+    {{- include "ihelp-store-rest.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        app: ihelp-store-rest
+      {{- include "ihelp-store-rest.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - env:
+        - name: DATASTORE_HOST
+          value: {{ quote .Values.ihelpStoreRest.ihelpStoreRest.env.datastoreHost }}
+        - name: swagger_path
+          value: {{ quote .Values.ihelpStoreRest.ihelpStoreRest.env.swaggerPath }}
+        - name: KUBERNETES_CLUSTER_DOMAIN
+          value: {{ quote .Values.kubernetesClusterDomain }}
+        image: {{ .Values.ihelpStoreRest.ihelpStoreRest.image.repository }}:{{ .Values.ihelpStoreRest.ihelpStoreRest.image.tag
+          | default .Chart.AppVersion }}
+        imagePullPolicy: {{ .Values.ihelpStoreRest.ihelpStoreRest.imagePullPolicy }}
+        name: ihelp-store-rest
+        ports:
+        - containerPort: 54735
+        resources: {{- toYaml .Values.ihelpStoreRest.ihelpStoreRest.resources | nindent
+          10 }}
+      imagePullSecrets:
+      - name: ihelpgit
+      restartPolicy: Always

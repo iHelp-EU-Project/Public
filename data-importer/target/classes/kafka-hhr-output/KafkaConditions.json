@@ -1,0 +1,264 @@
+{
+  "schema": {
+    "name": "conditionOccurrence",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "condition_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "condition_start_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "condition_start_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "condition_end_date",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "condition_end_datetime",
+        "type": {
+          "logicalType": "timestamp-millis",
+          "type": "long"
+        }
+      },
+      {
+        "name": "condition_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "stop_reason",
+        "type": "string"
+      },
+      {
+        "name": "provider_id",
+        "type": "int"
+      },
+      {
+        "name": "visit_occurrence_id",
+        "type": "int"
+      },
+      {
+        "name": "condition_source_concept_id",
+        "type": "int"
+      }
+    ]
+  },
+  "values": [
+    {
+      "asserter": {
+        "reference": "Practitioner/315"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "abatementDateTime": "2022-06-10T10:57:40+00:00",
+      "id": "76",
+      "encounter": {
+        "reference": "Encounter/10"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code": "problem-list-item"
+            }
+          ]
+        }
+      ],
+      "onsetDateTime": "2022-06-10T10:57:40+00:00",
+      "resourceType": "Condition"
+    },
+    {
+      "asserter": {
+        "reference": "Practitioner/420"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "abatementDateTime": "2022-06-10T10:57:40+00:00",
+      "id": "81",
+      "encounter": {
+        "reference": "Encounter/10"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code": "problem-list-item"
+            }
+          ]
+        }
+      ],
+      "onsetDateTime": "2022-06-10T10:57:40+00:00",
+      "resourceType": "Condition"
+    },
+    {
+      "asserter": {
+        "reference": "Practitioner/420"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "abatementDateTime": "2022-06-10T10:57:40+00:00",
+      "id": "82",
+      "encounter": {
+        "reference": "Encounter/10"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code": "problem-list-item"
+            }
+          ]
+        }
+      ],
+      "onsetDateTime": "2022-06-10T10:57:40+00:00",
+      "resourceType": "Condition"
+    },
+    {
+      "asserter": {
+        "reference": "Practitioner/391"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "abatementDateTime": "2022-06-10T10:57:40+00:00",
+      "id": "83",
+      "encounter": {
+        "reference": "Encounter/10"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code": "problem-list-item"
+            }
+          ]
+        }
+      ],
+      "onsetDateTime": "2022-06-10T10:57:40+00:00",
+      "resourceType": "Condition"
+    },
+    {
+      "asserter": {
+        "reference": "Practitioner/315"
+      },
+      "meta": {
+        "source": "http://www.ohdsi.org/OMOP4976890"
+      },
+      "subject": {
+        "reference": "Patient/4102"
+      },
+      "abatementDateTime": "2022-06-10T10:57:40+00:00",
+      "id": "84",
+      "encounter": {
+        "reference": "Encounter/10"
+      },
+      "category": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+              "code": "problem-list-item"
+            }
+          ]
+        }
+      ],
+      "onsetDateTime": "2022-06-10T10:57:40+00:00",
+      "resourceType": "Condition"
+    }
+  ],
+  "datasourceID": "HDM",
+  "datasetID": "ConditionOccurrence",
+  "currentBatchStart": 1,
+  "confParameters": {
+    "cleaning": [
+      {
+        "visit_occurrence_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "person_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "condition_concept_id": [
+          "int",
+          "not_null",
+          "max_12_digits"
+        ]
+      },
+      {
+        "condition_start_datetime": [
+          "date",
+          "not_null"
+        ]
+      },
+      {
+        "condition_start_date": [
+          "simple_date",
+          "not_null"
+        ]
+      }
+    ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "batchSize": 5,
+  "currentBatchEnd": 5,
+  "schemaKey": {
+    "name": "conditionOccurrencePK",
+    "namespace": "eu.ihelp.hdm",
+    "type": "record",
+    "fields": [
+      {
+        "name": "condition_occurrence_id",
+        "type": "int"
+      }
+    ]
+  }
+}

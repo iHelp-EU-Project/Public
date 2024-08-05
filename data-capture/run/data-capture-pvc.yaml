@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: data-capature-nfs-pvc
+spec:
+  storageClassName: data-capature-nfs
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 250Mi

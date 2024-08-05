@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: {{ include "data-capture.fullname" . }}-capature-nfs-pv
+  labels:
+  {{- include "data-capture.labels" . | nindent 4 }}
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 250Mi
+  nfs:
+    path: /storage/srv/datacapture
+    server: 10.10.2.120
+  storageClassName: data-capature-nfs

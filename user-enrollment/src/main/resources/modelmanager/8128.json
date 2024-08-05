@@ -1,0 +1,1109 @@
+[
+    {
+        "name": "patient_id",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "sex",
+        "possibleValues": [
+            {
+                "1": "m",
+                "2": "f"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "age",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "age_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "date_of_birth",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "date_of_diagnosis",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "ca19_9_diagnosis",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "ca19_9_diagnosis_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "ca19_9_diagnosis date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "staging_p_t",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "staging_p_n",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "staging_p_m",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "staging_c_t",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "staging_c_n",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "staging_c_m",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "tumor_location",
+        "possibleValues": [
+            {
+                "1": "head",
+                "2": "body",
+                "3": "isthmus",
+                "4": "tail",
+                "5": "hookedprocess"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4', '5'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "biopsy_grading",
+        "possibleValues": [
+            {
+                "1": "G1",
+                "2": "G2",
+                "3": "G3",
+                "4": "GX"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "histology",
+        "possibleValues": [
+            {
+                "1": "other",
+                "2": "adenocarcinoma"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "asa_score",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "surgery_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "biliary_prosthesis",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "surgery_bool",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "surgery_type",
+        "possibleValues": [
+            {
+                "1": "duodenocephalopancreasectomy",
+                "2": "distalsplenopancreasectomytotalpancreasectomy",
+                "3": "distalspleenpreservingpancreasectomy"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "surgery_approach",
+        "possibleValues": [
+            {
+                "1": "open",
+                "2": "robot-assisted",
+                "3": "laparoscopic"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "surgery_duration",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "surgery_duration_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "surgery_intraoperative_blood_loss",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "surgery_intraoperative_blood_loss_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "surgery_grading",
+        "possibleValues": [
+            {
+                "1": "G2",
+                "2": "G1",
+                "3": "G3",
+                "4": null
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "number_nodes",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "number_nodes_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "number_positive_nodes",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "number_positive_nodes_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "nodes_ratio",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "nodes_ratio_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "margin_status",
+        "possibleValues": [
+            {
+                "1": "R2",
+                "2": "R1",
+                "3": "R0"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "limphovascular_spaces_invasion",
+        "possibleValues": [
+            {
+                "1": "yes",
+                "2": "no"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "perineural_invasion",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "ca19_9_after_surgery",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "ca19_9_after_surgery_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "ca19_9_after_surgery_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "post_operative_complications",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "pancreatic_fistula",
+        "possibleValues": [
+            {
+                "1": "yes",
+                "2": "no"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "biliary_fistula",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "re-surgery",
+        "possibleValues": [
+            {
+                "1": "yes",
+                "2": "no"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "chemotherapy_bool",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "chemotherapy_type",
+        "possibleValues": [
+            {
+                "1": "FOLFIRINOX",
+                "2": "GEM",
+                "3": "5FU",
+                "4": "FOLFOX",
+                "5": null
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4', '5'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "radiotherapy_number_cicles",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_number_cicles_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_timing",
+        "possibleValues": [
+            {
+                "1": "RTsandwitch",
+                "2": "afterchemo",
+                "3": "onlyRT(CT)",
+                "4": "beforechemo"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "radiotherapy_setting",
+        "possibleValues": [
+            {
+                "1": "PalliativeonT",
+                "2": "PalliativeonM",
+                "3": "Curative",
+                "4": "PalliativeonT+N",
+                "5": "Localcontrol"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4', '5'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "radiotherapy_technique",
+        "possibleValues": [
+            {
+                "1": "VMAT",
+                "2": "3D",
+                "3": "SBRTMRIguided",
+                "4": "IMRTMRIguided",
+                "5": "IMRT",
+                "6": "SBRT"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4', '5', '6'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "radiotherapy_start_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_end_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV1 dose",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV1 dose_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV1  fractionation",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV1  fractionation_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV2 dose",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV2 dose_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV2  fractionation",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV2  fractionation_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV3 dose",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV3 dose_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV3 fractionation",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_CTV3 fractionation_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_reason for suspension RT",
+        "possibleValues": [
+            {
+                "1": "other",
+                "2": "toxicity"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "radiotherapy_days of suspension RT",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_days of suspension RT_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_RT 1° visit date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_RT simulation date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "radiotherapy_early closure of RT treatment",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "radiotherapy_Reason for early closure",
+        "possibleValues": [
+            {
+                "1": "toxicity",
+                "2": "other"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "acute_upper_gi_toxicity",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "acute_upper_gi_toxicity_grade",
+        "possibleValues": [
+            {
+                "1": "G3",
+                "2": "G1",
+                "3": "G2",
+                "4": "G4",
+                "5": "G5"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4', '5'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "late_upper_gi_toxicity",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "late_upper_gi_toxicity_grade",
+        "possibleValues": [
+            {
+                "1": "G2",
+                "2": "G3",
+                "3": "G4",
+                "4": "G1",
+                "5": "G5"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3', '4', '5'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "need_for_hospitalization",
+        "possibleValues": [
+            {
+                "1": "yes",
+                "2": "no"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "concomitant_chemotherapy",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "concomitant_chemotherapy_type",
+        "possibleValues": [
+            {
+                "1": "5FU",
+                "2": "other",
+                "3": "GEM"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2', '3'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "concomitant_chemotherapy_cicles",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "concomitant_chemotherapy_cicles_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "concomitant_chemotherapy_reason_suspension",
+        "possibleValues": [
+            {
+                "1": "other",
+                "2": "toxicity"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "concomitant_chemotherapy_days_of_suspension",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "concomitant_chemotherapy_days_of_suspension_unit",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "chemotherapy_schedule_change",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "last_follow_up_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "overall_survival_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "overall_survival",
+        "possibleValues": [
+            {
+                "1": "dead",
+                "2": "alive"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "disease_free_survival_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "disease_free_survival",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "local_control_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "local_control",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "regional_control_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "regional_control",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "distant_metastasis_date",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "distant_metastasis",
+        "possibleValues": [
+            {
+                "1": "no",
+                "2": "yes"
+            }
+        ],
+        "realValues": [
+            "dict_keys(['1', '2'])"
+        ],
+        "snomed": "0",
+        "multipleValues": false
+    },
+    {
+        "name": "albumin",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "alkaline_phosphatase",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "alt",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "ast",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "c-reactive_protein",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "ca19_9",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "creatinine",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "direct_bilirubin",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "ggt",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "haemoglobin",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "indirect_bilirubin",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "inr",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "lactic_dehydrogenase",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "lymphocytes",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "neutrophils",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "platelets",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "proteins",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "total_bilirubin",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "urea_nitrogen",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    },
+    {
+        "name": "white_blood_cells",
+        "possibleValues": [],
+        "realValues": [],
+        "snomed": "0",
+        "multipleValues": "False"
+    }
+]

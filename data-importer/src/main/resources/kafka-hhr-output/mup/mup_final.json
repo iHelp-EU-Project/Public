@@ -1,0 +1,3699 @@
+{
+  "datasourceID": "MUP",
+  "datasetID": "all",
+  "schema": {
+    "name": "all",
+    "namespace": "eu.ihelp.mup",
+    "type": "record",
+    "fields": [
+      {
+        "name": "gender",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "age",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "survey_indexes",
+        "type": {
+          "type": "array",
+          "items": "int"
+        }
+      }
+    ]
+  },
+  "schemaKey": {
+    "name": "allPK",
+    "namespace": "eu.ihelp.mup",
+    "type": "record",
+    "fields": [
+      {
+        "name": "patient_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {},
+  "values": [
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "394595002",
+                    "display": "Pathology"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "700423003",
+                  "display": "Adenocarcinoma of pancreas"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "75"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "236359005",
+                  "display": "Impotence"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "2",
+                  "display": "Quick fatigue"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "4",
+                  "display": "A feeling of bloating in the abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "110292000",
+                  "display": "Difficulty eating"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "422587007",
+                  "display": "Nausea"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "192017004",
+                  "display": "Loss of appetite"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "46047002",
+                  "display": "upper abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "14",
+                  "display": "Abdominal pain that radiates to the back"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "16",
+                  "display": "Abdominal pain that worsens after eating"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "17",
+                  "display": "Unwanted weight loss"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "18",
+                  "display": "Changes in the color of stools discoloration"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "19",
+                  "display": "Darkening of urine"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "64144002",
+                  "display": "Itchy skin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "23",
+                  "display": "Pain in the musculoskeletal system"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "24",
+                  "display": "Difficult and painful movements"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "235494005",
+                  "display": "Chronic pancreatitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "773737004",
+                  "display": "Pancreatic cysts"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "1084931000119109",
+                  "display": "Choledocholithiasis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "20824003",
+                  "display": "Chronic cholecystitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "33",
+                  "display": "Chronic gastroduodenitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "397825006",
+                  "display": "Gastric ulcer"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "FamilyMemberHistory",
+            "patient": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            },
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "SNOMED",
+                      "code": "47009004",
+                      "display": "No family history of"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "63",
+                  "display": "Increased alcohol consumption"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "66",
+                  "display": "Increased consumption of fat and fatty foods"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "67",
+                  "display": "Daily consumption of red meats"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "73",
+                  "display": "Pale dry skin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "425244000",
+                  "display": "Decreased skin turgor"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "75",
+                  "display": "Painless jaundice skin and visible mucous membranes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "76",
+                  "display": "Palpatory tenderness paraumbilically or in the upper quadrants of the abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "77",
+                  "display": "Abdominal pain which increases on palpation"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "197456007",
+                  "display": "Acute pancreatitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "1084931000119109",
+                  "display": "Choledocholithiasis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "20824003",
+                  "display": "Chronic cholecystitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "49",
+                  "display": "Chronic gastroduodenitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "397825006",
+                  "display": "Gastric ulcer"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "173712002",
+                  "display": "Stomach operations"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "387031005",
+                  "display": "Amylase"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "259431002",
+                  "display": "Lipase"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "166667003",
+                  "display": "SGOT"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "69480007",
+                  "display": "GGTP"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "170756003",
+                  "display": "Blood sugar"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "4201000179104",
+                    "display": "Imaging report (record artifact)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "271315005",
+                  "display": "Radiography"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "4201000179104",
+                    "display": "Imaging report (record artifact)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "99",
+                  "display": "CT - native or with contrast enhancement"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/75",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Patient",
+            "id": "75",
+            "gender": "female",
+            "birthDate": "1979-01-01"
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "Bundle",
+      "entry": [
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "394595002",
+                    "display": "Pathology"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "700423003",
+                  "display": "Adenocarcinoma of pancreas"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "76"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "236359005",
+                  "display": "Impotence"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "2",
+                  "display": "Quick fatigue"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "4",
+                  "display": "A feeling of bloating in the abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "110292000",
+                  "display": "Difficulty eating"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "422587007",
+                  "display": "Nausea"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "192017004",
+                  "display": "Loss of appetite"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "46047002",
+                  "display": "upper abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "14",
+                  "display": "Abdominal pain that radiates to the back"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "16",
+                  "display": "Abdominal pain that worsens after eating"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "17",
+                  "display": "Unwanted weight loss"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "18",
+                  "display": "Changes in the color of stools discoloration"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "19",
+                  "display": "Darkening of urine"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "64144002",
+                  "display": "Itchy skin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "23",
+                  "display": "Pain in the musculoskeletal system"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "24",
+                  "display": "Difficult and painful movements"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "4",
+                  "display": "A feeling of bloating in the abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "422587007",
+                  "display": "Nausea"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "46047002",
+                  "display": "upper abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "16",
+                  "display": "Abdominal pain that worsens after eating"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "409586006",
+                    "display": "Complaint (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "23",
+                  "display": "Pain in the musculoskeletal system"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "235494005",
+                  "display": "Chronic pancreatitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "773737004",
+                  "display": "Pancreatic cysts"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "1084931000119109",
+                  "display": "Choledocholithiasis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "20824003",
+                  "display": "Chronic cholecystitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "33",
+                  "display": "Chronic gastroduodenitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "397825006",
+                  "display": "Gastric ulcer"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "235494005",
+                  "display": "Chronic pancreatitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "9859006",
+                  "display": "Insulin resistant diabetes mellitus"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "20824003",
+                  "display": "Chronic cholecystitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "33",
+                  "display": "Chronic gastroduodenitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "359581008",
+                  "display": "Obesity"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "64715009",
+                  "display": "Hypertensive disease"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "41",
+                  "display": "Arthritic disease"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "398192003",
+                    "display": "Co-morbid conditions (finding)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "34",
+                  "display": "Hepatitis B, C"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "FamilyMemberHistory",
+            "patient": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            },
+            "condition": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "SNOMED",
+                      "code": "47009004",
+                      "display": "No family history of"
+                    }
+                  ]
+                }
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "SNOMED",
+                      "code": "47009004",
+                      "display": "No family history of"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "63",
+                  "display": "Increased alcohol consumption"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "66",
+                  "display": "Increased consumption of fat and fatty foods"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "67",
+                  "display": "Daily consumption of red meats"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "65",
+                  "display": "Increased intake of medicinal preparations"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "66",
+                  "display": "Increased consumption of fat and fatty foods"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "67",
+                  "display": "Daily consumption of red meats"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "363898005",
+                    "display": "Habits"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "71",
+                  "display": "Sedentary lifestyle reduced daily physical activity"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "73",
+                  "display": "Pale dry skin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "425244000",
+                  "display": "Decreased skin turgor"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "75",
+                  "display": "Painless jaundice skin and visible mucous membranes"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "76",
+                  "display": "Palpatory tenderness paraumbilically or in the upper quadrants of the abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "77",
+                  "display": "Abdominal pain which increases on palpation"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "425244000",
+                  "display": "Decreased skin turgor"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "76",
+                  "display": "Palpatory tenderness paraumbilically or in the upper quadrants of the abdomen"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "77",
+                  "display": "Abdominal pain which increases on palpation"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "359581008",
+                  "display": "Obesity"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "83",
+                  "display": "Limited movements"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "5880005",
+                    "display": "Physical examination procedure"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "84",
+                  "display": "Painful movements or pain in the musculoskeletal system"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "197456007",
+                  "display": "Acute pancreatitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "1084931000119109",
+                  "display": "Choledocholithiasis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "20824003",
+                  "display": "Chronic cholecystitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "49",
+                  "display": "Chronic gastroduodenitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "397825006",
+                  "display": "Gastric ulcer"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "173712002",
+                  "display": "Stomach operations"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "9859006",
+                  "display": "Insulin resistant diabetes mellitus"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "20824003",
+                  "display": "Chronic cholecystitis"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "397825006",
+                  "display": "Gastric ulcer"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Condition",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "https://fhir.ihelp-project.eu/CodeSystem/codes",
+                    "code": "morbidityHistory",
+                    "display": "Morbidity History"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "773737004",
+                  "display": "Pancreatic cysts"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "387031005",
+                  "display": "Amylase"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "259431002",
+                  "display": "Lipase"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "166667003",
+                  "display": "SGOT"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "69480007",
+                  "display": "GGTP"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "170756003",
+                  "display": "Blood sugar"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "387031005",
+                  "display": "Amylase"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "166667003",
+                  "display": "SGOT"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "166645004",
+                  "display": "SGPT"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "69480007",
+                  "display": "GGTP"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "365797009",
+                  "display": "Fecal fat level"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "78903005",
+                  "display": "Pancreatic elastase"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "170756003",
+                  "display": "Blood sugar"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "396550006",
+                    "display": "Blood test"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "733829007",
+                  "display": "Glycated hemoglobin"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "4201000179104",
+                    "display": "Imaging report (record artifact)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "271315005",
+                  "display": "Radiography"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "4201000179104",
+                    "display": "Imaging report (record artifact)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "99",
+                  "display": "CT - native or with contrast enhancement"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "4201000179104",
+                    "display": "Imaging report (record artifact)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "iHelp",
+                  "code": "97",
+                  "display": "Transabdominal ultrasound"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Observation",
+            "category": [
+              {
+                "coding": [
+                  {
+                    "system": "SNOMED",
+                    "code": "4201000179104",
+                    "display": "Imaging report (record artifact)"
+                  }
+                ]
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "SNOMED",
+                  "code": "271315005",
+                  "display": "Radiography"
+                }
+              ]
+            },
+            "subject": {
+              "reference": "Patient/76",
+              "type": "Patient"
+            }
+          }
+        },
+        {
+          "resource": {
+            "resourceType": "Patient",
+            "id": "76",
+            "gender": "female",
+            "birthDate": "1946-01-01"
+          }
+        }
+      ]
+    }
+  ],
+  "faultyData": [],
+  "jobID": "7e28f2d5-5c53-48d2-9f12-ece13d4ded69",
+  "batchSize": 2,
+  "currentBatchStart": 75,
+  "currentBatchEnd": 76,
+  "lastBatch": false,
+  "loggingURL": "http://127.0.0.1:54735/ihelp/datacapture/logs/"
+}

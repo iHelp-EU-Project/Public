@@ -1,0 +1,23 @@
+{
+  "informationSource": {
+    "reference": "Practitioner/51"
+  },
+  "meta": {
+    "source": "http://www.ohdsi.org/OMOP4976891"
+  },
+  "subject": {
+    "reference": "Patient/12367"
+  },
+  "id": "1",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "2683",
+        "display": "colchicine"
+      }
+    ]
+  },
+  "resourceType": "MedicationStatement",
+  "status": "active"
+}

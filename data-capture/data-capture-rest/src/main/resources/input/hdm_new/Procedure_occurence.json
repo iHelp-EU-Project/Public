@@ -1,0 +1,111 @@
+{ "datasourceID": "HDM",
+  "datasetID": "ProcedureOccurrence",
+  "schema": {
+    "type": "record",
+    "name": "procedureOccurrence",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "person_id",
+        "type": "int"
+      },
+      {
+        "name": "procedure_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "procedure_date",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "procedure_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      },
+      {
+        "name": "procedure_type_concept_id",
+        "type": "int"
+      },
+      {
+        "name": "modifier_concept_id",
+        "type": "int"
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "procedureOccurrencePK",
+    "namespace": "eu.ihelp.hdm",
+    "fields": [
+      {
+        "name": "procedure_occurrence_id",
+        "type": "int"
+      }
+    ]
+  },
+  "confParameters": {
+   "cleaning": [
+        {
+          "procedure_occurrence_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "person_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "procedure_concept_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        },
+        {
+          "procedure_datetime": [
+            "date",
+            "not_null"
+          ]
+        },
+        {
+          "procedure_date": [
+            "simple_date",
+            "not_null"
+          ]
+        },
+        {
+          "procedure_type_concept_id": [
+            "int",
+            "not_null",
+            "max_12_digits"
+          ]
+        }
+      ],
+    "harmonizer": {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/iHelp/datasets/HDM/Procedure_occurrence.csv",
+    "datePattern": "dd/MM/yyyy",
+    "delimiter": ";",
+    "nullString": "NULL",
+    "skipFirst": true
+  },
+  "converterArguments": {
+    "type": "PRINT",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z"
+  }
+}

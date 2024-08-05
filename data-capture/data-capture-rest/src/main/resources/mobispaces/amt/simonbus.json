@@ -1,0 +1,227 @@
+{
+  "datasourceID": "AMT",
+  "datasetID": "canbus",
+  "schema": {
+    "type": "record",
+    "name": "simonbus",
+    "namespace": "eu.mobispaces.amt",
+    "fields": [
+      {
+        "name": "blocknumber",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "id_timetable",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "id_network",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "trip_sequence",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "id_stop",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "stop_code",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "stop_name",
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      {
+        "name": "route_id",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "number_of_passengers",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "odometer_value_from_first_stop",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "odometer_value_from_last_stop",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "time_delay",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "time_from_departure",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "time_from_last_stop",
+        "type": {
+          "type": "int",
+          "logicalType": "time-millis"
+        },
+        "default": 0
+      },
+      {
+        "name": "passengers_got_on_door1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "passengers_got_off_door1",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "passengers_got_on_door2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "passengers_got_off_door2",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "passengers_got_on_door3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "passengers_got_off_door3",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "passengers_got_on_door4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "passengers_got_off_door4",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "delay",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "delay_from_departure",
+        "type": [
+          "int",
+          "null"
+        ]
+      },
+      {
+        "name": "delay_from_last_stop",
+        "type": [
+          "int",
+          "null"
+        ]
+      }
+    ]
+  },
+  "schemaKey": {
+    "type": "record",
+    "name": "simonbus",
+    "namespace": "eu.mobispaces.amt",
+    "fields": [
+      {
+        "name": "id_bus",
+        "type": "string"
+      },
+      {
+        "name": "event_type",
+        "type": "string"
+      },
+      {
+        "name": "event_datetime",
+        "type": {
+          "type": "long",
+          "logicalType": "timestamp-millis"
+        }
+      }
+    ]
+  },
+  "connectorArguments": {
+    "type": "FILE",
+    "path": "/home/pavlos/leanxcale/Projects/MobiSpaces/datasets/20221109_bus.csv",
+    "datePattern": "dd/MM/yyyy HH:mm:ss",
+    "delimiter": ",",
+    "nullString": "NULL",
+    "skipFirst": false
+  },
+  "converterArguments": {
+    "type": "KAFKA_AVRO",
+    "datePattern": "yyyy-MM-dd HH:mm:ss z",
+    "url": "192.168.2.101",
+    "port": "9092",
+    "avroPort": "8081",
+    "topic": "amt_simonbus"
+  }
+}

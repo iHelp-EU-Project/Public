@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  datastore:
+    image: gitlab.ihelp-project.eu:5050/pkranas/ihelp-store:test
+    container_name: datastore
+    restart: unless-stopped
+    ports:
+      - 2181:2181
+      - 1529:1529  
+    environment:
+      - KVPEXTERNALIP=datastore!9800
+  pdt_backend:
+    image: gitlab.ihelp-project.eu:5050/pkranas/ihelp-store-rest:test
+    container_name: datastore-rest
+    restart: unless-stopped
+    ports:
+      - 54735:54735
+    depends_on:
+      - datastore
+    links:
+      - datastore
+    environment:
+      - DATASTORE_HOST=datastore
+      - swagger_path=/tmp/
+      - USEIP=yes
