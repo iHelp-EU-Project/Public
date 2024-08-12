@@ -1,0 +1,7 @@
+apiVersion: 1.0
+name: bounce-mitigation-ui-helm-chart
+version: 1.0
+description: bounce mitigation ui helm-chart
+maintainers:
+  - name: Jarcau Stefan-Cristian
+    email: stefan.jarcau.ext@siemens.com

@@ -1,0 +1,6 @@
+/bounce-mitigation-deprecated
+/bounce_helm
+.dockerignore
+.gitignore
+.idea
+/venv

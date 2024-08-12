@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.name }}-deployment
+  labels:
+    app: {{ .Values.name }}
+spec:
+  replicas: {{ .Values.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.name }}
+    spec:
+      {{- if .Values.imagePullSecretName }}
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecretName }}
+      {{- end }}
+      containers:
+      - name: {{ .Values.name }}
+        image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: {{ .Values.internal_port_1 }}
+          name: streamlit-port
+        env:
+          - name: DB_URL
+            value: {{ .Values.env.DB_URL }}
+          - name: DB_DRIVER_PATH
+            value: {{ .Values.env.DB_DRIVER_PATH }}
+          - name: DB_USER
+            value: {{ .Values.env.DB_USER }}
+          - name: DB_PW
+            value: {{ .Values.env.DB_PW }}
+          - name: DB_DRIVER_CLASS
+            value: {{ .Values.env.DB_DRIVER_CLASS }}

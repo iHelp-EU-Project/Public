@@ -1,0 +1,20 @@
+name: bounce-mitigation-ui
+internal_port_1: 8050
+external_port_1: 8050
+node_port: 30046
+image: 
+    name: bounce-mitigation-ui
+    tag: 0.1.0
+replicas: 1
+service_type: NodePort
+service_ip: 10.43.183.25
+env:
+  # add the keycloak protection 
+  KEYCLOAK_IDP: https://<keycloakip>/realms/<your-realm>/protocol/openid-connect/userinfo
+  #add your own VM IP or machine here
+  DB_URL: jdbc:leanxcale://192.168.56.150:1529/ihelp
+  DB_DRIVER_PATH: ./driver/qe-driver-1.7.10-jar-with-dependencies.jar
+  DB_DRIVER_CLASS: com.leanxcale.client.Driver
+  DB_USER: siemens
+  DB_PW:
+

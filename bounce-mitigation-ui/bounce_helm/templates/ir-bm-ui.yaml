@@ -1,0 +1,16 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: hdm-bm-ui-ir-dss
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - kind: Rule
+    match: Host(`{{ .Values.dns }}`)
+    services:
+    - name: bounce-mitigation-ui-service
+      port: 8050
+  tls:
+    certResolver: myresolver
+    

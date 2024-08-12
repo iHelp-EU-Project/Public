@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: hdm-quest-adh-cronjob
+spec:
+  schedule: {{ .Values.schedule | quote }}
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          {{- if .Values.imagePullSecretName }}
+          imagePullSecrets:
+            - name: {{ .Values.imagePullSecretName }}
+          {{- end }}
+          containers:
+          - name: bm-hdm-cronjob-quest-report
+            image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+            env:
+              - name: DB_URL
+                value: {{ .Values.env.DB_URL }}
+              - name: DB_DRIVER_PATH
+                value: {{ .Values.env.DB_DRIVER_PATH }}
+              - name: DB_USER
+                value: {{ .Values.env.DB_USER }}
+              - name: DB_PW
+                value: {{ .Values.env.DB_PW }}
+              - name: DB_DRIVER_CLASS
+                value: {{ .Values.env.DB_DRIVER_CLASS }}
+          restartPolicy: OnFailure
+
+          
+

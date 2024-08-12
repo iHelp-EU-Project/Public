@@ -1,0 +1,15 @@
+image:
+  repository: bm_hdm
+  tag: rc3
+env:
+  DB_URL: jdbc:leanxcale://192.168.56.150:1529/ihelp
+  DB_DRIVER_PATH: /bounce_mitigation/qe-driver-1.8-RC.9-jar-with-dependencies.jar
+  DB_DRIVER_CLASS: com.leanxcale.client.Driver
+  DB_USER: siemens
+  DB_PW: 
+  #SIMULATE: "False"
+schedule: '*/1 * * * *' # run every 1 minutes
+
+
+
+
